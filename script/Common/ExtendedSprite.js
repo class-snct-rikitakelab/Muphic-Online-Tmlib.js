@@ -1,0 +1,70 @@
+tm.define("ExtendedSprite", {
+	superClass : "tm.display.Sprite",
+	init : function(image, width, height, x, y) {
+		this.superInit(image, width, height);
+		this.setImageName(image);
+		this.x = x + this.width / 2;
+		this.y = y + this.height / 2;
+		this.setBoundingType("rect");
+		this.addPointingStartEvent();
+		this.addPointingEndEvent();
+		this.addPointingOverEvent();
+		this.addPointingOutEvent();
+		this.addPointingMoveEvent();
+	},
+	addToScene : function(scene) {
+		this.addChildTo(scene);
+	},
+	removeFromScene : function() {
+		this.remove();
+	},
+	addPointingStartEvent : function() {
+		this.on("pointingstart", function(e) {
+			this.pointingStartAction(e);
+		});
+	},
+	addPointingEndEvent : function() {
+		this.on("pointingend", function(e) {
+			this.pointingEndAction(e);
+		});
+	},
+	addPointingOverEvent : function() {
+		this.on("pointingover", function(e) {
+			this.pointingOverAction(e);
+		});
+	},
+	addPointingOutEvent : function() {
+		this.on("pointingout", function(e) {
+			this.pointingOutAction(e);
+		});
+	},
+	addPointingMoveEvent : function() {
+		this.on("pointingmove", function(e) {
+			this.pointingMoveAction(e);
+		});
+	},
+	pointingStartAction : function(e) {
+		// override
+	},
+	pointingEndAction : function(e) {
+		// override
+	},
+	pointingOverAction : function(e) {
+		// override
+	},
+	pointingOutAction : function(e) {
+		// override
+	},
+	pointingMoveAction : function(e) {
+		// override
+	},
+
+	changeImage : function(image) { this.image = image; },
+	getImageName : function() { return this.imageName; },
+	setImageName : function(imageName) { this.imageName = imageName; },
+	getDarkImage : function() { return this.imageName + "Dark"; },
+	getState : function() { return this.state; },
+	setState : function(state) { this.state = state; },
+	getIsUpdate : function() { return this.isUpdate; },
+	setIsUpdate : function(isUpdate) { this.isUpdate = isUpdate; },
+})
