@@ -21,7 +21,6 @@ document.write('<script src="script/Story/Illust/IllustManager.js"></script>');
 document.write('<script src="script/Story/Illust/IllustModel.js"></script>');
 document.write('<script src="script/Story/Illust/IllustView.js"></script>');
 document.write('<script src="script/Story/Illust/IllustController.js"></script>');
-document.write('<script src="script/Story/Illust/IllustRemoveState.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusManager.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusModel.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusView.js"></script>');
