@@ -11,7 +11,7 @@ tm.define("IllustView", {
 		var y = illust.y;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingEndAction : function() {
+	destroyIllust : function() {
 		this.getController().destroyIllust();
 	},
 })

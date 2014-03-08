@@ -8,14 +8,8 @@ tm.define("BackgroundThumbnailView", {
 		var y = THUMBNAIL[weather][background].y;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingEndAction : function() {
+	changeBackground : function() {
 		this.getController().changeBackground();
-	},
-	pointingOverAction : function() {
-		this.setAlpha(1.0);
-	},
-	pointingOutAction : function() {
-		this.setAlpha(0.5);
 	},
 	renew : function() {
 		var weather = this.getModel().getWeather();

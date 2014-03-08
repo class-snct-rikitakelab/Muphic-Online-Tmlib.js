@@ -18,7 +18,7 @@ tm.define("BackgroundThumbnailManager", {
 		this.getMediator().changeBackground(backgroundIllust);
 	},
 	setEnableState : function() {
-		this.getView().setState(ThumbnailEnableState(this.getView()));
+		this.getView().setState(BackgroundThumbnailEnableState(this.getView()));
 	},
 
 	getMediator : function() { return this.mediator; },

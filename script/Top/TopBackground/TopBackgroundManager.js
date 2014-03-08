@@ -9,5 +9,6 @@ tm.define("TopBackgroundManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
+		this.setDisableState();
 	}
 })

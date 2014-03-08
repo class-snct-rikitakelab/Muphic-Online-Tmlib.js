@@ -1,21 +1,20 @@
-tm.define("IllustFocusEnableState", {
-	superClass : "State",
+tm.define("ObjectThumbnailEnableState", {
+	superClass : "SpriteEnableState",
 	init : function(parent) {
 		this.superInit(parent);
 		this.getParent().setAlpha(0.5);
 		this.getParent().setInteractive(true);
-		this.getParent().setIsUpdate(false);
 	},
 	pointingStartAction : function() {
-		this.getParent().createIllust();
+		return;
 	},
 	pointingEndAction : function() {
-		return;
+		this.getParent().selectIllust();
 	},
 	pointingOverAction : function() {
-		return;
+		this.getParent().setAlpha(1.0);
 	},
 	pointingOutAction : function() {
-		return;
+		this.getParent().setAlpha(0.5);
 	},
 })

@@ -6,10 +6,7 @@ tm.define("CharButtonView", {
 		var height = 36;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	addCharacter : function() {
 		this.getController().addCharacter();
 	},
 	renew : function() {

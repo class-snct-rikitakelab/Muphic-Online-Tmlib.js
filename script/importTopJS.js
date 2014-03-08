@@ -7,3 +7,4 @@ document.write('<script src="script/Top/StartButton/StartButtonManager.js"></scr
 document.write('<script src="script/Top/StartButton/StartButtonModel.js"></script>');
 document.write('<script src="script/Top/StartButton/StartButtonView.js"></script>');
 document.write('<script src="script/Top/StartButton/StartButtonController.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonEnableState.js"></script>');

@@ -8,10 +8,7 @@ tm.define("ThumbnailButtonView", {
 		var y = THUMBNAILBUTTON[icon].y;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	changeThumbnail : function() {
 		this.getController().changeThumbnail();
 	},
 })

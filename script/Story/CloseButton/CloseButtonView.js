@@ -8,10 +8,7 @@ tm.define("CloseButtonView", {
 		var y = 619;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	removePalette : function() {
 		this.getController().removePalette();
 	},
 })

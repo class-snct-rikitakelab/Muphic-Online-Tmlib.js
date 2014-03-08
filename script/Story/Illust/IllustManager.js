@@ -15,6 +15,9 @@ tm.define("IllustManager", {
 	destroyIllust : function() {
 		this.getMediator().destroyIllust(this);
 	},
+	setEnableState : function() {
+		this.getView().setState(IllustEnableState(this.getView()));
+	},
 
 	getMediator : function() { return this.mediator; },
 	setMediator : function(mediator) { this.mediator = mediator; },

@@ -8,10 +8,7 @@ tm.define("BackgroundButtonView", {
 		var y = 200;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	addPalette : function() {
 		this.getController().addPalette();
 	},
 })

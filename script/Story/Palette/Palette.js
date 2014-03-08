@@ -40,6 +40,9 @@ tm.define("Palette", {
 		}
 		this.enablePreviewScreen();
 	},
+	countIllust : function() {
+		return this.getPreviewScreen().countIllust();
+	},
 	darkenOtherObject : function() {
 		for(var index in this.otherObject) {
 			this.otherObject[index].setDarkState();
@@ -61,6 +64,12 @@ tm.define("Palette", {
 	disablePreviewScreen : function() {
 		this.getPreviewScreen().setDisableState();
 	},
+	enableRemoveIllustButton : function() {
+		this.getRemoveIllustButton().setEnableState();
+	},
+	disableRemoveIllustButton : function() {
+		this.getPreviewScreen().setDisableState();
+	},
 
 	getPaletteFrame : function() { return this.paletteFrame; },
 	setPaletteFrame : function(paletteFrame) { this.paletteFrame = paletteFrame; },
@@ -68,6 +77,8 @@ tm.define("Palette", {
 	setCloseButton : function(closeButton) { this.closeButton = closeButton; },
 	getPreviewScreen : function() { return this.previewScreen; },
 	setPreviewScreen : function(previewScreen) { this.previewScreen = previewScreen; },
+	getRemoveIllustButton : function() { return this.removeIllustButton; },
+	setRemoveIllustButton : function(removeIllustButton) { this.removeIllustButton = removeIllustButton; },
 	getOtherObject : function() { return this.otherObject; },
 	setOtherObject : function(otherObject) { this.otherObject = otherObject; },
 })

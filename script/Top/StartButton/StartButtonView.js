@@ -8,10 +8,7 @@ tm.define("StartButtonView", {
 		var y = 280;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	moveToLogin : function() {
 		this.getController().moveToLogin();
 	},
 })

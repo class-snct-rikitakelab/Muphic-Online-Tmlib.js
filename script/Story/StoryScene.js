@@ -14,17 +14,21 @@ tm.define("StoryScene", {
 
 		var objectArray = [
 			this.background, this.musicButton,
-			this.backgroundButton, this.humanButton, this.animalButton, this.itemButton, this.removeIllustButton
+			this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
 		];
 		this.previewScreen.setOtherObject(objectArray);
 		this.previewScreen.setRemoveIllustButton(this.removeIllustButton);
 		this.backgroundButton.setPalettePreviewScreen(this.previewScreen);
+		this.backgroundButton.setPaletteRemoveIllustButton(this.removeIllustButton);
 		this.backgroundButton.setPaletteOtherObject(objectArray);
 		this.humanButton.setPalettePreviewScreen(this.previewScreen);
+		this.humanButton.setPaletteRemoveIllustButton(this.removeIllustButton);
 		this.humanButton.setPaletteOtherObject(objectArray);
 		this.animalButton.setPalettePreviewScreen(this.previewScreen);
+		this.animalButton.setPaletteRemoveIllustButton(this.removeIllustButton);
 		this.animalButton.setPaletteOtherObject(objectArray);
 		this.itemButton.setPalettePreviewScreen(this.previewScreen);
+		this.itemButton.setPaletteRemoveIllustButton(this.removeIllustButton);
 		this.itemButton.setPaletteOtherObject(objectArray);
 		this.removeIllustButton.setPreviewScreen(this.previewScreen);
 	}

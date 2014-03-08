@@ -11,6 +11,7 @@ tm.define("RemoveFocusView", {
 	resetPosition : function() {
 		var x = SCREEN_WIDTH + Math.floor(this.width / 2);
 		var y = SCREEN_HEIGHT + Math.floor(this.height / 2);
+		this.setScale(1, 1);
 		this.setPosition(x, y);
 	},
 	update : function() {

@@ -14,6 +14,14 @@ tm.define("CloseButtonManager", {
 	removePalette : function() {
 		this.getMediator().removePalette();
 		this.getMediator().enableOtherObject();
+		if(this.getMediator().countIllust() > 0) {
+			this.getMediator().enableRemoveIllustButton();
+		} else {
+			this.getMediator().disableRemoveIllustButton();
+		}
+	},
+	setEnableState : function() {
+		this.getView().setState(CloseButtonEnableState(this.getView()));
 	},
 
 	getMediator : function() { return this.mediator; },

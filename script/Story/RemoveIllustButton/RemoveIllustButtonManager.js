@@ -20,6 +20,12 @@ tm.define("RemoveIllustButtonManager", {
 	setIsAvailable : function(isAvailable) {
 		this.getModel().setIsAvailable(isAvailable);
 	},
+	setEnableState : function() {
+		this.getView().setState(RemoveIllustButtonEnableState(this.getView()));
+	},
+	setPushState : function() {
+		this.getView().setState(RemoveIllustButtonPushState(this.getView()));
+	},
 
 	getPreviewScreen : function() { return this.previewScreen; },
 	setPreviewScreen : function(previewScreen) { this.previewScreen = previewScreen; },

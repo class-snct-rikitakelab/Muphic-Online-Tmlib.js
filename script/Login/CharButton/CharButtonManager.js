@@ -16,6 +16,9 @@ tm.define("CharButtonManager", {
 	addCharacter : function(character) {
 		this.getTable().addCharacter(character);
 	},
+	setEnableState : function() {
+		this.getView().setState(CharButtonEnableState(this.getView()));
+	},
 
 	getTable : function() { return this.table; },
 	setTable : function(table) { this.table = table; },

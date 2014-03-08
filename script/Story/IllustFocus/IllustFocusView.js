@@ -13,7 +13,7 @@ tm.define("IllustFocusView", {
 		var y = SCREEN_HEIGHT;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
+	createIllust : function() {
 		var x = Math.floor(app.mouse.x);
 		var y = Math.floor(app.mouse.y);
 		this.getController().createIllust(x, y);

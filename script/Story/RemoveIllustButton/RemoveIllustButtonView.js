@@ -8,14 +8,13 @@ tm.define("RemoveIllustButtonView", {
 		var y = 200;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingEndAction : function() {
-		this.getController().switchRemove();
+	startRemoveFocusUpdate : function() {
+		this.getController().startRemoveFocusUpdate();
 	},
-	pointingOutAction : function() {
-		if(!this.getModel().getIsAvailable()) {
-			this.changeImage(this.getOffImage());
-		} else {
-			this.changeImage(this.getPushImage());
-		}
+	stopRemoveFocusUpdate : function() {
+		this.getController().stopRemoveFocusUpdate();
+	},
+	setIsAvailable : function(isAvailable) {
+		this.getModel().setIsAvailable(isAvailable);
 	},
 })

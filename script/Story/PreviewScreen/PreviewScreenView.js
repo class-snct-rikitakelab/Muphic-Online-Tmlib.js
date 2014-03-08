@@ -8,10 +8,10 @@ tm.define("PreviewScreenView", {
 		var y = 200;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingOverAction : function() {
+	startIllustFocusUpdate : function() {
 		this.getController().startIllustFocusUpdate();
 	},
-	pointingOutAction : function() {
+	stopIllustFocusUpdate : function() {
 		this.getController().stopIllustFocusUpdate();
 	},
 })

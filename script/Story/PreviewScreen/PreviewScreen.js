@@ -31,9 +31,7 @@ tm.define("PreviewScreen", {
 	},
 	createIllust : function(illust) {
 		this.illust.push(IllustManager(this.getScene(), this, illust));
-		if(this.countIllust() === 1) {
-			this.getRemoveIllustButton().setEnableState();
-		}
+		this.getRemoveIllustButton().setEnableState();
 	},
 	destroyIllust : function(illust) {
 		for(var index in this.illust) {

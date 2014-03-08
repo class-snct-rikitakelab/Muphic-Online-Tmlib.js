@@ -15,6 +15,9 @@ tm.define("RemoveTextButtonManager", {
 	removeCharacter : function() {
 		this.getTextbox().removeCharacter();
 	},
+	setEnableState : function() {
+		this.getView().setState(RemoveTextButtonEnableState(this.getView()));
+	},
 
 	getTextbox : function() { return this.textbox; },
 	setTextbox : function(textbox) { this.textbox = textbox; },

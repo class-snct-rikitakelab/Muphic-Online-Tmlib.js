@@ -8,10 +8,7 @@ tm.define("RemoveTextButtonView", {
 		var y = 630;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
+	removeCharacter : function() {
 		this.getController().removeCharacter();
 	},
 })

@@ -18,6 +18,9 @@ tm.define("PreviewScreenManager", {
 	stopIllustFocusUpdate : function() {
 		this.getMediator().stopIllustFocusUpdate();
 	},
+	setEnableState : function() {
+		this.getView().setState(PreviewScreenEnableState(this.getView()));
+	},
 
 	getMediator : function() { return this.mediator; },
 	setMediator : function(mediator) { this.mediator = mediator; },

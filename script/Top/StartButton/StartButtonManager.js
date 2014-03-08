@@ -10,5 +10,8 @@ tm.define("StartButtonManager", {
 		this.initController();
 		this.addToScene();
 		this.setEnableState();
-	}
+	},
+	setEnableState : function() {
+		this.getView().setState(StartButtonEnableState(this.getView()));
+	},
 })

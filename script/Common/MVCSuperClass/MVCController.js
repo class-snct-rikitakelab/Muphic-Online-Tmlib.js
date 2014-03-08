@@ -9,6 +9,8 @@ tm.define("MVCController", {
 		this.getView().addToScene(scene);
 	},
 	removeFromScene : function() {
+		var scene = this.getModel().getScene();
+		if(scene.getChildAt(this.getView()) === -1) return;
 		this.view.removeFromScene();
 	},
 	setState : function(state) {

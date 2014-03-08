@@ -6,10 +6,16 @@ tm.define("ButtonDarkState", {
 		this.getParent().setAlpha(1.0);
 		this.getParent().setInteractive(false);
 	},
-	touchEndBehavior : function() {
+	pointingStartAction : function() {
 		return;
 	},
-	enterFrameBehavior : function() {
+	pointingEndAction : function() {
 		return;
-	}
+	},
+	pointingOverAction : function() {
+		return;
+	},
+	pointingOutAction : function() {
+		return;
+	},
 })

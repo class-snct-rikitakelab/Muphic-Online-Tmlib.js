@@ -5,5 +5,17 @@ tm.define("ButtonPushState", {
 		this.getParent().changeImage(this.getParent().getPushImage());
 		this.getParent().setAlpha(1.0);
 		this.getParent().setInteractive(true);
-	}
+	},
+	pointingStartAction : function() {
+		// override
+	},
+	pointingEndAction : function() {
+		// override
+	},
+	pointingOverAction : function() {
+		this.getParent().changeImage(this.getParent().getOnImage());
+	},
+	pointingOutAction : function() {
+		this.getParent().changeImage(this.getParent().getPushImage());
+	},
 })

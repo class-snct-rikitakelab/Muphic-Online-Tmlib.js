@@ -17,6 +17,9 @@ tm.define("ThumbnailButtonManager", {
 	getIcon : function() {
 		return this.getModel().getIcon();
 	},
+	setEnableState : function() {
+		this.getView().setState(ThumbnailButtonEnableState(this.getView()));
+	},
 	setPushState : function() {
 		this.getView().setState(ThumbnailButtonPushState(this.getView()));
 	},

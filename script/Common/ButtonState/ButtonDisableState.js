@@ -6,10 +6,16 @@ tm.define("ButtonDisableState", {
 		this.getParent().setAlpha(0.5);
 		this.getParent().setInteractive(false);
 	},
-	touchEndBehavior : function() {
+	pointingStartAction : function() {
 		return;
 	},
-	enterFrameBehavior : function() {
+	pointingEndAction : function() {
 		return;
-	}
+	},
+	pointingOverAction : function() {
+		return;
+	},
+	pointingOutAction : function() {
+		return;
+	},
 })

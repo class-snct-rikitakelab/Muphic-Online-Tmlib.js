@@ -23,11 +23,11 @@ tm.define("RemoveFocusController", {
 				var y = otherIllust.y;
 				this.getView().setPosition(x, y);
 				this.getView().setVisible(true);
-				otherIllust.setInteractive(true);
+				otherIllust.setState(IllustEnableState(otherIllust));
 				break;
 			} else {
 				this.getView().setVisible(false);
-				otherIllust.setInteractive(false);
+				otherIllust.setState(SpriteDisableState(otherIllust));
 			}
 		}
 	},

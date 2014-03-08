@@ -1,16 +1,13 @@
-tm.define("IllustFocusEnableState", {
-	superClass : "State",
+tm.define("IllustEnableState", {
+	superClass : "SpriteEnableState",
 	init : function(parent) {
 		this.superInit(parent);
-		this.getParent().setAlpha(0.5);
-		this.getParent().setInteractive(true);
-		this.getParent().setIsUpdate(false);
 	},
 	pointingStartAction : function() {
-		this.getParent().createIllust();
+		return;
 	},
 	pointingEndAction : function() {
-		return;
+		this.getParent().destroyIllust();
 	},
 	pointingOverAction : function() {
 		return;

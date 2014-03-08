@@ -18,7 +18,7 @@ tm.define("CharacterThumbnailManager", {
 		this.getModel().changeCharacter(character);
 	},
 	setEnableState : function() {
-		this.getView().setState(ThumbnailEnableState(this.getView()));
+		this.getView().setState(ObjectThumbnailEnableState(this.getView()));
 	},
 
 	getMediator : function() { return this.mediator; },

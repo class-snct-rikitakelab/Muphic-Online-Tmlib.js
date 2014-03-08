@@ -10,7 +10,6 @@ tm.define("ExtendedSprite", {
 		this.addPointingEndEvent();
 		this.addPointingOverEvent();
 		this.addPointingOutEvent();
-		this.addPointingMoveEvent();
 	},
 	addToScene : function(scene) {
 		this.addChildTo(scene);
@@ -20,43 +19,23 @@ tm.define("ExtendedSprite", {
 	},
 	addPointingStartEvent : function() {
 		this.on("pointingstart", function(e) {
-			this.pointingStartAction(e);
+			this.getState().pointingStartAction(e);
 		});
 	},
 	addPointingEndEvent : function() {
 		this.on("pointingend", function(e) {
-			this.pointingEndAction(e);
+			this.getState().pointingEndAction(e);
 		});
 	},
 	addPointingOverEvent : function() {
 		this.on("pointingover", function(e) {
-			this.pointingOverAction(e);
+			this.getState().pointingOverAction(e);
 		});
 	},
 	addPointingOutEvent : function() {
 		this.on("pointingout", function(e) {
-			this.pointingOutAction(e);
+			this.getState().pointingOutAction(e);
 		});
-	},
-	addPointingMoveEvent : function() {
-		this.on("pointingmove", function(e) {
-			this.pointingMoveAction(e);
-		});
-	},
-	pointingStartAction : function(e) {
-		// override
-	},
-	pointingEndAction : function(e) {
-		// override
-	},
-	pointingOverAction : function(e) {
-		// override
-	},
-	pointingOutAction : function(e) {
-		// override
-	},
-	pointingMoveAction : function(e) {
-		// override
 	},
 
 	changeImage : function(image) { this.image = image; },
