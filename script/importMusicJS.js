@@ -3,3 +3,7 @@ document.write('<script src="script/Music/MusicBackground/MusicBackgroundManager
 document.write('<script src="script/Music/MusicBackground/MusicBackgroundModel.js"></script>');
 document.write('<script src="script/Music/MusicBackground/MusicBackgroundView.js"></script>');
 document.write('<script src="script/Music/MusicBackground/MusicBackgroundController.js"></script>');
+document.write('<script src="script/Music/StoryButton/StoryButtonManager.js"></script>');
+document.write('<script src="script/Music/StoryButton/StoryButtonModel.js"></script>');
+document.write('<script src="script/Music/StoryButton/StoryButtonView.js"></script>');
+document.write('<script src="script/Music/StoryButton/StoryButtonController.js"></script>');

@@ -366,4 +366,7 @@ var ASSETS = {
 	"story_itemThumbnail_goodsCellPhone" : "image/Story/ItemThumbnail/Goods/cellPhone.png",
 	"story_itemThumbnail_goodsCar" : "image/Story/ItemThumbnail/Goods/car.png",
 	"music_background" : "image/Music/background.png",
+	"music_storyButtonOff" : "image/Music/StoryButton/storyButtonOff.png",
+	"music_storyButtonOn" : "image/Music/StoryButton/storyButtonOn.png",
+	"music_storyButtonDark" : "image/Music/StoryButton/storyButtonDark.png",
 };

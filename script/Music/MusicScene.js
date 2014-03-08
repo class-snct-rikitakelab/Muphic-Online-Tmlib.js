@@ -3,5 +3,6 @@ tm.define("MusicScene", {
 	init : function() {
 		this.superInit();
 		this.background = MusicBackgroundManager(this);
+		this.storyButton = StoryButtonManager(this);
 	},
 })
