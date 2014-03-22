@@ -5,8 +5,9 @@ var THUMBNAIL = null;
 function defineStoryData() {
 	ILLUST = new Array(13);
 	ILLUST["background"] = new Array(4);
-	ILLUST["background"]["empty"] = new Array(1);
+	ILLUST["background"]["empty"] = new Array(2);
 	ILLUST["background"]["empty"][null] = "story_backgroundIllust_empty";
+	ILLUST["background"]["empty"]["dark"] = "story_backgroundIllust_emptyDark";
 	ILLUST["background"]["sunny"] = new Array(8);
 	ILLUST["background"]["sunny"]["forest1"] = "story_backgroundIllust_sunnyForest1";
 	ILLUST["background"]["sunny"]["forest2"] = "story_backgroundIllust_sunnyForest2";

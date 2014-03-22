@@ -5,7 +5,10 @@ tm.define("LoginEndButtonController", {
 	},
 	moveToStory : function() {
 		userName = this.getManager().getUserName();
-		alert(userName);
-		//app.replaceScene(StoryScene());
+		if(storyScene === null) {
+			app.replaceScene(StoryScene());
+		} else {
+			app.replaceScene(storyScene);
+		}
 	},
 })

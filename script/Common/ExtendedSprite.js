@@ -17,6 +17,12 @@ tm.define("ExtendedSprite", {
 	removeFromScene : function() {
 		this.remove();
 	},
+	setEnableState : function() {
+		this.setState(SpriteEnableState(this));
+	},
+	setDisableState : function() {
+		this.setState(SpriteDisableState(this));
+	},
 	addPointingStartEvent : function() {
 		this.on("pointingstart", function(e) {
 			this.getState().pointingStartAction(e);
@@ -44,6 +50,8 @@ tm.define("ExtendedSprite", {
 	getDarkImage : function() { return this.imageName + "Dark"; },
 	getState : function() { return this.state; },
 	setState : function(state) { this.state = state; },
+	getOriginState : function() { return this.originState; },
+	setOriginState : function(originState) { this.originState = originState; },
 	getIsUpdate : function() { return this.isUpdate; },
 	setIsUpdate : function(isUpdate) { this.isUpdate = isUpdate; },
 })

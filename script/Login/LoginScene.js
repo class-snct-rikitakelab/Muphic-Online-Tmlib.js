@@ -13,5 +13,7 @@ tm.define("LoginScene", {
 		this.alfabetTable.setTextbox(this.textbox);
 		this.removeTextButon.setTextbox(this.textbox);
 		this.loginEndButton.setTextbox(this.textbox);
+
+		loginScene = this;
 	}
 })

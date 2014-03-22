@@ -10,6 +10,6 @@ tm.define("HumanButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setEnableState();
+		this.setDarkState();
 	},
 })

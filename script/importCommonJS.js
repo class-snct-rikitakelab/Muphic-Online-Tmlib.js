@@ -1,4 +1,5 @@
 document.write('<script src="script/Common/functions.js"></script>');
+document.write('<script src="script/Common/ExtendedCanvasElement.js"></script>');
 document.write('<script src="script/Common/ExtendedSprite.js"></script>');
 document.write('<script src="script/Common/ExtendedButton.js"></script>');
 document.write('<script src="script/Common/State.js"></script>');

@@ -3,4 +3,11 @@ tm.define("StoryButtonController", {
 	init : function(manager) {
 		this.superInit(manager);
 	},
+	moveToStory : function() {
+		if(storyScene === null) {
+			app.replaceScene(StoryScene());
+		} else {
+			app.replaceScene(storyScene);
+		}
+	},
 })

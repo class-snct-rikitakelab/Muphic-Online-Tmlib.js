@@ -8,10 +8,7 @@ tm.define("StoryButtonView", {
 		var y = 30;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	pointingStartAction : function() {
-		return;
-	},
-	pointingEndAction : function() {
-		return;
+	moveToStory : function() {
+		this.getController().moveToStory();
 	},
 })

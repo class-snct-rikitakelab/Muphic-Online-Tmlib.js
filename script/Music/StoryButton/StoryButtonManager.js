@@ -9,6 +9,9 @@ tm.define("StoryButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setEnableState();
+		this.setDarkState();
+	},
+	setEnableState : function() {
+		this.getView().setState(StoryButtonEnableState(this.getView()));
 	},
 })

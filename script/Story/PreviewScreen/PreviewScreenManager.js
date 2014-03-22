@@ -8,8 +8,8 @@ tm.define("PreviewScreenManager", {
 		this.initModel();
 		this.initView();
 		this.initController();
-		this.setEnableState();
 		this.addToScene();
+		this.setDarkState();
 		this.setMediator(mediator);
 	},
 	startIllustFocusUpdate : function() {

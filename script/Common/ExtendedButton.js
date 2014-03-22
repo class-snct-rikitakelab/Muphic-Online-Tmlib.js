@@ -47,6 +47,8 @@ tm.define("ExtendedButton", {
 	getPushImage : function() { return this.imageName + "Push"; },
 	getState : function() { return this.state; },
 	setState : function(state) { this.state = state; },
+	getOriginState : function() { return this.originState; },
+	setOriginState : function(originState) { this.originState = originState; },
 	getIsUpdate : function() { return this.isUpdate; },
 	setIsUpdate : function(isUpdate) { this.isUpdate = isUpdate; },
 })

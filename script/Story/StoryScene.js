@@ -11,6 +11,8 @@ tm.define("StoryScene", {
 		this.animalButton = AnimalButtonManager(this);
 		this.itemButton = ItemButtonManager(this);
 		this.removeIllustButton = RemoveIllustButtonManager(this);
+		this.introDialog = StoryIntroDialog(this);
+		this.yesButton = StoryYesButton(this);
 
 		var objectArray = [
 			this.background, this.musicButton,
@@ -31,5 +33,17 @@ tm.define("StoryScene", {
 		this.itemButton.setPaletteRemoveIllustButton(this.removeIllustButton);
 		this.itemButton.setPaletteOtherObject(objectArray);
 		this.removeIllustButton.setPreviewScreen(this.previewScreen);
+
+		this.introDialog.setBackground(this.background);
+		this.introDialog.setMusicButton(this.musicButton);
+		this.introDialog.setPreviewScreen(this.previewScreen);
+		this.introDialog.setBackgroundButton(this.backgroundButton);
+		this.introDialog.setHumanButton(this.humanButton);
+		this.introDialog.setAnimalButton(this.animalButton);
+		this.introDialog.setItemButton(this.itemButton);
+		this.introDialog.setRemoveIllustButton(this.removeIllustButton);
+		this.yesButton.setDialog(this.introDialog);
+
+		storyScene = this;
 	}
 })
