@@ -1,5 +1,4 @@
 #app {
 	cursor:
-		url("image/mouse/cursor.png"), url("image/mouse/cursor.cur"),
-		url("../image/mouse/cursor.png"), url("../image/mouse/cursor.cur"), default;
+		url("image/mouse/cursor.cur"), url("image/mouse/cursor.png"), default;
 }
