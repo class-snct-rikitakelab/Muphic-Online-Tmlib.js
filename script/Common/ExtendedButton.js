@@ -11,9 +11,11 @@ tm.define("ExtendedButton", {
 		this.addPointingOverEvent();
 		this.addPointingOutEvent();
 	},
+	//イラストの配置
 	addToScene : function(scene) {
 		this.addChildTo(scene);
 	},
+	//イラストの削除
 	removeFromScene : function() {
 		this.remove();
 	},
@@ -41,6 +43,7 @@ tm.define("ExtendedButton", {
 	changeImage : function(image) { this.image = image; },
 	getImageName : function() { return this.imageName; },
 	setImageName : function(imageName) { this.imageName = imageName; },
+	//画像の呼び出し
 	getOffImage : function() { return this.imageName + "Off"; },
 	getOnImage : function() { return this.imageName + "On"; },
 	getDarkImage : function() { return this.imageName + "Dark"; },

@@ -3,8 +3,8 @@ tm.define("ExtendedSprite", {
 	init : function(image, width, height, x, y) {
 		this.superInit(image, width, height);
 		this.setImageName(image);
-		this.x = x + this.width / 2;
-		this.y = y + this.height / 2;
+		this.x = x + this.width / 2;			//全体の描画位置を決めるらしき変数
+		this.y = y + this.height / 2;			//中心のデフォがが左上なので縦横それぞれ(長さ)/2ずつ足すようである
 		this.setBoundingType("rect");
 		this.addPointingStartEvent();
 		this.addPointingEndEvent();

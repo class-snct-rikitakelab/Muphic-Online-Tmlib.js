@@ -3,6 +3,7 @@ tm.define("PreviewScreenEnableState", {
 	init : function(parent) {
 		this.superInit(parent);
 	},
+	//マウスオーバー時のアクション
 	pointingOverAction : function() {
 		this.getParent().startIllustFocusUpdate();
 	},

@@ -11,7 +11,7 @@ tm.define("IllustFocusController", {
 			"x" : x,
 			"y" : y
 		};
-		this.getManager().createIllust(illust);
+		this.getManager().createIllust(illust);					//IllustFocusManager.createIllust ?
 	},
 	resetIllustFocus : function() {
 		this.getManager().stopUpdate();

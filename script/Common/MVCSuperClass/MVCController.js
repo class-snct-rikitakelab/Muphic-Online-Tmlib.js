@@ -11,7 +11,7 @@ tm.define("MVCController", {
 	removeFromScene : function() {
 		var scene = this.getModel().getScene();
 		if(scene.getChildAt(this.getView()) === -1) return;
-		this.view.removeFromScene();
+		this.getView().removeFromScene();
 	},
 	setState : function(state) {
 		this.getView().setState(state);

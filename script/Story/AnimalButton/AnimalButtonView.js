@@ -8,6 +8,7 @@ tm.define("AnimalButtonView", {
 		var y = 458;
 		this.superInit(image, width, height, x, y, manager);
 	},
+	//動物を選択するメニューを表示する
 	addPalette : function() {
 		this.getController().addPalette();
 	},

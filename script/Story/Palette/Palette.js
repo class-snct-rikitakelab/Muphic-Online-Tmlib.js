@@ -17,6 +17,7 @@ tm.define("Palette", {
 	changeThumbnail : function(icon) {
 		// override
 	},
+	//ウィンドウ描画全般の関数？
 	addPalette : function() {
 		this.getPaletteFrame().addToScene();
 		this.getCloseButton().addToScene();
@@ -29,6 +30,7 @@ tm.define("Palette", {
 		this.darkenOtherObject();
 		this.disablePreviewScreen();
 	},
+	//ウィンドウ削除全般の関数？
 	removePalette : function() {
 		this.getPaletteFrame().removeFromScene();
 		this.getCloseButton().removeFromScene();
@@ -58,12 +60,14 @@ tm.define("Palette", {
 			this.otherObject[index].setDisableState();
 		}
 	},
+	//消すと描画不可能？
 	enablePreviewScreen : function() {
 		this.getPreviewScreen().setEnableState();
 	},
 	disablePreviewScreen : function() {
 		this.getPreviewScreen().setDisableState();
 	},
+	//
 	enableRemoveIllustButton : function() {
 		this.getRemoveIllustButton().setEnableState();
 	},

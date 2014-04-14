@@ -8,9 +8,11 @@ tm.define("RemoveIllustButtonView", {
 		var y = 200;
 		this.superInit(image, width, height, x, y, manager);
 	},
+	//消すときのマウスカーソルの位置を検出する
 	startRemoveFocusUpdate : function() {
 		this.getController().startRemoveFocusUpdate();
 	},
+	//消した後の位置情報をリセットする
 	stopRemoveFocusUpdate : function() {
 		this.getController().stopRemoveFocusUpdate();
 	},
