@@ -20,9 +20,11 @@ tm.define("RemoveIllustButtonManager", {
 	setIsAvailable : function(isAvailable) {
 		this.getModel().setIsAvailable(isAvailable);
 	},
+	//ボタンをマウスオーバーする関数を呼び出す関数？
 	setEnableState : function() {
 		this.getView().setState(RemoveIllustButtonEnableState(this.getView()));
 	},
+	//ボタンを押したときの関数を呼び出す関数？
 	setPushState : function() {
 		this.getView().setState(RemoveIllustButtonPushState(this.getView()));
 	},

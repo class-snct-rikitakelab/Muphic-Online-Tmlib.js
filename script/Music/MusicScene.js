@@ -10,6 +10,7 @@ tm.define("MusicScene", {
 		this.superInit();
 		this.background = MusicBackgroundManager(this);
 		this.storyButton = StoryButtonManager(this);
+		this.menuButton = Music_MenuButtonManager(this);
 		this.playButton = PlayButtonManager(this);
 		this.pianoButton = PianoButtonManager(this);
 		this.removeNoteButton = RemoveNoteButtonManager(this);
@@ -18,7 +19,7 @@ tm.define("MusicScene", {
 		this.yesButton = MusicYesButton(this);
 
 		var otherObject = [
-			this.storyButton, this.playButton, this.pianoButton, this.removeNoteButton,
+			this.storyButton, this.menuButton, this.playButton, this.pianoButton, this.removeNoteButton,
 			this.humen.getHumen(), this.humen.getNextButton(), this.humen.getPrevButton()
 		];
 		this.humen.setOtherObject(otherObject);
@@ -32,6 +33,7 @@ tm.define("MusicScene", {
 
 		this.introDialog.setBackground(this.background);
 		this.introDialog.setStoryButton(this.storyButton);
+		this.introDialog.setMenuButton(this.menuButton);
 		this.introDialog.setPlayButton(this.playButton);
 		this.introDialog.setPianoButton(this.pianoButton);
 		this.introDialog.setRemoveNoteButton(this.removeNoteButton);

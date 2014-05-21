@@ -5,6 +5,7 @@ tm.define("StoryScene", {
 		this.superInit();
 		this.background = StoryBackgroundManager(this);
 		this.musicButton = MusicButtonManager(this);
+		this.menuButton = Story_MenuButtonManager(this);
 		this.previewScreen = PreviewScreen(this);
 		this.backgroundButton = BackgroundButtonManager(this);
 		this.humanButton = HumanButtonManager(this);
@@ -36,6 +37,7 @@ tm.define("StoryScene", {
 
 		this.introDialog.setBackground(this.background);
 		this.introDialog.setMusicButton(this.musicButton);
+		this.introDialog.setMenuButton(this.menuButton);
 		this.introDialog.setPreviewScreen(this.previewScreen);
 		this.introDialog.setBackgroundButton(this.backgroundButton);
 		this.introDialog.setHumanButton(this.humanButton);
@@ -43,6 +45,9 @@ tm.define("StoryScene", {
 		this.introDialog.setItemButton(this.itemButton);
 		this.introDialog.setRemoveIllustButton(this.removeIllustButton);
 		this.yesButton.setDialog(this.introDialog);
+
+		//app.canvas.saveAsImage("png");
+		var png = app.canvas.canvas.toDataURL();
 
 		storyScene = this;
 	}

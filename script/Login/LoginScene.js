@@ -1,6 +1,7 @@
 tm.define("LoginScene", {
 	superClass : "tm.app.Scene",
 	init : function() {
+		defineLoginData();
 		this.superInit();
 		this.background = LoginBackgroundManager(this);
 		this.textbox = TextboxManager(this);

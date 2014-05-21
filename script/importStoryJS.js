@@ -1,14 +1,24 @@
 document.write('<script src="script/Story/StoryScene.js"></script>');
 document.write('<script src="script/Story/StoryData.js"></script>');
+
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundManager.js"></script>');
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundModel.js"></script>');
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundView.js"></script>');
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundController.js"></script>');
+
 document.write('<script src="script/Story/MusicButton/MusicButtonManager.js"></script>');
 document.write('<script src="script/Story/MusicButton/MusicButtonModel.js"></script>');
 document.write('<script src="script/Story/MusicButton/MusicButtonView.js"></script>');
 document.write('<script src="script/Story/MusicButton/MusicButtonController.js"></script>');
 document.write('<script src="script/Story/MusicButton/MusicButtonEnableState.js"></script>');
+
+
+document.write('<script src="script/Story/MenuButton/MenuButtonManager.js"></script>');
+document.write('<script src="script/Story/MenuButton/MenuButtonModel.js"></script>');
+document.write('<script src="script/Story/MenuButton/MenuButtonView.js"></script>');
+document.write('<script src="script/Story/MenuButton/MenuButtonController.js"></script>');
+document.write('<script src="script/Story/MenuButton/MenuButtonEnableState.js"></script>');
+
 document.write('<script src="script/Story/PreviewScreen/PreviewScreen.js"></script>');
 document.write('<script src="script/Story/PreviewScreen/PreviewScreenManager.js"></script>');
 document.write('<script src="script/Story/PreviewScreen/PreviewScreenModel.js"></script>');

@@ -4,8 +4,9 @@ var SCREEN_HEIGHT = 768;
 var app = null;
 var userName = null;
 var loginScene = null;
-var storyScene = null;
+var storyScene = null;					//増やしたほうがいいのかな・・・
 var musicScene = null;
+var menuScene = null;
 
 tm.main(function() {
 	app = tm.app.CanvasApp("#app");
@@ -16,11 +17,15 @@ tm.main(function() {
 
 	var loadingScene = tm.app.LoadingScene({
 		assets : ASSETS,
-		nextScene : StoryScene,
-		width : SCREEN_WIDTH,
-		height : SCREEN_HEIGHT,
-	});
-	app.replaceScene(loadingScene);
+		nextScene : MenuScene,							
+		width : SCREEN_WIDTH,							
+		height : SCREEN_HEIGHT,							
+	});		
 
+	app.replaceScene(loadingScene);		
+
+
+	
 	app.run();
+
 })

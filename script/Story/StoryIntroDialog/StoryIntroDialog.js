@@ -13,6 +13,7 @@ tm.define("StoryIntroDialog", {
 		this.removeFromScene();
 		this.getBackground().setEnableState();
 		this.getMusicButton().setEnableState();
+		this.getMenuButton().setEnableState();
 		this.getPreviewScreen().getPreviewScreen().setEnableState();
 		this.getBackgroundButton().setEnableState();
 		this.getHumanButton().setEnableState();
@@ -31,6 +32,8 @@ tm.define("StoryIntroDialog", {
 	setBackground : function(background) { this.background = background; },
 	getMusicButton : function() { return this.musicButton; },
 	setMusicButton : function(musicButton) { this.musicButton = musicButton; },
+	getMenuButton : function() { return this.menuButton; },
+	setMenuButton : function(menuButton) { this.menuButton = menuButton; },
 	getPreviewScreen : function() { return this.previewScreen; },
 	setPreviewScreen : function(previewScreen) { this.previewScreen = previewScreen; },
 	getBackgroundButton : function() { return this.backgroundButton; },
