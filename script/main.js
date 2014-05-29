@@ -5,6 +5,7 @@ var app = null;
 var userName = null;
 var loginScene = null;
 var storyScene = null;					//増やしたほうがいいのかな・・・
+var storySceneCop = null;
 var musicScene = null;
 var menuScene = null;
 

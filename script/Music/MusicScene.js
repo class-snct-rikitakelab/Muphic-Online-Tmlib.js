@@ -1,7 +1,7 @@
 var MEASURE_WIDTH = 240;
 var BEAT_WIDTH = 60;
 var MEASURENUMBER_MAX = 8;
-var STEP = 1.5;
+var STEP = 0.5;
 
 tm.define("MusicScene", {
 	superClass : "tm.app.Scene",
@@ -9,7 +9,6 @@ tm.define("MusicScene", {
 		defineMusicData();
 		this.superInit();
 		this.background = MusicBackgroundManager(this);
-		this.storyButton = StoryButtonManager(this);
 		this.menuButton = Music_MenuButtonManager(this);
 		this.playButton = PlayButtonManager(this);
 		this.pianoButton = PianoButtonManager(this);
@@ -19,7 +18,7 @@ tm.define("MusicScene", {
 		this.yesButton = MusicYesButton(this);
 
 		var otherObject = [
-			this.storyButton, this.menuButton, this.playButton, this.pianoButton, this.removeNoteButton,
+			this.menuButton, this.playButton, this.pianoButton, this.removeNoteButton,
 			this.humen.getHumen(), this.humen.getNextButton(), this.humen.getPrevButton()
 		];
 		this.humen.setOtherObject(otherObject);
@@ -32,7 +31,6 @@ tm.define("MusicScene", {
 		this.removeNoteButton.setPianoButton(this.pianoButton);
 
 		this.introDialog.setBackground(this.background);
-		this.introDialog.setStoryButton(this.storyButton);
 		this.introDialog.setMenuButton(this.menuButton);
 		this.introDialog.setPlayButton(this.playButton);
 		this.introDialog.setPianoButton(this.pianoButton);
