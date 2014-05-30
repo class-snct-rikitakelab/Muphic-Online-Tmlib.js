@@ -1,6 +1,6 @@
 tm.define("StoryScene", {
 	superClass : "tm.app.Scene",
-	init : function() {
+	init : function(x) {
 		defineStoryData();
 		this.superInit();
 		this.background = StoryBackgroundManager(this);
@@ -46,6 +46,6 @@ tm.define("StoryScene", {
 		//app.canvas.saveAsImage("png");
 		//var png = app.canvas.canvas.toDataURL();
 
-		storyScene = this;
+		storySceneArray[x] = this;
 	}
 })

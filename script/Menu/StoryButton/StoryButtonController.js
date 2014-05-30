@@ -5,9 +5,9 @@ tm.define("Menu_StoryButtonController", {
 	},
 	moveToStory : function(x) {
 		if(storySceneArray[x] === null) {
-			app.replaceScene(StoryScene());
+			app.replaceScene(StoryScene(x));
 		} else {
-			app.replaceScene(storyScene);
+			app.replaceScene(storySceneArray[x]);
 		}
 	},
 })
