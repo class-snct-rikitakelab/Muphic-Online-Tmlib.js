@@ -4,8 +4,7 @@ var SCREEN_HEIGHT = 768;
 var app = null;
 var userName = null;
 var loginScene = null;
-var storyScene = null;					//増やしたほうがいいのかな・・・
-var storySceneCop = null;
+var storySceneArray = [null,null,null,null];					//増やしたほうがいいのかな・・・
 var musicScene = null;
 var menuScene = null;
 

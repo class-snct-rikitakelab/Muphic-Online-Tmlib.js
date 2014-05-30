@@ -13,16 +13,16 @@ tm.define("MenuIntroDialog", {
 		this.removeFromScene();
 		this.getBackground().setEnableState();
 		this.getMusicButton(0).setEnableState();
-		this.getStoryButton().setEnableState();
+		this.getStoryButton(0).setEnableState();
+		this.getMusicButton(1).setEnableState();
+		this.getStoryButton(1).setEnableState();
 
 	},
 
 	getBackground : function() { return this.background; },
 	setBackground : function(background) { this.background = background; },
 	getMusicButton : function(x) { return musicButtonArray[x]; },
-	setMusicButton : function(musicButton,x) { musicButton[x] = musicButton; },
-	getStoryButton : function() { return this.storyButton; },
-	setStoryButton : function(storyButton) { this.storyButton = storyButton; },
-	getBackgroundButton : function() { return this.backgroundButton; },
-	setBackgroundButton : function(backgroundButton) { this.backgroundButton = backgroundButton; },
+	setMusicButton : function(musicButton,x) { musicButtonArray[x] = musicButton; },
+	getStoryButton : function(x) { return storyButtonArray[x]; },
+	setStoryButton : function(storyButton,x) { storyButtonArray[x] = storyButton; },
 })

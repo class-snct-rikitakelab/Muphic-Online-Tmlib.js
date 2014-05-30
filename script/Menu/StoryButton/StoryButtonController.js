@@ -3,8 +3,8 @@ tm.define("Menu_StoryButtonController", {
 	init : function(manager) {
 		this.superInit(manager);
 	},
-	moveToStory : function() {
-		if(storyScene === null) {
+	moveToStory : function(x) {
+		if(storySceneArray[x] === null) {
 			app.replaceScene(StoryScene());
 		} else {
 			app.replaceScene(storyScene);
