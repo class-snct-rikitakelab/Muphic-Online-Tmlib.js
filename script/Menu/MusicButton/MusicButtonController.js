@@ -3,11 +3,11 @@ tm.define("Menu_MusicButtonController", {
 	init : function(manager) {
 		this.superInit(manager);
 	},
-	moveToMusic : function() {
-		if(musicScene === null) {
-			app.replaceScene(MusicScene());
+	moveToMusic : function(x) {
+		if(musicSceneArray[x] === null) {
+			app.replaceScene(MusicScene(x));
 		} else {
-			app.replaceScene(musicScene);
+			app.replaceScene(musicSceneArray[x]);
 		}
 	},
 })

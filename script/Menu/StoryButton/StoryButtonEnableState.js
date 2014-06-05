@@ -7,6 +7,6 @@ tm.define("Menu_StoryButtonEnableState", {
 		return;
 	},
 	pointingEndAction : function() {
-		this.getParent().moveToStory();
+		this.getParent().moveToStory(this.getParent().getManager().getButtonNumber());
 	},
 })

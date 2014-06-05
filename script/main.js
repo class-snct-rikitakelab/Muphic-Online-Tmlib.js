@@ -5,7 +5,7 @@ var app = null;
 var userName = null;
 var loginScene = null;
 var storySceneArray = [null,null,null,null];					//増やしたほうがいいのかな・・・
-var musicScene = null;
+var musicSceneArray = [null,null,null,null];
 var menuScene = null;
 
 tm.main(function() {

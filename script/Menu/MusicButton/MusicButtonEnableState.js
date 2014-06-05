@@ -7,6 +7,6 @@ tm.define("Menu_MusicButtonEnableState", {
 		return;
 	},
 	pointingEndAction : function() {
-		this.getParent().moveToMusic();
+		this.getParent().moveToMusic(this.getParent().getManager().getButtonNumber());
 	},
 })

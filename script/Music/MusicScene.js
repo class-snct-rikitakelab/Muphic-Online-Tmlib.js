@@ -5,7 +5,7 @@ var STEP = 0.5;
 
 tm.define("MusicScene", {
 	superClass : "tm.app.Scene",
-	init : function() {
+	init : function(x) {
 		defineMusicData();
 		this.superInit();
 		this.background = MusicBackgroundManager(this);
@@ -40,6 +40,6 @@ tm.define("MusicScene", {
 		this.introDialog.setPrevButton(this.humen.getPrevButton());
 		this.yesButton.setDialog(this.introDialog);
 
-		musicScene = this;
+		musicSceneArray[x] = this;
 	},
 })

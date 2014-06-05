@@ -1,13 +1,14 @@
 tm.define("Menu_MusicButtonManager", {
 	superClass : "MVCManagerButton",
-	init : function(scene,x,y) {
+	init : function(scene,x,y,number) {
 		this.superInit();
-		this.model = Menu_MusicButtonModel(this, scene);
-		this.view = Menu_MusicButtonView(this,x,y);
-		this.controller = Menu_MusicButtonController(this);
+		this.model = new Menu_MusicButtonModel(this, scene);
+		this.view = new Menu_MusicButtonView(this,x,y);
+		this.controller = new Menu_MusicButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
+		this.setButtonNumber(number);
 		this.addToScene();
 		this.setDarkState();
 	},
