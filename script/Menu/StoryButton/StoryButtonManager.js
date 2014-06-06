@@ -1,10 +1,10 @@
-tm.define("Menu_StoryButtonManager", {
+tm.define("StoryButtonManager", {
 	superClass : "MVCManagerButton",
 	init : function(scene,x,y,number) {
 		this.superInit();
-		this.model = new Menu_StoryButtonModel(this, scene);
-		this.view = new Menu_StoryButtonView(this,x,y);
-		this.controller = new Menu_StoryButtonController(this);
+		this.model = new StoryButtonModel(this, scene);
+		this.view = new StoryButtonView(this,x,y);
+		this.controller = new StoryButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
@@ -13,6 +13,6 @@ tm.define("Menu_StoryButtonManager", {
 		this.setDarkState();
 	},
 	setEnableState : function() {
-		this.getView().setState(Menu_StoryButtonEnableState(this.getView()));
+		this.getView().setState(StoryButtonEnableState(this.getView()));
 	},
 })

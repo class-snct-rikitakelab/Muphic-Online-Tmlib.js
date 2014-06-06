@@ -1,4 +1,4 @@
-tm.define("Menu_MusicButtonEnableState", {
+tm.define("MusicButtonEnableState", {
 	superClass : "ButtonEnableState",
 	init : function(parent) {
 		this.superInit(parent);

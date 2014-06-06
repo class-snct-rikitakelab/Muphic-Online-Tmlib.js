@@ -6,12 +6,6 @@ document.write('<script src="script/Music/MusicBackground/MusicBackgroundModel.j
 document.write('<script src="script/Music/MusicBackground/MusicBackgroundView.js"></script>');
 document.write('<script src="script/Music/MusicBackground/MusicBackgroundController.js"></script>');
 
-document.write('<script src="script/Music/StoryButton/StoryButtonManager.js"></script>');
-document.write('<script src="script/Music/StoryButton/StoryButtonModel.js"></script>');
-document.write('<script src="script/Music/StoryButton/StoryButtonView.js"></script>');
-document.write('<script src="script/Music/StoryButton/StoryButtonController.js"></script>');
-document.write('<script src="script/Music/StoryButton/StoryButtonEnableState.js"></script>');
-
 document.write('<script src="script/Music/MenuButton/MenuButtonManager.js"></script>');
 document.write('<script src="script/Music/MenuButton/MenuButtonModel.js"></script>');
 document.write('<script src="script/Music/MenuButton/MenuButtonView.js"></script>');

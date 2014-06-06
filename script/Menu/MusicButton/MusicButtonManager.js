@@ -1,10 +1,10 @@
-tm.define("Menu_MusicButtonManager", {
+tm.define("MusicButtonManager", {
 	superClass : "MVCManagerButton",
 	init : function(scene,x,y,number) {
 		this.superInit();
-		this.model = new Menu_MusicButtonModel(this, scene);
-		this.view = new Menu_MusicButtonView(this,x,y);
-		this.controller = new Menu_MusicButtonController(this);
+		this.model = new MusicButtonModel(this, scene);
+		this.view = new MusicButtonView(this,x,y);
+		this.controller = new MusicButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
@@ -13,6 +13,6 @@ tm.define("Menu_MusicButtonManager", {
 		this.setDarkState();
 	},
 	setEnableState : function() {
-		this.getView().setState(Menu_MusicButtonEnableState(this.getView()));
+		this.getView().setState(MusicButtonEnableState(this.getView()));
 	},
 })

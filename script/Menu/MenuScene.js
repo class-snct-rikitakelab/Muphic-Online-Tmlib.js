@@ -8,20 +8,17 @@ tm.define("MenuScene", {
 		var music_height = 440;
 		var storyButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
 		var musicButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
-		var width_base = 50;
-
-
 		this.superInit();
 		this.background = MenuBackgroundManager(this);
-		storyButtonArray[0] = new Menu_StoryButtonManager(this,storyButtonLocationX.no1,story_height,0);
-		storyButtonArray[1] = new Menu_StoryButtonManager(this,storyButtonLocationX.no2,story_height,1);
-		storyButtonArray[2] = new Menu_StoryButtonManager(this,storyButtonLocationX.no3,story_height,2);
-		storyButtonArray[3] = new Menu_StoryButtonManager(this,storyButtonLocationX.no4,story_height,3);
+		storyButtonArray[0] = new StorySelectButtonManager(this,storyButtonLocationX.no1,story_height,0);
+		storyButtonArray[1] = new StorySelectButtonManager(this,storyButtonLocationX.no2,story_height,1);
+		storyButtonArray[2] = new StorySelectButtonManager(this,storyButtonLocationX.no3,story_height,2);
+		storyButtonArray[3] = new StorySelectButtonManager(this,storyButtonLocationX.no4,story_height,3);
 
-		musicButtonArray[0] = new Menu_MusicButtonManager(this,musicButtonLocationX.no1,music_height,0);
-		musicButtonArray[1] = new Menu_MusicButtonManager(this,musicButtonLocationX.no2,music_height,1);
-		musicButtonArray[2] = new Menu_MusicButtonManager(this,musicButtonLocationX.no3,music_height,2);
-		musicButtonArray[3] = new Menu_MusicButtonManager(this,musicButtonLocationX.no4,music_height,3);
+		musicButtonArray[0] = new MusicSelectButtonManager(this,musicButtonLocationX.no1,music_height,0);
+		musicButtonArray[1] = new MusicSelectButtonManager(this,musicButtonLocationX.no2,music_height,1);
+		musicButtonArray[2] = new MusicSelectButtonManager(this,musicButtonLocationX.no3,music_height,2);
+		musicButtonArray[3] = new MusicSelectButtonManager(this,musicButtonLocationX.no4,music_height,3);
 
 		this.introDialog = MenuIntroDialog(this);
 		this.yesButton = MenuYesButton(this);

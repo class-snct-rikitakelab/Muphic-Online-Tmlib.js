@@ -6,13 +6,6 @@ document.write('<script src="script/Story/StoryBackground/StoryBackgroundModel.j
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundView.js"></script>');
 document.write('<script src="script/Story/StoryBackground/StoryBackgroundController.js"></script>');
 
-document.write('<script src="script/Story/MusicButton/MusicButtonManager.js"></script>');
-document.write('<script src="script/Story/MusicButton/MusicButtonModel.js"></script>');
-document.write('<script src="script/Story/MusicButton/MusicButtonView.js"></script>');
-document.write('<script src="script/Story/MusicButton/MusicButtonController.js"></script>');
-document.write('<script src="script/Story/MusicButton/MusicButtonEnableState.js"></script>');
-
-
 document.write('<script src="script/Story/MenuButton/MenuButtonManager.js"></script>');
 document.write('<script src="script/Story/MenuButton/MenuButtonModel.js"></script>');
 document.write('<script src="script/Story/MenuButton/MenuButtonView.js"></script>');
@@ -25,31 +18,38 @@ document.write('<script src="script/Story/PreviewScreen/PreviewScreenModel.js"><
 document.write('<script src="script/Story/PreviewScreen/PreviewScreenView.js"></script>');
 document.write('<script src="script/Story/PreviewScreen/PreviewScreenController.js"></script>');
 document.write('<script src="script/Story/PreviewScreen/PreviewScreenEnableState.js"></script>');
+
 document.write('<script src="script/Story/BackgroundIllust/BackgroundIllustManager.js"></script>');
 document.write('<script src="script/Story/BackgroundIllust/BackgroundIllustModel.js"></script>');
 document.write('<script src="script/Story/BackgroundIllust/BackgroundIllustView.js"></script>');
 document.write('<script src="script/Story/BackgroundIllust/BackgroundIllustController.js"></script>');
+
 document.write('<script src="script/Story/Illust/IllustManager.js"></script>');
 document.write('<script src="script/Story/Illust/IllustModel.js"></script>');
 document.write('<script src="script/Story/Illust/IllustView.js"></script>');
 document.write('<script src="script/Story/Illust/IllustController.js"></script>');
 document.write('<script src="script/Story/Illust/IllustEnableState.js"></script>');
+
 document.write('<script src="script/Story/IllustFocus/IllustFocusManager.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusModel.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusView.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusController.js"></script>');
 document.write('<script src="script/Story/IllustFocus/IllustFocusEnableState.js"></script>');
+
 document.write('<script src="script/Story/RemoveFocus/RemoveFocusManager.js"></script>');
 document.write('<script src="script/Story/RemoveFocus/RemoveFocusModel.js"></script>');
 document.write('<script src="script/Story/RemoveFocus/RemoveFocusView.js"></script>');
 document.write('<script src="script/Story/RemoveFocus/RemoveFocusController.js"></script>');
+
 document.write('<script src="script/Story/IllustButton/IllustButtonManager.js"></script>');
 document.write('<script src="script/Story/IllustButton/IllustButtonController.js"></script>');
 document.write('<script src="script/Story/IllustButton/IllustButtonEnableState.js"></script>');
+
 document.write('<script src="script/Story/BackgroundButton/BackgroundButtonManager.js"></script>');
 document.write('<script src="script/Story/BackgroundButton/BackgroundButtonModel.js"></script>');
 document.write('<script src="script/Story/BackgroundButton/BackgroundButtonView.js"></script>');
 document.write('<script src="script/Story/BackgroundButton/BackgroundButtonController.js"></script>');
+
 document.write('<script src="script/Story/HumanButton/HumanButtonManager.js"></script>');
 document.write('<script src="script/Story/HumanButton/HumanButtonModel.js"></script>');
 document.write('<script src="script/Story/HumanButton/HumanButtonView.js"></script>');
