@@ -24,19 +24,23 @@ tm.define("MenuScene", {
 		this.yesButton = MenuYesButton(this);
 
 		this.introDialog.setBackground(this.background);
-		/*
-		this.introDialog.setStoryButton(storyButtonArray[0],0);
-		this.introDialog.setStoryButton(storyButtonArray[1],1);
-		this.introDialog.setStoryButton(storyButtonArray[2],2);
-		this.introDialog.setStoryButton(storyButtonArray[3],3);
-
-		this.introDialog.setMusicButton(musicButtonArray[0],0);
-		this.introDialog.setMusicButton(musicButtonArray[1],1);
-		this.introDialog.setMusicButton(musicButtonArray[2],2);
-		this.introDialog.setMusicButton(musicButtonArray[3],3);
-		*/
 		this.yesButton.setDialog(this.introDialog);
 
 		menuScene = this;
+	},
+
+	activateStoryButton: function() {
+		storyButtonArray[0].setEnableState();
+		storyButtonArray[1].setEnableState();
+		storyButtonArray[2].setEnableState();
+		storyButtonArray[3].setEnableState();
+	},
+
+	activateMusicButton: function() {
+		musicButtonArray[0].setEnableState();
+		musicButtonArray[1].setEnableState();
+		musicButtonArray[2].setEnableState();
+		musicButtonArray[3].setEnableState();		
 	}
+	
 })
