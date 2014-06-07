@@ -17,21 +17,19 @@ tm.define("MenuIntroDialog", {
 	},
 
 	activateStoryButton: function() {
-		this.getStoryButton(0).setEnableState();
-		this.getStoryButton(1).setEnableState();
-		this.getStoryButton(2).setEnableState();
-		this.getStoryButton(3).setEnableState();
+		storyButtonArray[0].setEnableState();
+		storyButtonArray[1].setEnableState();
+		storyButtonArray[2].setEnableState();
+		storyButtonArray[3].setEnableState();
 	},
 
 	activateMusicButton: function() {
-		this.getMusicButton(0).setEnableState();
-		this.getMusicButton(1).setEnableState();
-		this.getMusicButton(2).setEnableState();
-		this.getMusicButton(3).setEnableState();		
+		musicButtonArray[0].setEnableState();
+		musicButtonArray[1].setEnableState();
+		musicButtonArray[2].setEnableState();
+		musicButtonArray[3].setEnableState();		
 	},
 
 	getBackground : function() { return this.background; },
 	setBackground : function(background) { this.background = background; },
-	getMusicButton : function(x) { return musicButtonArray[x]; },
-	getStoryButton : function(x) { return storyButtonArray[x]; },
 })
