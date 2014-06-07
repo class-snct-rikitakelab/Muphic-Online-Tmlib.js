@@ -16,8 +16,8 @@ tm.define("MenuIntroDialog", {
 	removeDialog : function() {
 		this.removeFromScene();
 		this.getBackground().setEnableState();
-		this.ownedScene.activateStoryButton();
-		this.ownedScene.activateMusicButton();
+		this.ownedScene.activateStoryButtons();
+		this.ownedScene.activateMusicButtons();
 	},
 
 	getBackground : function() { return this.background; },
