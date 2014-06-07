@@ -10,20 +10,21 @@ tm.define("MenuScene", {
 		var musicButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
 		this.superInit();
 		this.background = MenuBackgroundManager(this);
-		storyButtonArray[0] = new StorySelectButtonManager(this,storyButtonLocationX.no1,story_height,0);
-		storyButtonArray[1] = new StorySelectButtonManager(this,storyButtonLocationX.no2,story_height,1);
-		storyButtonArray[2] = new StorySelectButtonManager(this,storyButtonLocationX.no3,story_height,2);
-		storyButtonArray[3] = new StorySelectButtonManager(this,storyButtonLocationX.no4,story_height,3);
+		storyButtonArray[0] = new StoryButtonManager(this,storyButtonLocationX.no1,story_height,0);
+		storyButtonArray[1] = new StoryButtonManager(this,storyButtonLocationX.no2,story_height,1);
+		storyButtonArray[2] = new StoryButtonManager(this,storyButtonLocationX.no3,story_height,2);
+		storyButtonArray[3] = new StoryButtonManager(this,storyButtonLocationX.no4,story_height,3);
 
-		musicButtonArray[0] = new MusicSelectButtonManager(this,musicButtonLocationX.no1,music_height,0);
-		musicButtonArray[1] = new MusicSelectButtonManager(this,musicButtonLocationX.no2,music_height,1);
-		musicButtonArray[2] = new MusicSelectButtonManager(this,musicButtonLocationX.no3,music_height,2);
-		musicButtonArray[3] = new MusicSelectButtonManager(this,musicButtonLocationX.no4,music_height,3);
+		musicButtonArray[0] = new MusicButtonManager(this,musicButtonLocationX.no1,music_height,0);
+		musicButtonArray[1] = new MusicButtonManager(this,musicButtonLocationX.no2,music_height,1);
+		musicButtonArray[2] = new MusicButtonManager(this,musicButtonLocationX.no3,music_height,2);
+		musicButtonArray[3] = new MusicButtonManager(this,musicButtonLocationX.no4,music_height,3);
 
 		this.introDialog = MenuIntroDialog(this);
 		this.yesButton = MenuYesButton(this);
 
 		this.introDialog.setBackground(this.background);
+		/*
 		this.introDialog.setStoryButton(storyButtonArray[0],0);
 		this.introDialog.setStoryButton(storyButtonArray[1],1);
 		this.introDialog.setStoryButton(storyButtonArray[2],2);
@@ -33,7 +34,7 @@ tm.define("MenuScene", {
 		this.introDialog.setMusicButton(musicButtonArray[1],1);
 		this.introDialog.setMusicButton(musicButtonArray[2],2);
 		this.introDialog.setMusicButton(musicButtonArray[3],3);
-
+		*/
 		this.yesButton.setDialog(this.introDialog);
 
 		menuScene = this;

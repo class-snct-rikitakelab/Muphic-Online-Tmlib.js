@@ -26,7 +26,5 @@ tm.define("MenuIntroDialog", {
 	getBackground : function() { return this.background; },
 	setBackground : function(background) { this.background = background; },
 	getMusicButton : function(x) { return musicButtonArray[x]; },
-	setMusicButton : function(musicButton,x) { musicButtonArray[x] = musicButton; },
 	getStoryButton : function(x) { return storyButtonArray[x]; },
-	setStoryButton : function(storyButton,x) { storyButtonArray[x] = storyButton; },
 })
