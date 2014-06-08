@@ -10,17 +10,17 @@ document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailModel.js"></
 document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailView.js"></script>');
 document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailController.js"></script>');
 
-document.write('<script src="script/Menu/MusicButton/MusicButtonManager.js"></script>');
-document.write('<script src="script/Menu/MusicButton/MusicButtonModel.js"></script>');
-document.write('<script src="script/Menu/MusicButton/MusicButtonView.js"></script>');
-document.write('<script src="script/Menu/MusicButton/MusicButtonController.js"></script>');
-document.write('<script src="script/Menu/MusicButton/MusicButtonEnableState.js"></script>');
+document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonManager.js"></script>');
+document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonModel.js"></script>');
+document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonView.js"></script>');
+document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonController.js"></script>');
+document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonEnableState.js"></script>');
 
-document.write('<script src="script/Menu/StoryButton/StoryButtonManager.js"></script>');
-document.write('<script src="script/Menu/StoryButton/StoryButtonModel.js"></script>');
-document.write('<script src="script/Menu/StoryButton/StoryButtonView.js"></script>');
-document.write('<script src="script/Menu/StoryButton/StoryButtonController.js"></script>');
-document.write('<script src="script/Menu/StoryButton/StoryButtonEnableState.js"></script>');
+document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonManager.js"></script>');
+document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonModel.js"></script>');
+document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonView.js"></script>');
+document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonController.js"></script>');
+document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonEnableState.js"></script>');
 
 document.write('<script src="script/Menu/MenuIntroDialog/MenuIntroDialog.js"></script>');
 document.write('<script src="script/Menu/MenuIntroDialog/MenuYesButton.js"></script>');

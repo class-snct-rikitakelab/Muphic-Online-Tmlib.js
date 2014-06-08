@@ -1,4 +1,4 @@
-tm.define("StoryButtonController", {
+tm.define("StorySelectButtonController", {
 	superClass : "MVCController",
 	init : function(manager) {
 		this.superInit(manager);
