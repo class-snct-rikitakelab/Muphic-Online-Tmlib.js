@@ -27,12 +27,10 @@ tm.define("MenuScene", {
 
 		this._initStoyButtons();
 		this._initmusicSelectButtons();
-
-		this.introDialog = MenuIntroDialog(this);
-		this.yesButton = MenuYesButton(this);
-
-		this.introDialog.setBackground(this.background);
-		this.yesButton.setDialog(this.introDialog);
+		
+		this.background.setEnableState();
+		this.activateStorySelectButtons();
+		this.activateMusicSelectButtons();
 
 		menuScene = this;
 	},
