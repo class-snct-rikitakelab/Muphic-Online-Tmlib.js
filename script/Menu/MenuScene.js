@@ -1,25 +1,32 @@
+// menuScene上のボタン配置などのレイアウト情報
+menuSceneLayout = {
+	storyButtons: [
+		{name: 'no1', height: 270, posX: 50},
+		{name: 'no2', height: 270, posX: 275},
+		{name: 'no3', height: 270, posX: 500},
+		{name: 'no4', height: 270, posX: 725}
+	],
+	musicButtons: [
+		{name: 'no1', height: 440, posX: 50},
+		{name: 'no2', height: 440, posX: 275},
+		{name: 'no3', height: 440, posX: 500},
+		{name: 'no4', height: 440, posX: 725}
+	]	
+};
+
+
 tm.define("MenuScene", {
 	storyButtons: [],
 	musicButtons: [],
 
 	superClass : "tm.app.Scene",
+
 	init : function() {
-		var story_height = 270;
-		var music_height = 440;
-		var storyButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
-		var musicButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
 		this.superInit();
 		this.background = MenuBackgroundManager(this);
 
-		this.storyButtons.push(new StoryButtonManager(this,storyButtonLocationX.no1,story_height,0));
-		this.storyButtons.push(new StoryButtonManager(this,storyButtonLocationX.no2,story_height,1));
-		this.storyButtons.push(new StoryButtonManager(this,storyButtonLocationX.no3,story_height,2));
-		this.storyButtons.push(new StoryButtonManager(this,storyButtonLocationX.no4,story_height,3));
-
-		this.musicButtons.push(new MusicButtonManager(this,musicButtonLocationX.no1,music_height,0));
-		this.musicButtons.push(new MusicButtonManager(this,musicButtonLocationX.no2,music_height,1));
-		this.musicButtons.push(new MusicButtonManager(this,musicButtonLocationX.no3,music_height,2));
-		this.musicButtons.push(new MusicButtonManager(this,musicButtonLocationX.no4,music_height,3));
+		this._initStoyButtons();
+		this._initMusicButtons();
 
 		this.introDialog = MenuIntroDialog(this);
 		this.yesButton = MenuYesButton(this);
@@ -36,6 +43,25 @@ tm.define("MenuScene", {
 
 	activateMusicButtons: function() {
 		this.musicButtons.forEach(function(btn) { btn.setEnableState();} );
+	},
+
+	_initStoyButtons: function() {
+		var numBtns = menuSceneLayout.storyButtons.length;
+		for (var i = 0; i < numBtns; i++) {
+			var layout = menuSceneLayout.storyButtons[i];
+			this.storyButtons.push(new StoryButtonManager(this, layout.posX, layout.height, i));
+		}
+
+	},
+
+	_initMusicButtons: function() {
+		var numBtns = menuSceneLayout.musicButtons.length;
+		for (var i = 0; i < numBtns; i++) {
+			var layout = menuSceneLayout.musicButtons[i];
+			this.musicButtons.push(new MusicButtonManager(this, layout.posX, layout.height, i));
+		}
 	}
+
+
 
 })
