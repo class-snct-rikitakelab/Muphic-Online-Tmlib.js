@@ -1,4 +1,4 @@
-tm.define("MusicButtonView", {
+tm.define("MusicSelectButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager,x,y) {
 		var image = "menu_musicButton";
