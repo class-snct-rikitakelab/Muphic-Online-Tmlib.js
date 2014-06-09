@@ -1,12 +1,12 @@
 // menuScene上のボタン配置などのレイアウト情報
 menuSceneLayout = {
-	storyButtons: [
+	storySelectButtons: [
 		{name: 'no1', height: 270, posX: 50},
 		{name: 'no2', height: 270, posX: 275},
 		{name: 'no3', height: 270, posX: 500},
 		{name: 'no4', height: 270, posX: 725}
 	],
-	musicButtons: [
+	musicSelectButtons: [
 		{name: 'no1', height: 440, posX: 50},
 		{name: 'no2', height: 440, posX: 275},
 		{name: 'no3', height: 440, posX: 500},
@@ -16,8 +16,8 @@ menuSceneLayout = {
 
 
 tm.define("MenuScene", {
-	storyButtons: [],
-	musicButtons: [],
+	storySelectButtons: [],
+	musicSelectButtons: [],
 
 	superClass : "tm.app.Scene",
 
@@ -26,7 +26,7 @@ tm.define("MenuScene", {
 		this.background = MenuBackgroundManager(this);
 
 		this._initStoyButtons();
-		this._initMusicButtons();
+		this._initmusicSelectButtons();
 
 		this.introDialog = MenuIntroDialog(this);
 		this.yesButton = MenuYesButton(this);
@@ -37,28 +37,28 @@ tm.define("MenuScene", {
 		menuScene = this;
 	},
 
-	activateStoryButtons: function() {
-		this.storyButtons.forEach(function(btn) { btn.setEnableState();} );
+	activateStorySelectButtons: function() {
+		this.storySelectButtons.forEach(function(btn) { btn.setEnableState();} );
 	},
 
-	activateMusicButtons: function() {
-		this.musicButtons.forEach(function(btn) { btn.setEnableState();} );
+	activateMusicSelectButtons: function() {
+		this.musicSelectButtons.forEach(function(btn) { btn.setEnableState();} );
 	},
 
 	_initStoyButtons: function() {
-		var numBtns = menuSceneLayout.storyButtons.length;
+		var numBtns = menuSceneLayout.storySelectButtons.length;
 		for (var i = 0; i < numBtns; i++) {
-			var layout = menuSceneLayout.storyButtons[i];
-			this.storyButtons.push(new StoryButtonManager(this, layout.posX, layout.height, i));
+			var layout = menuSceneLayout.storySelectButtons[i];
+			this.storySelectButtons.push(new StorySelectButtonManager(this, layout.posX, layout.height, i));
 		}
 
 	},
 
-	_initMusicButtons: function() {
-		var numBtns = menuSceneLayout.musicButtons.length;
+	_initmusicSelectButtons: function() {
+		var numBtns = menuSceneLayout.musicSelectButtons.length;
 		for (var i = 0; i < numBtns; i++) {
-			var layout = menuSceneLayout.musicButtons[i];
-			this.musicButtons.push(new MusicButtonManager(this, layout.posX, layout.height, i));
+			var layout = menuSceneLayout.musicSelectButtons[i];
+			this.musicSelectButtons.push(new MusicSelectButtonManager(this, layout.posX, layout.height, i));
 		}
 	}
 
