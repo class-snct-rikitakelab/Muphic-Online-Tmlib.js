@@ -1,41 +1,67 @@
-var storyButtonArray = [null,null,null,null];
-var musicButtonArray = [null,null,null,null];
+// menuScene上のボタン配置などのレイアウト情報
+menuSceneLayout = {
+	storySelectButtons: [
+		{name: 'no1', height: 270, posX: 50},
+		{name: 'no2', height: 270, posX: 275},
+		{name: 'no3', height: 270, posX: 500},
+		{name: 'no4', height: 270, posX: 725}
+	],
+	musicSelectButtons: [
+		{name: 'no1', height: 440, posX: 50},
+		{name: 'no2', height: 440, posX: 275},
+		{name: 'no3', height: 440, posX: 500},
+		{name: 'no4', height: 440, posX: 725}
+	]	
+};
+
 
 tm.define("MenuScene", {
+	storySelectButtons: [],
+	musicSelectButtons: [],
+
 	superClass : "tm.app.Scene",
+
 	init : function() {
-		var story_height = 270;
-		var music_height = 440;
-		var storyButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
-		var musicButtonLocationX = {no1: 50, no2: 275, no3: 500, no4: 725};
 		this.superInit();
 		this.background = MenuBackgroundManager(this);
-		storyButtonArray[0] = new StorySelectButtonManager(this,storyButtonLocationX.no1,story_height,0);
-		storyButtonArray[1] = new StorySelectButtonManager(this,storyButtonLocationX.no2,story_height,1);
-		storyButtonArray[2] = new StorySelectButtonManager(this,storyButtonLocationX.no3,story_height,2);
-		storyButtonArray[3] = new StorySelectButtonManager(this,storyButtonLocationX.no4,story_height,3);
 
-		musicButtonArray[0] = new MusicSelectButtonManager(this,musicButtonLocationX.no1,music_height,0);
-		musicButtonArray[1] = new MusicSelectButtonManager(this,musicButtonLocationX.no2,music_height,1);
-		musicButtonArray[2] = new MusicSelectButtonManager(this,musicButtonLocationX.no3,music_height,2);
-		musicButtonArray[3] = new MusicSelectButtonManager(this,musicButtonLocationX.no4,music_height,3);
+		this._initStoyButtons();
+		this._initmusicSelectButtons();
 
 		this.introDialog = MenuIntroDialog(this);
 		this.yesButton = MenuYesButton(this);
 
 		this.introDialog.setBackground(this.background);
-		this.introDialog.setStoryButton(storyButtonArray[0],0);
-		this.introDialog.setStoryButton(storyButtonArray[1],1);
-		this.introDialog.setStoryButton(storyButtonArray[2],2);
-		this.introDialog.setStoryButton(storyButtonArray[3],3);
-
-		this.introDialog.setMusicButton(musicButtonArray[0],0);
-		this.introDialog.setMusicButton(musicButtonArray[1],1);
-		this.introDialog.setMusicButton(musicButtonArray[2],2);
-		this.introDialog.setMusicButton(musicButtonArray[3],3);
-
 		this.yesButton.setDialog(this.introDialog);
 
 		menuScene = this;
+	},
+
+	activateStorySelectButtons: function() {
+		this.storySelectButtons.forEach(function(btn) { btn.setEnableState();} );
+	},
+
+	activateMusicSelectButtons: function() {
+		this.musicSelectButtons.forEach(function(btn) { btn.setEnableState();} );
+	},
+
+	_initStoyButtons: function() {
+		var numBtns = menuSceneLayout.storySelectButtons.length;
+		for (var i = 0; i < numBtns; i++) {
+			var layout = menuSceneLayout.storySelectButtons[i];
+			this.storySelectButtons.push(new StorySelectButtonManager(this, layout.posX, layout.height, i));
+		}
+
+	},
+
+	_initmusicSelectButtons: function() {
+		var numBtns = menuSceneLayout.musicSelectButtons.length;
+		for (var i = 0; i < numBtns; i++) {
+			var layout = menuSceneLayout.musicSelectButtons[i];
+			this.musicSelectButtons.push(new MusicSelectButtonManager(this, layout.posX, layout.height, i));
+		}
 	}
+
+
+
 })
