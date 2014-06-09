@@ -12,6 +12,8 @@ tm.define("PreviewScreen", {
 	},
 	changeSelectIllust : function(illust) {
 		this.getIllustFocus().changeIllust(illust)
+		this.getRemoveIllustButton().setDisableState();
+		this.getRemoveFocus().stopUpdate();
 	},
 	startIllustFocusUpdate : function() {
 		this.getIllustFocus().addToScene();
