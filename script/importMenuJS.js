@@ -21,7 +21,3 @@ document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonMode
 document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonView.js"></script>');
 document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonController.js"></script>');
 document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonEnableState.js"></script>');
-
-document.write('<script src="script/Menu/MenuIntroDialog/MenuIntroDialog.js"></script>');
-document.write('<script src="script/Menu/MenuIntroDialog/MenuYesButton.js"></script>');
-document.write('<script src="script/Menu/MenuIntroDialog/MenuYesButtonEnableState.js"></script>');

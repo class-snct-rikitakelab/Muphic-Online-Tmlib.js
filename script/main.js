@@ -1,10 +1,10 @@
 var SCREEN_WIDTH = 1024;
 var SCREEN_HEIGHT = 768;
 
-var app = null;
 var userName = null;
 var loginScene = null;
-var storySceneArray = [null,null,null,null];					//増やしたほうがいいのかな・・・
+
+var storySceneArray = [null,null,null,null];
 var musicSceneArray = [null,null,null,null];
 var menuScene = null;
 

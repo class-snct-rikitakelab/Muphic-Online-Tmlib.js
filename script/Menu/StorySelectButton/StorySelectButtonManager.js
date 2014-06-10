@@ -1,16 +1,15 @@
 tm.define("StorySelectButtonManager", {
 	superClass : "MVCManagerButton",
-	init : function(scene,x,y,number) {
+	init : function(scene,x,y,buttonNumber) {
 		this.superInit();
 		this.model = new StorySelectButtonModel(this, scene);
-		this.view = new StorySelectButtonView(this,x,y);
+		this.view = new StorySelectButtonView(this,x,y,buttonNumber);
 		this.controller = new StorySelectButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
-		this.setButtonNumber(number);
+		this.setButtonNumber(buttonNumber);
 		this.addToScene();
-		this.setDarkState();
 	},
 	setEnableState : function() {
 		this.getView().setState(StorySelectButtonEnableState(this.getView()));
