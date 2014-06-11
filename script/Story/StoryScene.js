@@ -1,6 +1,7 @@
 tm.define("StoryScene", {
+
 	superClass : "tm.app.Scene",
-	init : function(x) {
+	init : function(storyNumber) {
 		defineStoryData();
 		this.superInit();
 		this.background = StoryBackgroundManager(this);
@@ -11,11 +12,11 @@ tm.define("StoryScene", {
 		this.animalButton = AnimalButtonManager(this);
 		this.itemButton = ItemButtonManager(this);
 		this.removeIllustButton = RemoveIllustButtonManager(this);
-		this.introDialog = StoryIntroDialog(this);
-		this.yesButton = StoryYesButton(this);
+
+		this.displayIntroDialog();
 
 		var objectArray = [
-			this.background, this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
+			this.background,this.menuButton, this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
 		];
 		this.previewScreen.setOtherObject(objectArray);
 		this.previewScreen.setRemoveIllustButton(this.removeIllustButton);
@@ -33,6 +34,17 @@ tm.define("StoryScene", {
 		this.itemButton.setPaletteOtherObject(objectArray);
 		this.removeIllustButton.setPreviewScreen(this.previewScreen);
 
+		//app.canvas.saveAsImage("png");
+		//var png = app.canvas.canvas.toDataURL();
+
+		storySceneArray[storyNumber] = this;
+	},
+
+	displayIntroDialog : function(){
+
+		this.introDialog = StoryIntroDialog(this);
+		this.yesButton = StoryYesButton(this);
+
 		this.introDialog.setBackground(this.background);
 		this.introDialog.setMenuButton(this.menuButton);
 		this.introDialog.setPreviewScreen(this.previewScreen);
@@ -43,9 +55,5 @@ tm.define("StoryScene", {
 		this.introDialog.setRemoveIllustButton(this.removeIllustButton);
 		this.yesButton.setDialog(this.introDialog);
 
-		//app.canvas.saveAsImage("png");
-		//var png = app.canvas.canvas.toDataURL();
-
-		storySceneArray[x] = this;
 	}
 })
