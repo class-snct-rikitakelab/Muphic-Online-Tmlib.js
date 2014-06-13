@@ -8,7 +8,7 @@ tm.define("IllustFocusManager", {
 		this.initModel();
 		this.initView();
 		this.initController();
-		this.setEnableState();
+		this.setEnableState();													//EnableState = よくわからん
 		this.setMediator(mediator);												//Mediator = 影の実体化用変数？
 	},
 

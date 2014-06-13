@@ -1,22 +1,22 @@
 tm.define("StoryScene", {
+
 	superClass : "tm.app.Scene",
-	init : function() {
+	init : function(storyNumber) {
 		defineStoryData();
 		this.superInit();
 		this.background = StoryBackgroundManager(this);
-		this.musicButton = MusicButtonManager(this);
+		this.menuButton = Story_MenuButtonManager(this);
 		this.previewScreen = PreviewScreen(this);
 		this.backgroundButton = BackgroundButtonManager(this);
 		this.humanButton = HumanButtonManager(this);
 		this.animalButton = AnimalButtonManager(this);
 		this.itemButton = ItemButtonManager(this);
 		this.removeIllustButton = RemoveIllustButtonManager(this);
-		this.introDialog = StoryIntroDialog(this);
-		this.yesButton = StoryYesButton(this);
+
+		this.displayIntroDialog();
 
 		var objectArray = [
-			this.background, this.musicButton,
-			this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
+			this.background,this.menuButton, this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
 		];
 		this.previewScreen.setOtherObject(objectArray);
 		this.previewScreen.setRemoveIllustButton(this.removeIllustButton);
@@ -34,8 +34,19 @@ tm.define("StoryScene", {
 		this.itemButton.setPaletteOtherObject(objectArray);
 		this.removeIllustButton.setPreviewScreen(this.previewScreen);
 
+		//app.canvas.saveAsImage("png");
+		//var png = app.canvas.canvas.toDataURL();
+
+		storySceneArray[storyNumber] = this;
+	},
+
+	displayIntroDialog : function(){
+
+		this.introDialog = StoryIntroDialog(this);
+		this.yesButton = StoryYesButton(this);
+
 		this.introDialog.setBackground(this.background);
-		this.introDialog.setMusicButton(this.musicButton);
+		this.introDialog.setMenuButton(this.menuButton);
 		this.introDialog.setPreviewScreen(this.previewScreen);
 		this.introDialog.setBackgroundButton(this.backgroundButton);
 		this.introDialog.setHumanButton(this.humanButton);
@@ -44,6 +55,5 @@ tm.define("StoryScene", {
 		this.introDialog.setRemoveIllustButton(this.removeIllustButton);
 		this.yesButton.setDialog(this.introDialog);
 
-		storyScene = this;
 	}
 })

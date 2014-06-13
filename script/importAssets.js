@@ -1,4 +1,5 @@
 var ASSETS = {
+	//Charactor
 	"char_a" : "image/Char/smallAlfabet/a.png",
 	"char_b" : "image/Char/smallAlfabet/b.png",
 	"char_c" : "image/Char/smallAlfabet/c.png",
@@ -43,7 +44,7 @@ var ASSETS = {
 	"char_P" : "image/Char/largeAlfabet/P.png",
 	"char_Q" : "image/Char/largeAlfabet/Q.png",
 	"char_R" : "image/Char/largeAlfabet/R.png",
-	"char_S" : "image/Char/largeAlfabet/S.png",
+	"chs3ar_S" : "image/Char/largeAlfabet/S.png",
 	"char_T" : "image/Char/largeAlfabet/T.png",
 	"char_U" : "image/Char/largeAlfabet/U.png",
 	"char_V" : "image/Char/largeAlfabet/V.png",
@@ -60,9 +61,13 @@ var ASSETS = {
 	"char_7" : "image/Char/number/7.png",
 	"char_8" : "image/Char/number/8.png",
 	"char_9" : "image/Char/number/9.png",
+
+	//Top
 	"top_background" : "image/Top/background.png",
 	"top_startButtonOff" : "image/Top/startButtonOff.png",
 	"top_startButtonOn" : "image/Top/startButtonOn.png",
+	
+	//Login
 	"login_background" : "image/Login/background.png",
 	"login_textbox" : "image/Login/textbox.png",
 	"login_textboxMessage" : "image/Login/textboxMessage.png",
@@ -72,11 +77,39 @@ var ASSETS = {
 	"login_removeTextButtonOn" : "image/Login/removeTextButtonOn.png",
 	"login_endButtonOff" : "image/Login/loginEndButtonOff.png",
 	"login_endButtonOn" : "image/Login/loginEndButtonOn.png",
+	
+	
+	//Menu
+	"menu_background" : "image/Menu/background.png",
+	"menu_backgroundDark" : "image/Menu/backgroundDark.png",
+	"menu_introDialog" : "image/Menu/IntroDialog/introDialog.png",
+	"menu_yesButtonOff" : "image/Menu/IntroDialog/yesButtonOff.png",
+	"menu_yesButtonOn" : "image/Menu/IntroDialog/yesButtonOn.png",
+
+	"menu_storyButton0Off" : "image/Menu/StoryButton/storyButton0Off.png",
+	"menu_storyButton1Off" : "image/Menu/StoryButton/storyButton1Off.png",
+	"menu_storyButton2Off" : "image/Menu/StoryButton/storyButton2Off.png",
+	"menu_storyButton3Off" : "image/Menu/StoryButton/storyButton3Off.png",
+
+	"menu_storyButton0On" : "image/Menu/StoryButton/storyButton0On.png",
+	"menu_storyButton1On" : "image/Menu/StoryButton/storyButton1On.png",
+	"menu_storyButton2On" : "image/Menu/StoryButton/storyButton2On.png",
+	"menu_storyButton3On" : "image/Menu/StoryButton/storyButton3On.png",
+	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
+	"menu_musicButtonOn" : "image/Menu/MusicButton/musicButtonOn.png",
+	"menu_musicButtonDark" : "image/Menu/MusicButton/musicButtonDark.png",
+	
+	//Story
 	"story_background" : "image/Story/background.png",
 	"story_backgroundDark" : "image/Story/backgroundDark.png",
 	"story_musicButtonOff" : "image/Story/MusicButton/musicButtonOff.png",
 	"story_musicButtonOn" : "image/Story/MusicButton/musicButtonOn.png",
 	"story_musicButtonDark" : "image/Story/MusicButton/musicButtonDark.png",
+
+	"story_menuButtonOff" : "image/Menu/MenuButton/menuButtonOff.png",
+	"story_menuButtonOn" : "image/Menu/MenuButton/menuButtonOn.png",
+	"story_menuButtonDark" : "image/Menu/MenuButton/menuButtonDark.png",
+
 	"story_previewScreen" : "image/Story/previewScreen.png",
 	"story_previewScreenDark" : "image/Story/previewScreenDark.png",
 	"story_removeFocus" : "image/Story/removeFocus.png",
@@ -379,11 +412,18 @@ var ASSETS = {
 	"story_introDialog" : "image/Story/IntroDialog/introDialog.png",
 	"story_yesButtonOff" : "image/Story/IntroDialog/yesButtonOff.png",
 	"story_yesButtonOn" : "image/Story/IntroDialog/yesButtonOn.png",
+	
+	//Music
 	"music_background" : "image/Music/MusicBackground/background.png",
 	"music_backgroundDark" : "image/Music/MusicBackground/backgroundDark.png",
 	"music_storyButtonOff" : "image/Music/StoryButton/storyButtonOff.png",
 	"music_storyButtonOn" : "image/Music/StoryButton/storyButtonOn.png",
 	"music_storyButtonDark" : "image/Music/StoryButton/storyButtonDark.png",
+
+	"music_menuButtonOff" : "image/Menu/MenuButton/menuButtonOff.png",
+	"music_menuButtonOn" : "image/Menu/MenuButton/menuButtonOn.png",
+	"music_menuButtonDark" : "image/Menu/MenuButton/menuButtonDark.png",
+
 	"music_playButtonOff" : "image/Music/PlayButton/playButtonOff.png",
 	"music_playButtonOn" : "image/Music/PlayButton/playButtonOn.png",
 	"music_playButtonDark" : "image/Music/PlayButton/playButtonDark.png",

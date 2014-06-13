@@ -40,6 +40,9 @@ tm.define("MVCManagerButton", {
 		this.getView().setState(new ButtonDarkState(this.getView()));
 	},
 
+	setButtonNumber : function(x){this.number = x;},
+	getButtonNumber : function(){return this.number;},
+
 	getModel : function() { return this.model; },
 	setModel : function(model) { this.model = model; },
 	getView : function() { return this.view; },
