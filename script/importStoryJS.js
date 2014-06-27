@@ -1,3 +1,4 @@
+document.write('<script src="script/Story/StorySceneState.js"></script>');
 document.write('<script src="script/Story/StoryScene.js"></script>');
 document.write('<script src="script/Story/StoryData.js"></script>');
 

@@ -10,6 +10,6 @@ tm.define("BackgroundButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 	},
 })

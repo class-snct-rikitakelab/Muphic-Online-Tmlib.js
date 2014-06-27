@@ -12,8 +12,10 @@ tm.define("StoryScene", {
 		this.animalButton = AnimalButtonManager(this);
 		this.itemButton = ItemButtonManager(this);
 		this.removeIllustButton = RemoveIllustButtonManager(this);
+		this.state = StorySceneState();
 
 		this.displayIntroDialog();
+
 
 		var objectArray = [
 			this.background,this.menuButton, this.backgroundButton, this.humanButton, this.animalButton, this.itemButton
@@ -34,7 +36,8 @@ tm.define("StoryScene", {
 		this.itemButton.setPaletteOtherObject(objectArray);
 		this.removeIllustButton.setPreviewScreen(this.previewScreen);
 
-		//app.canvas.saveAsImage("png");
+		//CORS関係につきコメントアウト中
+		//alert(app.canvas.saveAsImage("png"));
 		//var png = app.canvas.canvas.toDataURL();
 
 		storySceneArray[storyNumber] = this;
@@ -54,6 +57,7 @@ tm.define("StoryScene", {
 		this.introDialog.setItemButton(this.itemButton);
 		this.introDialog.setRemoveIllustButton(this.removeIllustButton);
 		this.yesButton.setDialog(this.introDialog);
+		this.introDialog.deactivateObject();
 
 	}
 })

@@ -26,6 +26,22 @@ tm.define("StoryIntroDialog", {
 		};
 		this.getPreviewScreen().changeBackground(backgroundIllust);
 	},
+	deactivateObject : function(){
+		this.getBackground().setDarkState();
+		this.getMenuButton().setDarkState();
+		this.getPreviewScreen().getPreviewScreen().setDarkState();
+		this.getBackgroundButton().setDarkState();
+		this.getHumanButton().setDarkState();
+		this.getAnimalButton().setDarkState();
+		this.getItemButton().setDarkState();
+		this.getRemoveIllustButton().setDarkState();
+		var backgroundDarkIllust = {
+			"arg1": "background",
+			"arg2": "empty",
+			"arg3": "dark"
+		};
+		this.getPreviewScreen().changeBackground(backgroundDarkIllust);
+	},
 
 	getBackground : function() { return this.background; },
 	setBackground : function(background) { this.background = background; },

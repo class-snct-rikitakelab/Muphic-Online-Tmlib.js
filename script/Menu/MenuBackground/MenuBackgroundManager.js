@@ -9,7 +9,6 @@ tm.define("MenuBackgroundManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDisableState();
-		this.setDarkState();
+		this.setEnableState();
 	}
 })

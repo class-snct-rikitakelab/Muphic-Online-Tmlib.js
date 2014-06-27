@@ -1,7 +1,7 @@
 var MEASURE_WIDTH = 240;
 var BEAT_WIDTH = 60;
 var MEASURENUMBER_MAX = 8;
-var STEP = 0.5;
+var STEP = 1.5;
 
 tm.define("MusicScene", {
 	superClass : "tm.app.Scene",

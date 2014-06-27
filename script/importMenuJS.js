@@ -4,12 +4,6 @@ document.write('<script src="script/Menu/MenuBackground/MenuBackgroundModel.js">
 document.write('<script src="script/Menu/MenuBackground/MenuBackgroundView.js"></script>');
 document.write('<script src="script/Menu/MenuBackground/MenuBackgroundController.js"></script>');
 
-document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnail.js"></script>');
-document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailManager.js"></script>');
-document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailModel.js"></script>');
-document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailView.js"></script>');
-document.write('<script src="script/Menu/MenuThumbnail/MenuThumbnailController.js"></script>');
-
 document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonManager.js"></script>');
 document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonModel.js"></script>');
 document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonView.js"></script>');

@@ -9,7 +9,7 @@ tm.define("RemoveIllustButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setDisableState();
 	},
 	startRemoveFocusUpdate : function() {
 		this.getPreviewScreen().startRemoveFocusUpdate();

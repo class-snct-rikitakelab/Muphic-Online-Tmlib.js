@@ -1,7 +1,7 @@
 tm.define("BackgroundIllustView", {
 	superClass : "MVCViewSprite",
 	init : function(manager) {
-		var image = ILLUST["background"]["empty"]["dark"];
+		var image = ILLUST["background"]["empty"][null];
 		var width = 690;
 		var height = 460;
 		var x = 167;

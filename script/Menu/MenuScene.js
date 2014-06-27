@@ -28,7 +28,6 @@ tm.define("MenuScene", {
 		this._initStoyButtons();
 		this._initmusicSelectButtons();
 		
-		this.background.setEnableState();
 		this.activateStorySelectButtons();
 		this.activateMusicSelectButtons();
 
@@ -58,8 +57,10 @@ tm.define("MenuScene", {
 			var layout = menuSceneLayout.musicSelectButtons[i];
 			this.musicSelectButtons.push(new MusicSelectButtonManager(this, layout.posX, layout.height, i));
 		}
+	},
+
+	moveToStory : function(buttonNumber) {
+		StorySceneState(buttonNumber);
 	}
-
-
 
 })

@@ -9,7 +9,7 @@ tm.define("Story_MenuButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 	},
 	setEnableState : function() {
 		this.getView().setState(Story_MenuButtonEnableState(this.getView()));
