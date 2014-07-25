@@ -5,14 +5,14 @@ tm.define("StoryScene", {
 		defineStoryData();
 		this.superInit();
 		this.background = StoryBackgroundManager(this);
-		this.menuButton = Story_MenuButtonManager(this);
+		this.menuButton = StoryMenuButtonManager(this);
 		this.previewScreen = PreviewScreen(this);
 		this.backgroundButton = BackgroundButtonManager(this);
 		this.humanButton = HumanButtonManager(this);
 		this.animalButton = AnimalButtonManager(this);
 		this.itemButton = ItemButtonManager(this);
 		this.removeIllustButton = RemoveIllustButtonManager(this);
-		this.state = StorySceneState();
+		
 
 		this.displayIntroDialog();
 

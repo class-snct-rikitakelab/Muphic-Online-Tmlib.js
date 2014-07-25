@@ -1,10 +1,10 @@
-tm.define("Story_MenuButtonManager", {
+tm.define("StoryMenuButtonManager", {
 	superClass : "MVCManagerButton",
 	init : function(scene,x,y) {
 		this.superInit();
-		this.model = Story_MenuButtonModel(this, scene);
-		this.view = Story_MenuButtonView(this,x,y);
-		this.controller = Story_MenuButtonController(this);
+		this.model = StoryMenuButtonModel(this, scene);
+		this.view = StoryMenuButtonView(this,x,y);
+		this.controller = StoryMenuButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
@@ -12,6 +12,6 @@ tm.define("Story_MenuButtonManager", {
 		this.setEnableState();
 	},
 	setEnableState : function() {
-		this.getView().setState(Story_MenuButtonEnableState(this.getView()));
+		this.getView().setState(StoryMenuButtonEnableState(this.getView()));
 	},
 })

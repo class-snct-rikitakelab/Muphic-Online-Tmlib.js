@@ -1,4 +1,4 @@
-tm.define("Story_MenuButtonView", {
+tm.define("StoryMenuButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager,x,y) {
 		var image = "story_menuButton";
