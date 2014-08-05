@@ -21,7 +21,7 @@ tm.define("RemoveFocusManager", {
 		this.getView().resetPosition();
 	},
 	getAllIllust : function() {
-		return this.getMediator().getIllust();
+		return this.getMediator().getStamps();
 	},
 
 	getMediator : function() { return this.mediator; },

@@ -8,14 +8,14 @@ tm.define("IllustFocusManager", {
 		this.initModel();
 		this.initView();
 		this.initController();
-		this.setEnableState();													//EnableState = よくわからん
+		this.setEnableState();													
 		this.setMediator(mediator);												//Mediator = 影の実体化用変数？
 	},
 
 	createIllust : function(illust) {
-		this.getMediator().createIllust(illust);								//描画部分に関わっている
+		this.getMediator().addStamp(illust);								//描画部分に関わっている
 		this.getMediator().enableOtherObject();									//新しいオブジェクトを置くことを許可する
-		this.getController().removeFromScene();									// ??
+		this.getController().removeFromScene();									
 	},
 	startUpdate : function() {
 		if(this.getModel().getIllust() === null) return;
@@ -25,11 +25,9 @@ tm.define("IllustFocusManager", {
 		if(this.getModel().getIllust() === null) return;
 		this.getView().setIsUpdate(false);
 	},
-	//画像変更
 	changeIllust : function(illust) {
 		this.getModel().changeIllust(illust);
 	},
-	//影
 	getIllustFocus : function() {
 		return this.getModel().getIllustFocusData();
 	},

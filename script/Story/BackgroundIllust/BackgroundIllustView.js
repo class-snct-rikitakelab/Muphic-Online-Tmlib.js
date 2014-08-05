@@ -1,12 +1,12 @@
 tm.define("BackgroundIllustView", {
 	superClass : "MVCViewSprite",
-	init : function(manager) {
+	init : function() {
 		var image = ILLUST["background"]["empty"][null];
 		var width = 690;
 		var height = 460;
 		var x = 167;
 		var y = 200;
-		this.superInit(image, width, height, x, y, manager);
+		this.superInit(image, width, height, x, y, null);
 	},
 	renew : function() {
 		var backgroundIllust = this.getModel().getBackgroundIllust();

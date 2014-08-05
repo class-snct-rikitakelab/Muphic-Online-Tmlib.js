@@ -3,7 +3,7 @@ tm.define("BackgroundIllustManager", {
 	init : function(scene, mediator) {
 		this.superInit();
 		this.model = BackgroundIllustModel(this, scene);
-		this.view = BackgroundIllustView(this);
+		this.view = BackgroundIllustView();
 		this.controller = BackgroundIllustController(this);
 		this.initModel();
 		this.initView();

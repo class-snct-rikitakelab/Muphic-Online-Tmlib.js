@@ -60,7 +60,6 @@ tm.define("Palette", {
 			this.otherObject[index].setDisableState();
 		}
 	},
-	//消すと描画不可能？
 	enablePreviewScreen : function() {
 		this.getPreviewScreen().setEnableState();
 	},

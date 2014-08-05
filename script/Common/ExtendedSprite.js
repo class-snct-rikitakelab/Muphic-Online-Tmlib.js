@@ -45,7 +45,6 @@ tm.define("ExtendedSprite", {
 	},
 
 	changeImage : function(image) { this.image = image; },
-	getImage : function(){return this.image;},
 	getImageName : function() { return this.imageName; },
 	setImageName : function(imageName) { this.imageName = imageName; },
 	getDarkImage : function() { return this.imageName + "Dark"; },

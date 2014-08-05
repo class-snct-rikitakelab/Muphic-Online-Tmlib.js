@@ -13,7 +13,7 @@ tm.define("IllustManager", {
 		this.setMediator(mediator);
 	},
 	destroyIllust : function() {
-		this.getMediator().destroyIllust(this);
+		this.getMediator().removeStamp(this);
 	},
 	setEnableState : function() {
 		this.getView().setState(IllustEnableState(this.getView()));

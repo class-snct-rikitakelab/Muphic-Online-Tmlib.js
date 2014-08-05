@@ -5,5 +5,5 @@ tm.define("StoryMenuButtonModel", {
 	},
 
 
-	obtainStoryBackground : function(){return this.scene.previewScreen.getBackgroundIllust();}
+	obtainStoryBackground : function(){return this.scene.previewScreen.getBackground();}
 })
