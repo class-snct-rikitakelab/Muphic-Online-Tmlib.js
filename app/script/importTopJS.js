@@ -1,0 +1,10 @@
+document.write('<script src="script/Top/TopScene.js"></script>');
+document.write('<script src="script/Top/TopBackground/TopBackgroundManager.js"></script>');
+document.write('<script src="script/Top/TopBackground/TopBackgroundModel.js"></script>');
+document.write('<script src="script/Top/TopBackground/TopBackgroundView.js"></script>');
+document.write('<script src="script/Top/TopBackground/TopBackgroundController.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonManager.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonModel.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonView.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonController.js"></script>');
+document.write('<script src="script/Top/StartButton/StartButtonEnableState.js"></script>');

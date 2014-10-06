@@ -1,0 +1,51 @@
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+body, .item {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 100%;
+	overflow: auto;
+}
+
+#header {
+	background-color: #ccc;
+	height: 50px;
+	margin-top: -50px;
+	padding: 5px;
+}
+
+#footer {
+	background-color: #ccc;
+	bottom: 0;
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+#middle {
+	background-color: #FFFF99;
+}
+
+#left_frame {
+	float: left;
+	width: 50%;
+	overflow:hidden;
+}
+
+#right_frame {
+}
+
+.spacer {
+	height: 10000px;
+}
+
