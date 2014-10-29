@@ -1,0 +1,7 @@
+body {
+	cursor:
+		url("../image/Mouse/cursor.cur"), url("../image/Mouse/cursor.png"), default;
+
+	overflow:
+		hidden;
+}
