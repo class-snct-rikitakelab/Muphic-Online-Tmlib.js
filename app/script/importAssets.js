@@ -449,4 +449,6 @@ var ASSETS = {
 	"music_introDialog" : "image/Music/IntroDialog/introDialog.png",
 	"music_yesButtonOff" : "image/Music/IntroDialog/yesButtonOff.png",
 	"music_yesButtonOn" : "image/Music/IntroDialog/yesButtonOn.png",
+
+	"music_dog" : "image/Music/Animal/dog.png",
 };
