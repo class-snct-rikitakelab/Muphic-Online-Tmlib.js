@@ -14,7 +14,6 @@ tm.define("MusicIntroDialog", {
 		this.getBackground().setEnableState();
 		this.getPlayButton().setDisableState();
 		this.getPianoButton().setEnableState();
-		this.getGuitarButton().setEnableState();
 		this.getRemoveNoteButton().setEnableState();
 		this.getHumen().setDisableState();
 		this.getNextButton().setEnableState();
@@ -27,8 +26,6 @@ tm.define("MusicIntroDialog", {
 	setPlayButton : function(playButton) { this.playButton = playButton; },
 	getPianoButton : function() { return this.pianoButton; },
 	setPianoButton : function(pianoButton) { this.pianoButton = pianoButton; },
-	getGuitarButton : function() { return this.guitarButton; },
-	setGuitarButton : function(guitarButton) { this.guitarButton = guitarButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
 	getHumen : function() { return this.humen; },
