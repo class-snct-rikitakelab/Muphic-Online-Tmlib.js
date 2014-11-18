@@ -43,6 +43,9 @@ body, .item {
 }
 
 #right_frame {
+	float: right;
+	width: 50%;
+	overflow:hidden;
 }
 
 .spacer {
