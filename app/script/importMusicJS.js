@@ -25,6 +25,13 @@ document.write('<script src="script/Music/PianoButton/PianoButtonController.js">
 document.write('<script src="script/Music/PianoButton/PianoButtonEnableState.js"></script>');
 document.write('<script src="script/Music/PianoButton/PianoButtonPushState.js"></script>');
 
+document.write('<script src="script/Music/GuitarButton/GuitarButtonManager.js"></script>');
+document.write('<script src="script/Music/GuitarButton/GuitarButtonModel.js"></script>');
+document.write('<script src="script/Music/GuitarButton/GuitarButtonView.js"></script>');
+document.write('<script src="script/Music/GuitarButton/GuitarButtonController.js"></script>');
+document.write('<script src="script/Music/GuitarButton/GuitarButtonEnableState.js"></script>');
+document.write('<script src="script/Music/GuitarButton/GuitarButtonPushState.js"></script>');
+
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonManager.js"></script>');
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonModel.js"></script>');
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonView.js"></script>');

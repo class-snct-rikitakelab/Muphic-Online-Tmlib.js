@@ -17,6 +17,16 @@ function defineMusicData() {
 	tm.sound.SoundManager.add("pianoB4", "sound/pianoB4.mp3");
 	tm.sound.SoundManager.add("pianoC5", "sound/pianoC5.mp3");
 
+	tm.sound.SoundManager.add("guitarC4", "sound/pianoC4.mp3");
+	tm.sound.SoundManager.add("guitarD4", "sound/pianoD4.mp3");
+	tm.sound.SoundManager.add("guitarE4", "sound/pianoE4.mp3");
+	tm.sound.SoundManager.add("guitarF4", "sound/pianoF4.mp3");
+	tm.sound.SoundManager.add("guitarG4", "sound/pianoG4.mp3");
+	tm.sound.SoundManager.add("guitarA4", "sound/pianoA4.mp3");
+	tm.sound.SoundManager.add("guitarB4", "sound/pianoB4.mp3");
+	tm.sound.SoundManager.add("guitarC5", "sound/pianoC5.mp3");
+
+
 	NUMBER = new Array(10);
 	NUMBER[0] = "char_0";
 	NUMBER[1] = "char_1";
