@@ -12,7 +12,7 @@ tm.define("NoteView", {
 		var y = Y_FROM_SCALE[scale];
 		this.superInit(image, width, height, x, y, manager);
 		this.sound = tm.sound.SoundManager.get("piano" + scale).clone();
-		this.sound = tm.sound.SoundManager.get("guitar" + scale).clone();
+//		this.sound = tm.sound.SoundManager.get("clarinet" + scale).clone();
 		this.play();
 	},
 	settingPlay : function() {

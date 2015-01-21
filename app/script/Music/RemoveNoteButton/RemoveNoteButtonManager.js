@@ -18,7 +18,6 @@ tm.define("RemoveNoteButtonManager", {
 		this.setPushState();
 		this.getHumen().getHumen().setShowRemoveNoteFocusState();
 
-
 		if(this.getGuitarButton().getIsAvailable()) {
 			this.getGuitarButton().reset();
 		}
