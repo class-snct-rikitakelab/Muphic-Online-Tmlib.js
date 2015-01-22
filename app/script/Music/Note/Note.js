@@ -1,4 +1,5 @@
 var scales = ["C5", "B4", "A4", "G4", "F4", "E4", "D4", "C4"];
+var sound = "piano";
 
 tm.define("Note", {
 	init : function(scene, mediator) {

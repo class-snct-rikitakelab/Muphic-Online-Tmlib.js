@@ -4,7 +4,7 @@ var SCREEN_HEIGHT = 768;
 //var userName = null;
 //var loginScene = null;
 //var	storySceneArray =[null,null,null,null];
-var musicSceneArray = [null,null,null,null];
+var musicScene = null;
 var menuScene = null;
 
 tm.main(function() {

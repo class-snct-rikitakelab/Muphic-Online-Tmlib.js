@@ -11,8 +11,8 @@ tm.define("NoteView", {
 		var x = X_FROM_MEASURE[measure] + X_FROM_BEAT[beat];
 		var y = Y_FROM_SCALE[scale];
 		this.superInit(image, width, height, x, y, manager);
-		this.sound = tm.sound.SoundManager.get("piano" + scale).clone();
-//		this.sound = tm.sound.SoundManager.get("clarinet" + scale).clone();
+	/*案:soundをグローバルに設定してbuttonで操作*/
+		this.sound = tm.sound.SoundManager.get(sound + scale).clone();
 		this.play();
 	},
 	settingPlay : function() {
