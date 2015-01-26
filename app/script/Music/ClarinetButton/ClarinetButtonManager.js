@@ -34,6 +34,7 @@ tm.define("ClarinetButtonManager", {
 	},
 	setPushState : function() {
 		this.getView().setState(ClarinetButtonPushState(this.getView()));
+		sound = "clarinet";
 	},
 
 	getHumen : function() { return this.humen; },

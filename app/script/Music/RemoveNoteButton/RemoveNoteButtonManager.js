@@ -15,11 +15,9 @@ tm.define("RemoveNoteButtonManager", {
 		if(this.getPianoButton().getIsAvailable()) {
 			this.getPianoButton().reset();
 		}
-		this.setPushState();
-		this.getHumen().getHumen().setShowRemoveNoteFocusState();
-
-		if(this.getGuitarButton().getIsAvailable()) {
-			this.getGuitarButton().reset();
+		/*エラー発生：Uncaught TypeError: undefined is not a function*/
+		if(this.getClarinetButton().getIsAvailable()) {
+			this.getClarinetButton().reset();
 		}
 		this.setPushState();
 		this.getHumen().getHumen().setShowRemoveNoteFocusState();
@@ -42,6 +40,6 @@ tm.define("RemoveNoteButtonManager", {
 	setHumen : function(humen) { this.humen = humen; },
 	getPianoButton : function() { return this.pianoButton; },
 	setPianoButton : function(pianoButton) { this.pianoButton = pianoButton; },
-	getGuitarButton : function() { return this.guitarButton; },
-	setGuitarButton : function(guitarButton) { this.guitarButton = guitarButton; },
+	getClarinetButton : function() { return this.clarinetButton; },
+	setClarinetButton : function(clarinetButton) { this.clarinetButton = clarinetButton; },
 })

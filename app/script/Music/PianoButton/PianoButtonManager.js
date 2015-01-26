@@ -34,6 +34,7 @@ tm.define("PianoButtonManager", {
 	},
 	setPushState : function() {
 		this.getView().setState(PianoButtonPushState(this.getView()));
+		sound = "piano";
 	},
 
 	getHumen : function() { return this.humen; },
