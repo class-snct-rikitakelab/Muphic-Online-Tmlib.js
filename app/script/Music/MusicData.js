@@ -17,6 +17,7 @@ function defineMusicData() {
 	tm.sound.SoundManager.add("pianoB4", "sound/pianoB4.mp3");
 	tm.sound.SoundManager.add("pianoC5", "sound/pianoC5.mp3");
 
+
 	tm.sound.SoundManager.add("clarinetC4", "sound/clarinetC4.mp3");
 	tm.sound.SoundManager.add("clarinetD4", "sound/clarinetD4.mp3");
 	tm.sound.SoundManager.add("clarinetE4", "sound/clarinetE4.mp3");
@@ -39,8 +40,9 @@ function defineMusicData() {
 	NUMBER[8] = "char_8";
 	NUMBER[9] = "char_9";
 
-	ANIMAL = new Array(1);
+	ANIMAL = new Array(2);
 	ANIMAL["cat"] = "music_cat";
+	ANIMAL["rabbit"] = "music_rabbit";
 
 	MEASURE_FROM_X = new Array();
 	for(var x = 129; x < 369; x += 0.5) { MEASURE_FROM_X[x] = 1; }

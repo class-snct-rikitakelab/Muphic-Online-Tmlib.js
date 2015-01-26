@@ -26,14 +26,14 @@ tm.define("Humen", {
 		this.getNote().back(startNumber, endNumber, 1);
 	},
 	createNote : function(note) {
-		this.getNote().createNote(note);
-		if(this.getNote().count() === 1) {
+		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている(?)
+		if(this.getNote().count() === 1) { //譜面の音符が1つ以上ある場合
 			this.getPlayButton().setEnableState();
 		}
 	},
 	destroyNote : function(note) {
-		this.getNote().destroyNote(note);
-		if(this.getNote().count() === 0) {
+		this.getNote().destroyNote(note); //RemoveNoteFocusのdestroyNoteを使っている(?)
+		if(this.getNote().count() === 0) {　//譜面の音符がない場合
 			this.getPlayButton().setDisableState();
 		}
 	},

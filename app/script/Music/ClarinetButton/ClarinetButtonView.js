@@ -1,7 +1,7 @@
 tm.define("ClarinetButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "music_pianoButton";
+		var image = "music_clarinetButton";
 		var width = 106;
 		var height = 72;
 		var x = 910;

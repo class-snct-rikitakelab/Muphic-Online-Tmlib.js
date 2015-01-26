@@ -431,6 +431,12 @@ var ASSETS = {
 	"music_pianoButtonOn" : "image/Music/PianoButton/pianoButtonOn.png",
 	"music_pianoButtonDark" : "image/Music/PianoButton/pianoButtonDark.png",
 	"music_pianoButtonPush" : "image/Music/PianoButton/pianoButtonPush.png",
+
+	"music_clarinetButtonOff" : "image/Music/ClarinetButton/clarinetButtonOff.png",
+	"music_clarinetButtonOn" : "image/Music/ClarinetButton/clarinetButtonOn.png",
+	"music_clarinetButtonDark" : "image/Music/ClarinetButton/clarinetButtonDark.png",
+	"music_clarinetButtonPush" : "image/Music/ClarinetButton/clarinetButtonPush.png",
+
 	"music_removeNoteButtonOff" : "image/Music/RemoveNoteButton/removeNoteButtonOff.png",
 	"music_removeNoteButtonOn" : "image/Music/RemoveNoteButton/removeNoteButtonOn.png",
 	"music_removeNoteButtonDark" : "image/Music/RemoveNoteButton/removeNoteButtonDark.png",
@@ -444,6 +450,7 @@ var ASSETS = {
 	"music_prevButtonOn" : "image/Music/PrevButton/prevButtonOn.png",
 	"music_prevButtonDark" : "image/Music/PrevButton/prevButtonDark.png",
 	"music_cat" : "image/Music/Animal/cat.png",
+	"music_rabbit" : "image/Music/Animal/rabbit.png",
 	"music_removeNoteFocusLight" : "image/Music/RemoveNoteFocus/removeNoteFocusLight.png",
 	"music_removeNoteFocusDeep" : "image/Music/RemoveNoteFocus/removeNoteFocusDeep.png",
 	"music_introDialog" : "image/Music/IntroDialog/introDialog.png",
