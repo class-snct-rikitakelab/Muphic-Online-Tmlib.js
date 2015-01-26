@@ -36,7 +36,15 @@ tm.define("NoteFocus", {
 			"beat": beat,
 			"scale": scale
 		};
+		
+		var note2 = {
+			"animal": "rabbit",
+			"measure": measure,
+			"beat": beat,
+			"scale": scale
+		};
 		this.getMediator().createNote(note);
+		this.getMediator().createNote(note2);
 	},
 	update : function() {
 		var measure = MEASURE_FROM_X[Math.floor(app.mouse.x)];

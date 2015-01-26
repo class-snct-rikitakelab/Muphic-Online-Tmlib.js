@@ -17,14 +17,14 @@ function defineMusicData() {
 	tm.sound.SoundManager.add("pianoB4", "sound/pianoB4.mp3");
 	tm.sound.SoundManager.add("pianoC5", "sound/pianoC5.mp3");
 
-	tm.sound.SoundManager.add("guitarC4", "sound/pianoC4.mp3");
-	tm.sound.SoundManager.add("guitarD4", "sound/pianoD4.mp3");
-	tm.sound.SoundManager.add("guitarE4", "sound/pianoE4.mp3");
-	tm.sound.SoundManager.add("guitarF4", "sound/pianoF4.mp3");
-	tm.sound.SoundManager.add("guitarG4", "sound/pianoG4.mp3");
-	tm.sound.SoundManager.add("guitarA4", "sound/pianoA4.mp3");
-	tm.sound.SoundManager.add("guitarB4", "sound/pianoB4.mp3");
-	tm.sound.SoundManager.add("guitarC5", "sound/pianoC5.mp3");
+	tm.sound.SoundManager.add("clarinetC4", "sound/clarinetC4.wav");
+	tm.sound.SoundManager.add("clarinetD4", "sound/clarinetD4.wav");
+	tm.sound.SoundManager.add("clarinetE4", "sound/clarinetE4.wav");
+	tm.sound.SoundManager.add("clarinetF4", "sound/clarinetF4.wav");
+	tm.sound.SoundManager.add("clarinetG4", "sound/clarinetG4.wav");
+	tm.sound.SoundManager.add("clarinetA4", "sound/clarinetA4.wav");
+	tm.sound.SoundManager.add("clarinetB4", "sound/clarinetB4.wav");
+	tm.sound.SoundManager.add("clarinetC5", "sound/clarinetC5.wav");
 
 
 	NUMBER = new Array(10);
@@ -39,8 +39,9 @@ function defineMusicData() {
 	NUMBER[8] = "char_8";
 	NUMBER[9] = "char_9";
 
-	ANIMAL = new Array(1);
+	ANIMAL = new Array(2);
 	ANIMAL["cat"] = "music_cat";
+	ANIMAL["rabbit"] = "music_rabbit";
 
 	MEASURE_FROM_X = new Array();
 	for(var x = 129; x < 369; x += 0.5) { MEASURE_FROM_X[x] = 1; }

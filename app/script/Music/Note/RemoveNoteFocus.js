@@ -39,6 +39,12 @@ tm.define("RemoveNoteFocus", {
 			"beat": beat,
 			"scale": scale
 		};
+		var note2 = {
+			"animal": "rabbit",
+			"measure": measure,
+			"beat": beat,
+			"scale": scale
+		};
 		this.getMediator().destroyNote(note);
 	},
 	update : function() {

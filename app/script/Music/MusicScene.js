@@ -35,6 +35,9 @@ tm.define("MusicScene", {
 		this.removeNoteButton.setPianoButton(this.pianoButton);
 		this.removeNoteButton.setGuitarButton(this.guitarButton);
 
+		
+
+
 		this.introDialog.setBackground(this.background);
 		this.introDialog.setPlayButton(this.playButton);
 		this.introDialog.setPianoButton(this.pianoButton);
@@ -46,5 +49,6 @@ tm.define("MusicScene", {
 		this.yesButton.setDialog(this.introDialog);
 
 		musicSceneArray[x] = this;
+
 	},
 })
