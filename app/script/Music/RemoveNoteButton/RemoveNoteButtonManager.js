@@ -15,7 +15,7 @@ tm.define("RemoveNoteButtonManager", {
 		if(this.getPianoButton().getIsAvailable()) {
 			this.getPianoButton().reset();
 		}
-		/*エラー発生：Uncaught TypeError: undefined is not a function*/
+
 		if(this.getClarinetButton().getIsAvailable()) {
 			this.getClarinetButton().reset();
 		}
