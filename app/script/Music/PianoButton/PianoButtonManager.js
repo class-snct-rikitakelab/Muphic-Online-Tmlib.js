@@ -16,8 +16,8 @@ tm.define("PianoButtonManager", {
 			this.getRemoveNoteButton().reset();
 		}
 
-		if(this.getGuitarButton().getIsAvailable()) {
-			this.getGuitarButton().reset();
+		if(this.getClarinetButton().getIsAvailable()) {
+			this.getClarinetButton().reset();
 		}
 		this.setPushState();
 		this.getHumen().getHumen().setShowNoteFocusState(); 
@@ -38,8 +38,8 @@ tm.define("PianoButtonManager", {
 
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
-	getGuitarButton : function() { return this.guitarButton; },
-	setGuitarButton : function(guitarButton) { this.guitarButton = guitarButton; },
+	getClarinetButton : function() { return this.clarinetButton; },
+	setClarinetButton : function(clarinetButton) { this.clarinetButton = clarinetButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
 })

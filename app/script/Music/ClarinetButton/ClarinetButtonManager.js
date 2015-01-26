@@ -1,10 +1,10 @@
-tm.define("GuitarButtonManager", {
+tm.define("ClarinetButtonManager", {
 	superClass : "MVCManagerButton",
 	init : function(scene) {
 		this.superInit();
-		this.model = GuitarButtonModel(this, scene);
-		this.view = GuitarButtonView(this);
-		this.controller = GuitarButtonController(this);
+		this.model = ClarinetButtonModel(this, scene);
+		this.view = ClarinetButtonView(this);
+		this.controller = ClarinetButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
@@ -30,10 +30,10 @@ tm.define("GuitarButtonManager", {
 		return this.getModel().getIsAvailable();
 	},
 	setEnableState : function() {
-		this.getView().setState(GuitarButtonEnableState(this.getView()));
+		this.getView().setState(ClarinetButtonEnableState(this.getView()));
 	},
 	setPushState : function() {
-		this.getView().setState(GuitarButtonPushState(this.getView()));
+		this.getView().setState(ClarinetButtonPushState(this.getView()));
 	},
 
 	getHumen : function() { return this.humen; },

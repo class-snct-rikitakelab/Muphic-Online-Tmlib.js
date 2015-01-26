@@ -1,4 +1,4 @@
-tm.define("GuitarButtonView", {
+tm.define("ClarinetButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
 		var image = "music_clarinetButton";

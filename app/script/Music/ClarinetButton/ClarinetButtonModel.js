@@ -1,4 +1,4 @@
-tm.define("GuitarButtonModel", {
+tm.define("ClarinetButtonModel", {
 	superClass : "MVCModel",
 	init : function(manager, scene) {
 		this.superInit(manager, scene);

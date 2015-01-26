@@ -25,12 +25,12 @@ document.write('<script src="script/Music/PianoButton/PianoButtonController.js">
 document.write('<script src="script/Music/PianoButton/PianoButtonEnableState.js"></script>');
 document.write('<script src="script/Music/PianoButton/PianoButtonPushState.js"></script>');
 
-document.write('<script src="script/Music/GuitarButton/GuitarButtonManager.js"></script>');
-document.write('<script src="script/Music/GuitarButton/GuitarButtonModel.js"></script>');
-document.write('<script src="script/Music/GuitarButton/GuitarButtonView.js"></script>');
-document.write('<script src="script/Music/GuitarButton/GuitarButtonController.js"></script>');
-document.write('<script src="script/Music/GuitarButton/GuitarButtonEnableState.js"></script>');
-document.write('<script src="script/Music/GuitarButton/GuitarButtonPushState.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonManager.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonModel.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonView.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonController.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonEnableState.js"></script>');
+document.write('<script src="script/Music/ClarinetButton/ClarinetButtonPushState.js"></script>');
 
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonManager.js"></script>');
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonModel.js"></script>');
