@@ -34,19 +34,29 @@ tm.define("RemoveNoteFocus", {
 		var beat = BEAT_FROM_X[Math.floor(app.mouse.x)];
 		var scale = SCALE_FROM_Y[Math.floor(app.mouse.y)];
 		var note = {
-			"animal": "cat",
+			"animal": animal,
 			"measure": measure,
 			"beat": beat,
 			"scale": scale
 		};
-		var note2 = {
-			"animal": "rabbit",
-			"measure": measure,
-			"beat": beat,
-			"scale": scale
-		};
+
 		this.getMediator().destroyNote(note);
 	},
+
+	resetNote : function() {
+		var measure = MEASURE_FROM_X[Math.floor(app.mouse.x)] + this.getMediator().getStartNumber() - 1;
+		var beat = BEAT_FROM_X[Math.floor(app.mouse.x)];
+		var scale = SCALE_FROM_Y[Math.floor(app.mouse.y)];
+		var note = {
+			"animal": animal,
+			"measure": measure,
+			"beat": beat,
+			"scale": scale
+		};
+
+		this.getMediator().resetNote(note);
+	},
+
 	update : function() {
 		var measure = MEASURE_FROM_X[Math.floor(app.mouse.x)];
 		var beat = BEAT_FROM_X[Math.floor(app.mouse.x)];
