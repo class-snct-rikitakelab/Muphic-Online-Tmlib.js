@@ -47,9 +47,10 @@ function defineMusicData() {
 	NUMBER[8] = "char_8";
 	NUMBER[9] = "char_9";
 
-	ANIMAL = new Array(2);
+	ANIMAL = new Array(3);
 	ANIMAL["cat"] = "music_cat";
 	ANIMAL["rabbit"] = "music_rabbit";
+	ANIMAL["dog"] = "music_dog";
 
 	MEASURE_FROM_X = new Array();
 	for(var x = 129; x < 369; x += 0.5) { MEASURE_FROM_X[x] = 1; }

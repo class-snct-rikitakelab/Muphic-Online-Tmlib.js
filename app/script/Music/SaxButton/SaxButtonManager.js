@@ -41,6 +41,7 @@ tm.define("SaxButtonManager", {
 	setPushState : function() {
 		this.getView().setState(ClarinetButtonPushState(this.getView()));
 		sound = "sax";
+		animal = "dog";
 	},
 
 	getHumen : function() { return this.humen; },

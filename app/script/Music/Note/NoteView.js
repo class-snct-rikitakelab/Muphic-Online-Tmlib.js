@@ -1,3 +1,6 @@
+var sound = "piano";
+//var sounds = ["piano","clarinet","sax"];
+
 tm.define("NoteView", {
 	superClass : "MVCViewSprite",
 	init : function(manager, note) {

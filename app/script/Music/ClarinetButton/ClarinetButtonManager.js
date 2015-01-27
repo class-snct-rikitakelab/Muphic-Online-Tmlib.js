@@ -19,6 +19,11 @@ tm.define("ClarinetButtonManager", {
 		if(this.getPianoButton().getIsAvailable()) {
 			this.getPianoButton().reset(); 
 		}
+
+		if(this.getSaxButton().getIsAvailable()) {
+			this.getSaxButton().reset(); 
+		}
+
 		this.setPushState();
 		this.getHumen().getHumen().setShowNoteFocusState();
 	},
@@ -35,6 +40,7 @@ tm.define("ClarinetButtonManager", {
 	setPushState : function() {
 		this.getView().setState(ClarinetButtonPushState(this.getView()));
 		sound = "clarinet";
+		animal = "rabbit";
 	},
 
 	getHumen : function() { return this.humen; },

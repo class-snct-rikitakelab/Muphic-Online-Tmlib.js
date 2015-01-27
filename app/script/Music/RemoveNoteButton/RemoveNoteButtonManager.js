@@ -19,6 +19,11 @@ tm.define("RemoveNoteButtonManager", {
 		if(this.getClarinetButton().getIsAvailable()) {
 			this.getClarinetButton().reset();
 		}
+
+		if(this.getSaxButton().getIsAvailable()) {
+			this.getSaxButton().reset(); 
+		}
+
 		this.setPushState();
 		this.getHumen().getHumen().setShowRemoveNoteFocusState();
 	},
@@ -42,4 +47,7 @@ tm.define("RemoveNoteButtonManager", {
 	setPianoButton : function(pianoButton) { this.pianoButton = pianoButton; },
 	getClarinetButton : function() { return this.clarinetButton; },
 	setClarinetButton : function(clarinetButton) { this.clarinetButton = clarinetButton; },
+	getSaxButton : function() { return this.saxButton; },
+	setSaxButton : function(saxButton) { this.saxButton = saxButton; },
+
 })

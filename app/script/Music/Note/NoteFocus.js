@@ -1,7 +1,9 @@
+var animal = "cat";
+
 tm.define("NoteFocus", {
 	superClass : "ExtendedSprite",
 	init : function(scene, mediator) {
-		var image = ANIMAL["cat"];
+		var image = ANIMAL[animal]; //ここ
 		var width = 60;
 		var height = 45;
 		var x = SCREEN_WIDTH;
@@ -19,6 +21,7 @@ tm.define("NoteFocus", {
 		var beat = BEAT_FROM_X[Math.floor(app.mouse.x)];
 		var scale = SCALE_FROM_Y[Math.floor(app.mouse.y)];
 		if(this.getMediator().isExist(measure, beat, scale)) return;
+		this.changeImage(ANIMAL[animal]);
 		this.setVisible(true);
 		this.setIsUpdate(true);
 	},
@@ -30,22 +33,22 @@ tm.define("NoteFocus", {
 		var measure = MEASURE_FROM_X[Math.floor(app.mouse.x)] + this.getMediator().getStartNumber() - 1;
 		var beat = BEAT_FROM_X[Math.floor(app.mouse.x)];
 		var scale = SCALE_FROM_Y[Math.floor(app.mouse.y)];
-		var cat = {
-			"animal": "cat",
+		var note = {					//ここ
+			"animal": animal,
 			"measure": measure,
 			"beat": beat,
 			"scale": scale
 		};
 		
-		var rabbit = {
-			"animal": "rabbit",
-			"measure": measure,
-			"beat": beat,
-			"scale": scale
-		};
+		//var rabbit = {
+		//	"animal": "rabbit",
+		//	"measure": measure,
+		//	"beat": beat,
+		//	"scale": scale
+		//};
 
-		this.getMediator().createNote(cat);
-		this.getMediator().createNote(rabbit);
+		this.getMediator().createNote(note);
+	//	this.getMediator().createNote(rabbit);
 
 
 	},
