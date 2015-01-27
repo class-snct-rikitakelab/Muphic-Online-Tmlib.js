@@ -37,6 +37,19 @@ tm.define("Note", {
 		if(!this.isExist(note.measure, note.beat, note.scale)) return;
 		this.removeChild(this.note[note.measure][note.beat][note.scale].getView());
 		this.note[note.measure][note.beat][note.scale] = null;
+
+	},
+	destroyAllNote : function(note){
+		for(var measure = 1; measure <= MEASURENUMBER_MAX; measure++) {
+			for(var beat = 1; beat <= 4; beat++) {
+				for(var scale = 0; scale < 8; scale++) {
+					if(this.note[measure][beat][scales[scale]]!==null){
+						this.removeChild(this.note[measure][beat][scales[scale]].getView());
+						this.note[measure][beat][scales[scale]] = null;
+					}
+				}			
+			}			
+		}	
 	},
 	addChild : function(note) {
 		this.noteSheet.addChild(note);

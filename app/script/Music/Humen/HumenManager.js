@@ -33,6 +33,7 @@ tm.define("HumenManager", {
 	setShowNoteFocusState : function() {
 		this.getView().setState(HumenShowNoteFocusState(this.getView()));
 	},
+	//
 	setShowRemoveNoteFocusState : function() {
 		this.getView().setState(HumenShowRemoveNoteFocusState(this.getView()));
 	},

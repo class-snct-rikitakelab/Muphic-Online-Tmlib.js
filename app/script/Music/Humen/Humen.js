@@ -32,11 +32,19 @@ tm.define("Humen", {
 		}
 	},
 	destroyNote : function(note) {
-		this.getNote().destroyNote(note); //RemoveNoteFocusのdestroyNoteを使っている(?)
+		this.getNote().destroyNote(note); //RemoveNoteFocusのdestroyNoteを使っている
 		if(this.getNote().count() === 0) {　//譜面の音符がない場合
 			this.getPlayButton().setDisableState();
 		}
 	},
+//
+	resetNote : function(note){
+		this.getNote().destroyAllNote(note);
+		if(this.getNote().count() === 0) {
+			this.getPlayButton().setDisableState();
+		}
+	},
+//
 	showNoteFocus : function() {
 		this.noteFocus.show();
 	},
