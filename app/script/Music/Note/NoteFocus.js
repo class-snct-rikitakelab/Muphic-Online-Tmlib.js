@@ -39,17 +39,8 @@ tm.define("NoteFocus", {
 			"beat": beat,
 			"scale": scale
 		};
-		
-		//var rabbit = {
-		//	"animal": "rabbit",
-		//	"measure": measure,
-		//	"beat": beat,
-		//	"scale": scale
-		//};
 
 		this.getMediator().createNote(note);
-	//	this.getMediator().createNote(rabbit);
-
 
 	},
 	update : function() {
