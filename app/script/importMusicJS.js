@@ -32,6 +32,13 @@ document.write('<script src="script/Music/ClarinetButton/ClarinetButtonControlle
 document.write('<script src="script/Music/ClarinetButton/ClarinetButtonEnableState.js"></script>');
 document.write('<script src="script/Music/ClarinetButton/ClarinetButtonPushState.js"></script>');
 
+document.write('<script src="script/Music/SaxButton/SaxButtonManager.js"></script>');
+document.write('<script src="script/Music/SaxButton/SaxButtonModel.js"></script>');
+document.write('<script src="script/Music/SaxButton/SaxButtonView.js"></script>');
+document.write('<script src="script/Music/SaxButton/SaxButtonController.js"></script>');
+document.write('<script src="script/Music/SaxButton/SaxButtonEnableState.js"></script>');
+document.write('<script src="script/Music/SaxButton/SaxButtonPushState.js"></script>');
+
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonManager.js"></script>');
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonModel.js"></script>');
 document.write('<script src="script/Music/RemoveNoteButton/RemoveNoteButtonView.js"></script>');

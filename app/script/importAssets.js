@@ -427,6 +427,7 @@ var ASSETS = {
 	"music_playButtonOff" : "image/Music/PlayButton/playButtonOff.png",
 	"music_playButtonOn" : "image/Music/PlayButton/playButtonOn.png",
 	"music_playButtonDark" : "image/Music/PlayButton/playButtonDark.png",
+	
 	"music_pianoButtonOff" : "image/Music/PianoButton/pianoButtonOff.png",
 	"music_pianoButtonOn" : "image/Music/PianoButton/pianoButtonOn.png",
 	"music_pianoButtonDark" : "image/Music/PianoButton/pianoButtonDark.png",
@@ -437,25 +438,37 @@ var ASSETS = {
 	"music_clarinetButtonDark" : "image/Music/ClarinetButton/clarinetButtonDark.png",
 	"music_clarinetButtonPush" : "image/Music/ClarinetButton/clarinetButtonPush.png",
 
+	"music_saxButtonOff" : "image/Music/SaxButton/saxButtonOff.png",
+	"music_saxButtonOn" : "image/Music/SaxButton/saxButtonOn.png",
+	"music_saxButtonDark" : "image/Music/SaxButton/saxButtonDark.png",
+	"music_saxButtonPush" : "image/Music/SaxButton/saxButtonPush.png",
+
 	"music_removeNoteButtonOff" : "image/Music/RemoveNoteButton/removeNoteButtonOff.png",
 	"music_removeNoteButtonOn" : "image/Music/RemoveNoteButton/removeNoteButtonOn.png",
 	"music_removeNoteButtonDark" : "image/Music/RemoveNoteButton/removeNoteButtonDark.png",
 	"music_removeNoteButtonPush" : "image/Music/RemoveNoteButton/removeNoteButtonPush.png",
+	
 	"music_humen" : "image/Music/Humen/humen.png",
 	"music_humenDark" : "image/Music/Humen/humenDark.png",
+	
 	"music_nextButtonOff" : "image/Music/NextButton/nextButtonOff.png",
 	"music_nextButtonOn" : "image/Music/NextButton/nextButtonOn.png",
 	"music_nextButtonDark" : "image/Music/NextButton/nextButtonDark.png",
 	"music_prevButtonOff" : "image/Music/PrevButton/prevButtonOff.png",
 	"music_prevButtonOn" : "image/Music/PrevButton/prevButtonOn.png",
 	"music_prevButtonDark" : "image/Music/PrevButton/prevButtonDark.png",
+	
 	"music_cat" : "image/Music/Animal/cat.png",
 	"music_rabbit" : "image/Music/Animal/rabbit.png",
+	"music_dog" : "image/Music/Animal/dog.png",
+	
 	"music_removeNoteFocusLight" : "image/Music/RemoveNoteFocus/removeNoteFocusLight.png",
 	"music_removeNoteFocusDeep" : "image/Music/RemoveNoteFocus/removeNoteFocusDeep.png",
+	
 	"music_introDialog" : "image/Music/IntroDialog/introDialog.png",
+	
 	"music_yesButtonOff" : "image/Music/IntroDialog/yesButtonOff.png",
 	"music_yesButtonOn" : "image/Music/IntroDialog/yesButtonOn.png",
 
-	"music_dog" : "image/Music/Animal/dog.png",
+	
 };

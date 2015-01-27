@@ -26,7 +26,7 @@ tm.define("Humen", {
 		this.getNote().back(startNumber, endNumber, 1);
 	},
 	createNote : function(note) {
-		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている(?)
+		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている
 		if(this.getNote().count() === 1) { //譜面の音符が1つ以上ある場合
 			this.getPlayButton().setEnableState();
 		}

@@ -8,25 +8,32 @@ var SCALE_FROM_Y = null;
 var Y_FROM_SCALE = null;
 
 function defineMusicData() {
-	tm.sound.SoundManager.add("pianoC4", "sound/pianoC4.mp3");
-	tm.sound.SoundManager.add("pianoD4", "sound/pianoD4.mp3");
-	tm.sound.SoundManager.add("pianoE4", "sound/pianoE4.mp3");
-	tm.sound.SoundManager.add("pianoF4", "sound/pianoF4.mp3");
-	tm.sound.SoundManager.add("pianoG4", "sound/pianoG4.mp3");
-	tm.sound.SoundManager.add("pianoA4", "sound/pianoA4.mp3");
-	tm.sound.SoundManager.add("pianoB4", "sound/pianoB4.mp3");
-	tm.sound.SoundManager.add("pianoC5", "sound/pianoC5.mp3");
+	tm.sound.SoundManager.add("pianoC4", "sound/piano/pianoC4.mp3");
+	tm.sound.SoundManager.add("pianoD4", "sound/piano/pianoD4.mp3");
+	tm.sound.SoundManager.add("pianoE4", "sound/piano/pianoE4.mp3");
+	tm.sound.SoundManager.add("pianoF4", "sound/piano/pianoF4.mp3");
+	tm.sound.SoundManager.add("pianoG4", "sound/piano/pianoG4.mp3");
+	tm.sound.SoundManager.add("pianoA4", "sound/piano/pianoA4.mp3");
+	tm.sound.SoundManager.add("pianoB4", "sound/piano/pianoB4.mp3");
+	tm.sound.SoundManager.add("pianoC5", "sound/piano/pianoC5.mp3");
 
+	tm.sound.SoundManager.add("clarinetC4", "sound/clarinet/clarinetC4.mp3");
+	tm.sound.SoundManager.add("clarinetD4", "sound/clarinet/clarinetD4.mp3");
+	tm.sound.SoundManager.add("clarinetE4", "sound/clarinet/clarinetE4.mp3");
+	tm.sound.SoundManager.add("clarinetF4", "sound/clarinet/clarinetF4.mp3");
+	tm.sound.SoundManager.add("clarinetG4", "sound/clarinet/clarinetG4.mp3");
+	tm.sound.SoundManager.add("clarinetA4", "sound/clarinet/clarinetA4.mp3");
+	tm.sound.SoundManager.add("clarinetB4", "sound/clarinet/clarinetB4.mp3");
+	tm.sound.SoundManager.add("clarinetC5", "sound/clarinet/clarinetC5.mp3");
 
-	tm.sound.SoundManager.add("clarinetC4", "sound/clarinetC4.mp3");
-	tm.sound.SoundManager.add("clarinetD4", "sound/clarinetD4.mp3");
-	tm.sound.SoundManager.add("clarinetE4", "sound/clarinetE4.mp3");
-	tm.sound.SoundManager.add("clarinetF4", "sound/clarinetF4.mp3");
-	tm.sound.SoundManager.add("clarinetG4", "sound/clarinetG4.mp3");
-	tm.sound.SoundManager.add("clarinetA4", "sound/clarinetA4.mp3");
-	tm.sound.SoundManager.add("clarinetB4", "sound/clarinetB4.mp3");
-	tm.sound.SoundManager.add("clarinetC5", "sound/clarinetC5.mp3");
-
+	tm.sound.SoundManager.add("saxC4", "sound/sax/saxC4.mp3");
+	tm.sound.SoundManager.add("saxD4", "sound/sax/saxD4.mp3");
+	tm.sound.SoundManager.add("saxE4", "sound/sax/saxE4.mp3");
+	tm.sound.SoundManager.add("saxF4", "sound/sax/saxF4.mp3");
+	tm.sound.SoundManager.add("saxG4", "sound/sax/saxG4.mp3");
+	tm.sound.SoundManager.add("saxA4", "sound/sax/saxA4.mp3");
+	tm.sound.SoundManager.add("saxB4", "sound/sax/saxB4.mp3");
+	tm.sound.SoundManager.add("saxC5", "sound/sax/saxC5.mp3");
 
 	NUMBER = new Array(10);
 	NUMBER[0] = "char_0";
