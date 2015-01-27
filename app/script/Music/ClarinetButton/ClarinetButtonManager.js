@@ -41,6 +41,8 @@ tm.define("ClarinetButtonManager", {
 	setHumen : function(humen) { this.humen = humen; },
 	getPianoButton : function() { return this.pianoButton; },
 	setPianoButton : function(pianoButton) { this.pianoButton = pianoButton; },
+	getSaxButton : function() { return this.saxButton; },
+	setSaxButton : function(saxButton) { this.saxButton = saxButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
 })

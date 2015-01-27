@@ -19,6 +19,12 @@ tm.define("SaxButtonManager", {
 		if(this.getPianoButton().getIsAvailable()) {
 			this.getPianoButton().reset(); 
 		}
+
+		if(this.getClarinetButton().getIsAvailable()) {
+		this.getClarinetButton().reset();
+		}
+
+
 		this.setPushState();
 		this.getHumen().getHumen().setShowNoteFocusState();
 	},
