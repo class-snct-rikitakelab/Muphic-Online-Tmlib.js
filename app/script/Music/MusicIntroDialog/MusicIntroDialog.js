@@ -17,6 +17,7 @@ tm.define("MusicIntroDialog", {
 		this.getSaxButton().setEnableState();
 		this.getClarinetButton().setEnableState();
 		this.getRemoveNoteButton().setEnableState();
+		this.getRemoveAllNoteButton().setEnableState();
 		this.getHumen().setDisableState();
 		this.getNextButton().setEnableState();
 		this.getPrevButton().setDisableState();
@@ -34,6 +35,8 @@ tm.define("MusicIntroDialog", {
 	setSaxButton : function(saxButton) { this.saxButton = saxButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
+	getRemoveAllNoteButton : function() { return this.removeAllNoteButton; },
+	setRemoveAllNoteButton : function(removeAllNoteButton) { this.removeAllNoteButton = removeAllNoteButton; },
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
 	getNextButton : function() { return this.nextButton; },
