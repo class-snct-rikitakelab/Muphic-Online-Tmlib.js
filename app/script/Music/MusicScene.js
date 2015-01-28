@@ -22,7 +22,8 @@ tm.define("MusicScene", {
 
 		var otherObject = [
 			this.playButton, this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
-			this.removeAllNoteButton,this.humen.getHumen(),this.humen.getLastButton(), this.humen.getNextButton(), this.humen.getPrevButton()
+			this.removeAllNoteButton,this.humen.getHumen(),this.humen.getLastButton(), 
+			this.humen.getNextButton(), this.humen.getPrevButton(),this.humen.getFirstButton()
 		];
 		this.humen.setOtherObject(otherObject);
 		this.humen.setPlayButton(this.playButton);
