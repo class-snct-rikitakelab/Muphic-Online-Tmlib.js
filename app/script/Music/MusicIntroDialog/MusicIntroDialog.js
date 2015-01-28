@@ -19,6 +19,7 @@ tm.define("MusicIntroDialog", {
 		this.getRemoveNoteButton().setEnableState();
 		this.getRemoveAllNoteButton().setEnableState();
 		this.getHumen().setDisableState();
+	//	this.getLastButton().setEnableState();
 		this.getNextButton().setEnableState();
 		this.getPrevButton().setDisableState();
 	},
@@ -39,6 +40,8 @@ tm.define("MusicIntroDialog", {
 	setRemoveAllNoteButton : function(removeAllNoteButton) { this.removeAllNoteButton = removeAllNoteButton; },
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
+	getLastButton : function() { return this.lastButton; },
+	setLastButton : function(lastButton) { this.lastButton = lastButton; },
 	getNextButton : function() { return this.nextButton; },
 	setNextButton : function(nextButton) { this.nextButton = nextButton; },
 	getPrevButton : function() { return this.prevButton; },

@@ -9,7 +9,7 @@ tm.define("ClarinetButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 	},
 	showNoteFocus : function() {
 		if(this.getRemoveNoteButton().getIsAvailable()) {

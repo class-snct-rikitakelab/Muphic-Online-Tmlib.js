@@ -95,6 +95,8 @@ tm.define("Humen", {
 
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
+	getLastButton : function() { return this.lastButton; },
+	setLastButton : function(lastButton) { this.lastButton = lastButton; },
 	getNextButton : function() { return this.nextButton; },
 	setNextButton : function(nextButton) { this.nextButton = nextButton; },
 	getPrevButton : function() { return this.prevButton; },
@@ -105,6 +107,7 @@ tm.define("Humen", {
 	setNote : function(note) { this.note = note; },
 	getScene : function() { return this.scene; },
 	setScene : function(scene) { this.scene = scene; },
+	getRemoveNoteFocus : function(){return this.removeNoteFocus;},
 	getPlayButton : function() { return this.playButton; },
 	setPlayButton : function(playButton) { this.playButton = playButton; },
 	getOtherObject : function() { return this.otherObject; },

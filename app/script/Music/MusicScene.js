@@ -1,6 +1,7 @@
 var MEASURE_WIDTH = 240;
 var BEAT_WIDTH = 60;
 var MEASURENUMBER_MAX = 8;
+var MEASURENUMBER_MIN = 1;
 var STEP = 1.5;
 
 tm.define("MusicScene", {
@@ -16,12 +17,15 @@ tm.define("MusicScene", {
 		this.removeNoteButton = RemoveNoteButtonManager(this);
 		this.removeAllNoteButton = RemoveAllNoteButtonManager(this);
 		this.humen = Humen(this);
-		this.introDialog = MusicIntroDialog(this);
-		this.yesButton = MusicYesButton(this);
+		//this.introDialog = MusicIntroDialog(this);
+		//this.yesButton = MusicYesButton(this);
 
 		var otherObject = [
-			this.playButton, this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
-			this.removeAllNoteButton,this.humen.getHumen(), this.humen.getNextButton(), this.humen.getPrevButton()
+			this.playButton, this.pianoButton,this.clarinetButton,
+			this.saxButton, this.removeNoteButton,
+			this.removeAllNoteButton,this.humen.getHumen(), 
+			this.humen.getNextButton(), this.humen.getLastButton(), 
+			this.humen.getPrevButton()
 		];
 		this.humen.setOtherObject(otherObject);
 		this.humen.setPlayButton(this.playButton);
@@ -51,17 +55,18 @@ tm.define("MusicScene", {
 		this.removeAllNoteButton.setHumen(this.humen);
 
 
-		this.introDialog.setBackground(this.background);
-		this.introDialog.setPlayButton(this.playButton);
-		this.introDialog.setPianoButton(this.pianoButton);
-		this.introDialog.setClarinetButton(this.clarinetButton);
-		this.introDialog.setSaxButton(this.saxButton);
-		this.introDialog.setRemoveNoteButton(this.removeNoteButton);
-		this.introDialog.setRemoveAllNoteButton(this.removeAllNoteButton);
-		this.introDialog.setHumen(this.humen.getHumen());
-		this.introDialog.setNextButton(this.humen.getNextButton());
-		this.introDialog.setPrevButton(this.humen.getPrevButton());
-		this.yesButton.setDialog(this.introDialog);
+		//this.introDialog.setBackground(this.background);
+		//this.introDialog.setPlayButton(this.playButton);
+		//this.introDialog.setPianoButton(this.pianoButton);
+		//this.introDialog.setClarinetButton(this.clarinetButton);
+		//this.introDialog.setSaxButton(this.saxButton);
+		//this.introDialog.setRemoveNoteButton(this.removeNoteButton);
+		//this.introDialog.setRemoveAllNoteButton(this.removeAllNoteButton);
+		//this.introDialog.setHumen(this.humen.getHumen());
+		//this.introDialog.setLastButton(this.humen.getLastButton());
+		//this.introDialog.setNextButton(this.humen.getNextButton());
+		//this.introDialog.setPrevButton(this.humen.getPrevButton());
+		//this.yesButton.setDialog(this.introDialog);
 
 		musicScene = this;
 	},

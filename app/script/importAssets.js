@@ -457,9 +457,14 @@ var ASSETS = {
 	"music_humen" : "image/Music/Humen/humen.png",
 	"music_humenDark" : "image/Music/Humen/humenDark.png",
 	
+	"music_lastButtonOff" : "image/Music/LastButton/lastButtonOff.png",
+	"music_lastButtonOn" : "image/Music/LastButton/lastButtonOn.png",
+	"music_lastButtonDark" : "image/Music/LastButton/lastButtonDark.png",
+
 	"music_nextButtonOff" : "image/Music/NextButton/nextButtonOff.png",
 	"music_nextButtonOn" : "image/Music/NextButton/nextButtonOn.png",
 	"music_nextButtonDark" : "image/Music/NextButton/nextButtonDark.png",
+
 	"music_prevButtonOff" : "image/Music/PrevButton/prevButtonOff.png",
 	"music_prevButtonOn" : "image/Music/PrevButton/prevButtonOn.png",
 	"music_prevButtonDark" : "image/Music/PrevButton/prevButtonDark.png",

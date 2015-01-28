@@ -9,6 +9,7 @@ tm.define("LastButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
+<<<<<<< HEAD
 		this.setDarkState();
 		this.setMediator(mediator);
 	},
@@ -17,6 +18,16 @@ tm.define("LastButtonManager", {
 	},
 	setEnableState : function() {
 		this.getView().setState(NextButtonEnableState(this.getView()));
+=======
+		this.setEnableState();
+		this.setMediator(mediator);
+	},
+	forward : function() {
+		this.getMediator().forward();
+	},
+	setEnableState : function() {
+		this.getView().setState(LastButtonEnableState(this.getView()));
+>>>>>>> origin/html
 	},
 
 	getMediator : function() { return this.mediator; },

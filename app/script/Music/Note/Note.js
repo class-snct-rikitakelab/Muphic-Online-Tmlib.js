@@ -6,6 +6,8 @@ tm.define("Note", {
 		this.setMediator(mediator);
 		this.initNote();
 		this.initNoteSheet(scene);
+		this.setStartNumber(1);
+		this.setEndNumber(3);
 	},
 	initNote : function() {
 		this.note = new Array();
@@ -32,6 +34,11 @@ tm.define("Note", {
 		var _note = NoteManager(scene, this, note);
 		this.note[note.measure][note.beat][note.scale] = _note;
 		this.addChild(this.note[note.measure][note.beat][note.scale].getView());
+		
+		if(note.beat == 4 && note.measure == this.getEndNumber() && note.measure < MEASURENUMBER_MAX)
+			this.mediator.forward();
+		else if(note.beat == 1 && note.measure == this.getStartNumber() && note.measure > MEASURENUMBER_MIN)
+			this.mediator.back();
 	},
 	destroyNote : function(note) {
 		if(!this.isExist(note.measure, note.beat, note.scale)) return;
@@ -60,10 +67,14 @@ tm.define("Note", {
 	forward : function(startNumber, endNumber, count) {
 		this.inRange(startNumber, endNumber);
 		this.noteSheet.forward(count);
+		this.setStartNumber(startNumber);
+		this.setEndNumber(endNumber);
 	},
 	back : function(startNumber, endNumber, count) {
 		this.inRange(startNumber, endNumber);
 		this.noteSheet.back(count);
+		this.setStartNumber(startNumber);
+		this.setEndNumber(endNumber);
 	},
 	count : function() {
 		var count = 0;
@@ -119,4 +130,8 @@ tm.define("Note", {
 	setScene : function(scene) { this.scene = scene; },
 	getMediator : function() { return this.mediator; },
 	setMediator : function(mediator) { this.mediator = mediator; },
+	getStartNumber : function(){return this.startNumber;},
+	setStartNumber : function(startNumber){this.startNumber = startNumber;},
+	getEndNumber : function(){return this.endNumber;},
+	setEndNumber : function(endNumber){this.endNumber = endNumber;},
 })

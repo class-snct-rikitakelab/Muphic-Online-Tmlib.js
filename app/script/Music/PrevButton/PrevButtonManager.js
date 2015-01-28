@@ -9,7 +9,7 @@ tm.define("PrevButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setDisableState();
 		this.setMediator(mediator);
 	},
 	back : function() {
