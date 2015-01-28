@@ -19,6 +19,7 @@ tm.define("Humen", {
 				if(!this.getMeasureNumber().forward(1)) { 
 					this.getNextButton().setDisableState(); 
 					this.getLastButton().setDisableState(); 
+					break;
 				}
 				else { 
 					this.getPrevButton().setEnableState(); 
