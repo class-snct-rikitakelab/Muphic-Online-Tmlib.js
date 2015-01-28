@@ -12,16 +12,13 @@ tm.define("Humen", {
 		this.setScene(scene);
 	},
 
-	//直したい
+	//直したい：未完成
 	last : function(){
-		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX -  2; loopCount++)
+		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX - 2; loopCount++)
 			{
-				console.log(loopCount);
 				if(!this.getMeasureNumber().forward(1)) { 
-					this.getMeasureNumber().back(1);
 					this.getNextButton().setDisableState(); 
 					this.getLastButton().setDisableState(); 
-					break;
 				}
 				else { 
 					this.getPrevButton().setEnableState(); 
@@ -29,9 +26,10 @@ tm.define("Humen", {
 				}
 				var startNumber = this.getMeasureNumber().getStartNumber();
 				var endNumber = startNumber + 2;
-				console.log(loopCount);
 				this.getNote().forward(startNumber, endNumber, 1);
 			}
+			this.getMeasureNumber().back(1);
+			this.getNote().back(startNumber, endNumber, 1);
 	},
 	forward : function() {
 		if(!this.getMeasureNumber().forward(1)) { 
@@ -46,8 +44,6 @@ tm.define("Humen", {
 		var endNumber = startNumber + 2;
 		this.getNote().forward(startNumber, endNumber, 1);
 	},
-
-	//直したい
 	back : function() {
 		if(!this.getMeasureNumber().back(1)) {
 			this.getPrevButton().setDisableState();
@@ -61,22 +57,25 @@ tm.define("Humen", {
 		var endNumber = startNumber + 2;
 		this.getNote().back(startNumber, endNumber, 1);
 	},
+	//直したい：未完成
 	first : function(){
 		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX -  2; loopCount++)
-		{
-		if(!this.getMeasureNumber().back(1)) {
-			this.getMeasureNumber().forward(1);
-			this.getPrevButton().setDisableState();
-			this.getFirstButton().setDisableState();
-			break;
-		}	
-		else { 
-			this.getLastButton().setEnableState(); 
-			this.getNextButton().setEnableState(); 
+			{
+				if(!this.getMeasureNumber().back(1)) {
+					this.getPrevButton().setDisableState();
+					this.getFirstButton().setDisableState();
+					break;
+			}	
+			else { 
+					this.getLastButton().setEnableState(); 
+					this.getNextButton().setEnableState(); 
+				}
+			var startNumber = this.getStartNumber();
+			var endNumber = startNumber + 2;
+			this.getNote().back(startNumber, endNumber, 1);		
 		}
-		var startNumber = this.getStartNumber();
-		var endNumber = startNumber + 2;
-		this.getNote().back(startNumber, endNumber, 1);		}
+			this.getMeasureNumber().forward(1);
+			this.getNote().forward(startNumber, endNumber, 1);
 	},
 	createNote : function(note) {
 		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている
