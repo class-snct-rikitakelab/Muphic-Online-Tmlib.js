@@ -9,7 +9,7 @@ tm.define("HumenManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setDisableState();
 		this.setMediator(mediator);
 	},
 	showNoteFocus : function() {

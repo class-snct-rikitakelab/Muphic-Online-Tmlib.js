@@ -9,7 +9,7 @@ tm.define("RemoveNoteButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 	},
 	showRemoveNoteFocus : function() {
 		if(this.getPianoButton().getIsAvailable()) {

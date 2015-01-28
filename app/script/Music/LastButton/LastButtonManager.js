@@ -1,22 +1,22 @@
-tm.define("PrevButtonManager", {
+tm.define("LastButtonManager", {
 	superClass : "MVCManagerButton",
 	init : function(scene, mediator) {
 		this.superInit();
-		this.model = PrevButtonModel(this, scene);
-		this.view = PrevButtonView(this);
-		this.controller = PrevButtonController(this);
+		this.model = LastButtonModel(this, scene);
+		this.view = LastButtonView(this);
+		this.controller = LastButtonController(this);
 		this.initModel();
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDisableState();
+		this.setEnableState();
 		this.setMediator(mediator);
 	},
-	back : function() {
-		this.getMediator().back();
+	forward : function() {
+		this.getMediator().forward();
 	},
 	setEnableState : function() {
-		this.getView().setState(PrevButtonEnableState(this.getView()));
+		this.getView().setState(LastButtonEnableState(this.getView()));
 	},
 
 	getMediator : function() { return this.mediator; },

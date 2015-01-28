@@ -9,7 +9,7 @@ tm.define("RemoveAllNoteButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 	},
 	showRemoveNoteFocus : function() {
 		this.setPushState();

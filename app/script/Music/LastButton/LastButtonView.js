@@ -1,14 +1,14 @@
-tm.define("PrevButtonView", {
+tm.define("LastButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "music_prevButton";
+		var image = "music_lastButton";
 		var width = 36;
 		var height = 42;
-		var x = 180; //130
+		var x = 900; //860
 		var y = 651;
 		this.superInit(image, width, height, x, y, manager);
 	},
-	back : function() {
-		this.getController().back();
+	forward : function() {
+		this.getController().forward();
 	},
 })
