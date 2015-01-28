@@ -10,9 +10,31 @@ tm.define("Humen", {
 		this.removeNoteFocus = RemoveNoteFocus(scene, this);
 		this.setScene(scene);
 	},
+
+	//直したい
+	last : function(){
+		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX -  2; loopCount++)
+			{
+				console.log(loopCount);
+				if(!this.getMeasureNumber().forward(1)) { 
+					this.getMeasureNumber().back(1);
+					this.getNextButton().setDisableState(); 
+					this.getLastButton().setDisableState(); 
+					break;
+				}
+				else { this.getPrevButton().setEnableState(); }
+				var startNumber = this.getMeasureNumber().getStartNumber();
+				var endNumber = startNumber + 2;
+				console.log(loopCount);
+				this.getNote().forward(startNumber, endNumber, 1);
+			}
+	},
+
 	forward : function() {
-		var oldStartNumber = this.getMeasureNumber().getStartNumber();
-		if(!this.getMeasureNumber().forward(1)) { this.getNextButton().setDisableState(); }
+		if(!this.getMeasureNumber().forward(1)) { 
+			this.getNextButton().setDisableState(); 
+			this.getLastButton().setDisableState(); 
+		}
 		else { this.getPrevButton().setEnableState(); }
 		var startNumber = this.getMeasureNumber().getStartNumber();
 		var endNumber = startNumber + 2;
@@ -21,7 +43,10 @@ tm.define("Humen", {
 	back : function() {
 		var oldStartNumber = this.getStartNumber();
 		if(!this.getMeasureNumber().back(1)) { this.getPrevButton().setDisableState(); }
-		else { this.getNextButton().setEnableState(); }
+		else { 
+			this.getLastButton().setEnableState(); 
+			this.getNextButton().setEnableState(); 
+		}
 		var startNumber = this.getStartNumber();
 		var endNumber = startNumber + 2;
 		this.getNote().back(startNumber, endNumber, 1);

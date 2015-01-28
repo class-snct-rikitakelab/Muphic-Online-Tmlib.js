@@ -13,7 +13,7 @@ tm.define("LastButtonManager", {
 		this.setMediator(mediator);
 	},
 	forward : function() {
-		this.getMediator().forward();
+		this.getMediator().last();
 	},
 	setEnableState : function() {
 		this.getView().setState(LastButtonEnableState(this.getView()));
