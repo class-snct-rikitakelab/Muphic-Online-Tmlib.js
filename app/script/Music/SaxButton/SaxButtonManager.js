@@ -9,7 +9,7 @@ tm.define("SaxButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setEnableState();
+		this.setDarkState();
 	},
 	showNoteFocus : function() {
 		if(this.getRemoveNoteButton().getIsAvailable()) {

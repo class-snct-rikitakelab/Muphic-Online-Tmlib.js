@@ -9,6 +9,6 @@ tm.define("MusicBackgroundManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setEnableState();
+		this.setDarkState();
 	},
 })

@@ -95,8 +95,6 @@ tm.define("Humen", {
 
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
-	getLastButton : function() { return this.lastButton; },
-	setLastButton : function(lastButton) { this.lastButton = lastButton; },
 	getNextButton : function() { return this.nextButton; },
 	setNextButton : function(nextButton) { this.nextButton = nextButton; },
 	getPrevButton : function() { return this.prevButton; },
