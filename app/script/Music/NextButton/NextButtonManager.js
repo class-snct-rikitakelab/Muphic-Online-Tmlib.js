@@ -9,7 +9,7 @@ tm.define("NextButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDarkState();
+		this.setEnableState();
 		this.setMediator(mediator);
 	},
 	forward : function() {

@@ -1,6 +1,7 @@
 tm.define("Humen", {
 	init : function(scene) {
 		this.humen = HumenManager(scene, this);
+		this.lastButton = LastButtonManager(scene, this);
 		this.nextButton = NextButtonManager(scene, this);
 		this.prevButton = PrevButtonManager(scene, this);
 		this.measureNumber = MeasureNumber(scene, this);
@@ -95,6 +96,8 @@ tm.define("Humen", {
 
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },
+	getLastButton : function() { return this.lastButton; },
+	setLastButton : function(lastButton) { this.lastButton = lastButton; },
 	getNextButton : function() { return this.nextButton; },
 	setNextButton : function(nextButton) { this.nextButton = nextButton; },
 	getPrevButton : function() { return this.prevButton; },
