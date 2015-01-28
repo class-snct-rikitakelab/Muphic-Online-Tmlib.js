@@ -105,6 +105,7 @@ tm.define("Humen", {
 	setNote : function(note) { this.note = note; },
 	getScene : function() { return this.scene; },
 	setScene : function(scene) { this.scene = scene; },
+	getRemoveNoteFocus : function(){return this.removeNoteFocus;},
 	getPlayButton : function() { return this.playButton; },
 	setPlayButton : function(playButton) { this.playButton = playButton; },
 	getOtherObject : function() { return this.otherObject; },
