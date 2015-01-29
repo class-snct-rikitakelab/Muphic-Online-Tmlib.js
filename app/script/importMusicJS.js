@@ -81,6 +81,12 @@ document.write('<script src="script/Music/PrevButton/PrevButtonView.js"></script
 document.write('<script src="script/Music/PrevButton/PrevButtonController.js"></script>');
 document.write('<script src="script/Music/PrevButton/PrevButtonEnableState.js"></script>');
 
+document.write('<script src="script/Music/FirstButton/FirstButtonManager.js"></script>');
+document.write('<script src="script/Music/FirstButton/FirstButtonModel.js"></script>');
+document.write('<script src="script/Music/FirstButton/FirstButtonView.js"></script>');
+document.write('<script src="script/Music/FirstButton/FirstButtonController.js"></script>');
+document.write('<script src="script/Music/FirstButton/FirstButtonEnableState.js"></script>');
+
 document.write('<script src="script/Music/MeasureNumber/MeasureNumber.js"></script>');
 document.write('<script src="script/Music/MeasureNumber/MeasureNumberManager.js"></script>');
 document.write('<script src="script/Music/MeasureNumber/MeasureNumberModel.js"></script>');

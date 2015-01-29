@@ -9,7 +9,7 @@ tm.define("PlayButtonManager", {
 		this.initView();
 		this.initController();
 		this.addToScene();
-		this.setDisableState();
+		this.setEnableState();
 	},
 	play : function() {
 		this.getHumen().play();
