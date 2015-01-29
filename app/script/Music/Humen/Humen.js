@@ -90,14 +90,15 @@ tm.define("Humen", {
 			this.getPlayButton().setDisableState();
 		}
 	},
-//
+	replaceNote : function(note){
+		return;
+	},
 	resetNote : function(note){
 		this.getNote().destroyAllNote(note);
 		if(this.getNote().count() === 0) {
 			this.getPlayButton().setDisableState();
 		}
 	},
-//
 	showNoteFocus : function() {
 		this.noteFocus.show();
 	},
