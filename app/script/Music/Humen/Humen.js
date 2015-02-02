@@ -14,8 +14,13 @@ tm.define("Humen", {
 
 	//直したい：未完成
 	last : function(){
-		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX - 2; loopCount++)
+
+		var loopCount = 0;
+		do
 			{
+				var startNumber = this.getMeasureNumber().getStartNumber();
+				var endNumber = startNumber + 2;
+				this.getNote().forward(startNumber, endNumber, 1);
 				if(!this.getMeasureNumber().forward(1)) { 
 					this.getNextButton().setDisableState(); 
 					this.getLastButton().setDisableState(); 
@@ -25,12 +30,10 @@ tm.define("Humen", {
 					this.getPrevButton().setEnableState(); 
 					this.getFirstButton().setEnableState(); 
 				}
-				var startNumber = this.getMeasureNumber().getStartNumber();
-				var endNumber = startNumber + 2;
-				this.getNote().forward(startNumber, endNumber, 1);
+
+				loopCount++;
 			}
-			this.getMeasureNumber().back(1);
-			this.getNote().back(startNumber, endNumber, 1);
+		while(loopCount < MEASURENUMBER_MAX - 2);
 	},
 	forward : function() {
 		if(!this.getMeasureNumber().forward(1)) { 
@@ -60,23 +63,26 @@ tm.define("Humen", {
 	},
 	//直したい：未完成
 	first : function(){
-		for(var loopCount = 0; loopCount < MEASURENUMBER_MAX -  2; loopCount++)
-			{
+		var loopCount = 0;
+
+		do{
+				var startNumber = this.getStartNumber();
+				var endNumber = startNumber + 2;
+				this.getNote().back(startNumber, endNumber, 1);	
+
 				if(!this.getMeasureNumber().back(1)) {
 					this.getPrevButton().setDisableState();
 					this.getFirstButton().setDisableState();
 					break;
-			}	
-			else { 
+				}	
+				else { 
 					this.getLastButton().setEnableState(); 
 					this.getNextButton().setEnableState(); 
-				}
-			var startNumber = this.getStartNumber();
-			var endNumber = startNumber + 2;
-			this.getNote().back(startNumber, endNumber, 1);		
-		}
-			this.getMeasureNumber().forward(1);
-			this.getNote().forward(startNumber, endNumber, 1);
+				}	
+				loopCount++;
+			}
+		while(loopCount < MEASURENUMBER_MAX - 2);
+		console.log(this.getStartNumber());
 	},
 	createNote : function(note) {
 		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている
