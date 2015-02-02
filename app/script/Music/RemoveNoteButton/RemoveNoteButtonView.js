@@ -5,7 +5,7 @@ tm.define("RemoveNoteButtonView", {
 		var width = 106;
 		var height = 72;
 		var x = 910;
-		var y = 600;
+		var y = 550;
 		this.superInit(image, width, height, x, y, manager);
 	},
 	showRemoveNoteFocus : function() {

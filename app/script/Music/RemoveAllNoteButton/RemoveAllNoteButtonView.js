@@ -3,9 +3,9 @@ tm.define("RemoveAllNoteButtonView", {
 	init : function(manager) {
 		var image = "music_removeAllNoteButton";
 		var width = 106;
-		var height =106;
-		var x = 40;
-		var y = 25;
+		var height =72;
+		var x = 910;
+		var y = 630;
 		this.superInit(image, width, height, x, y, manager);
 	},
 	showRemoveNoteFocus : function() {
