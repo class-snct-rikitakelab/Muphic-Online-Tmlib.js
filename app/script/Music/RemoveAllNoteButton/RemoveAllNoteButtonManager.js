@@ -12,22 +12,22 @@ tm.define("RemoveAllNoteButtonManager", {
 		this.setEnableState();
 	},
 	showRemoveNoteFocus : function() {
-		this.setPushState();
+//		this.setPushState();
 		this.getHumen().getRemoveNoteFocus().resetNote();
 	},
-	reset : function() {
+/*	reset : function() {
 		this.setEnableState();
 		this.getHumen().getHumen().setDisableState();
 	},
 	getIsAvailable : function() {
 		return this.getModel().getIsAvailable();
-	},
+	},*/
 	setEnableState : function() {
 		this.getView().setState(RemoveNoteButtonEnableState(this.getView()));
 	},
-	setPushState : function() {
-		this.getView().setState(RemoveNoteButtonPushState(this.getView()));
-	},
+//	setPushState : function() {
+//		this.getView().setState(RemoveNoteButtonPushState(this.getView()));
+//	},
 
 	getHumen : function() { return this.humen; },
 	setHumen : function(humen) { this.humen = humen; },

@@ -18,9 +18,7 @@ tm.define("Humen", {
 		var loopCount = 0;
 		do
 			{
-				var startNumber = this.getMeasureNumber().getStartNumber();
-				var endNumber = startNumber + 2;
-				this.getNote().forward(startNumber, endNumber, 1);
+				
 				if(!this.getMeasureNumber().forward(1)) { 
 					this.getNextButton().setDisableState(); 
 					this.getLastButton().setDisableState(); 
@@ -34,6 +32,9 @@ tm.define("Humen", {
 				loopCount++;
 			}
 		while(loopCount < MEASURENUMBER_MAX - 2);
+		var startNumber = this.getMeasureNumber().getStartNumber();
+				var endNumber = startNumber + 2;
+				this.getNote().forward(startNumber, endNumber, loopCount+1);
 	},
 	forward : function() {
 		if(!this.getMeasureNumber().forward(1)) { 
@@ -66,9 +67,7 @@ tm.define("Humen", {
 		var loopCount = 0;
 
 		do{
-				var startNumber = this.getStartNumber();
-				var endNumber = startNumber + 2;
-				this.getNote().back(startNumber, endNumber, 1);	
+					
 
 				if(!this.getMeasureNumber().back(1)) {
 					this.getPrevButton().setDisableState();
@@ -83,6 +82,9 @@ tm.define("Humen", {
 			}
 		while(loopCount < MEASURENUMBER_MAX - 2);
 		console.log(this.getStartNumber());
+			var startNumber = this.getStartNumber();
+				var endNumber = startNumber + 2;
+				this.getNote().back(startNumber, endNumber, loopCount+1);	
 	},
 	createNote : function(note) {
 		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている

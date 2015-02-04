@@ -1,7 +1,7 @@
 tm.define("FirstButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "music_prevButton";
+		var image = "music_firstButton";
 		var width = 36;
 		var height = 42;
 		var x = 130;	//130

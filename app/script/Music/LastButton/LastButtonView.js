@@ -1,7 +1,7 @@
 tm.define("LastButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "music_nextButton";
+		var image = "music_lastButton";
 		var width = 36;
 		var height = 42;
 		var x = 860;	//860

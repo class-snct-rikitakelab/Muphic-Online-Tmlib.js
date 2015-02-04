@@ -463,6 +463,13 @@ var ASSETS = {
 	"music_prevButtonOff" : "image/Music/PrevButton/prevButtonOff.png",
 	"music_prevButtonOn" : "image/Music/PrevButton/prevButtonOn.png",
 	"music_prevButtonDark" : "image/Music/PrevButton/prevButtonDark.png",
+
+	"music_firstButtonOff" : "image/Music/FirstButton/firstButtonOff.png",
+	"music_firstButtonOn" : "image/Music/FirstButton/firstButtonOn.png",
+	"music_firstButtonDark" : "image/Music/FirstButton/firstButtonDark.png",
+	"music_lastButtonOff" : "image/Music/LastButton/lastButtonOff.png",
+	"music_lastButtonOn" : "image/Music/LastButton/lastButtonOn.png",
+	"music_lastButtonDark" : "image/Music/LastButton/lastButtonDark.png",
 	
 	"music_cat" : "image/Music/Animal/cat.png",
 	"music_rabbit" : "image/Music/Animal/rabbit.png",
