@@ -5,7 +5,7 @@ tm.define("ClarinetButtonView", {
 		var width = 106;
 		var height = 72;
 		var x = 910;
-		var y = 346;
+		var y = 270;
 		this.superInit(image, width, height, x, y, manager);
 	},
 	showNoteFocus : function() {

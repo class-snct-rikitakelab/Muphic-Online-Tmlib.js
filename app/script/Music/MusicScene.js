@@ -16,6 +16,7 @@ tm.define("MusicScene", {
 		this.saxButton = SaxButtonManager(this);
 		this.removeNoteButton = RemoveNoteButtonManager(this);
 		this.removeAllNoteButton = RemoveAllNoteButtonManager(this);
+		this.replaceNoteButton = ReplaceNoteButtonManager(this);
 		this.humen = Humen(this);
 //		this.introDialog = MusicIntroDialog(this);
 //		this.yesButton = MusicYesButton(this);
@@ -49,6 +50,11 @@ tm.define("MusicScene", {
 		this.removeNoteButton.setPianoButton(this.pianoButton);
 		this.removeNoteButton.setClarinetButton(this.clarinetButton);
 		this.removeNoteButton.setSaxButton(this.saxButton);
+
+		this.replaceNoteButton.setHumen(this.humen);
+		this.replaceNoteButton.setPianoButton(this.pianoButton);
+		this.replaceNoteButton.setClarinetButton(this.clarinetButton);
+		this.replaceNoteButton.setSaxButton(this.saxButton);
 
 		this.removeAllNoteButton.setHumen(this.humen);
 

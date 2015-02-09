@@ -53,6 +53,13 @@ document.write('<script src="script/Music/RemoveAllNoteButton/RemoveAllNoteButto
 document.write('<script src="script/Music/RemoveAllNoteButton/RemoveAllNoteButtonEnableState.js"></script>');
 document.write('<script src="script/Music/RemoveAllNoteButton/RemoveAllNoteButtonPushState.js"></script>');
 
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonManager.js"></script>');
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonModel.js"></script>');
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonView.js"></script>');
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonController.js"></script>');
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonEnableState.js"></script>');
+document.write('<script src="script/Music/ReplaceNoteButton/ReplaceNoteButtonPushState.js"></script>');
+
 document.write('<script src="script/Music/Humen/Humen.js"></script>');
 document.write('<script src="script/Music/Humen/HumenManager.js"></script>');
 document.write('<script src="script/Music/Humen/HumenModel.js"></script>');

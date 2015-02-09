@@ -5,7 +5,7 @@ tm.define("SaxButtonView", {
 		var width = 106;
 		var height = 72;
 		var x = 910;
-		var y = 446;
+		var y = 340;
 		this.superInit(image, width, height, x, y, manager);
 	},
 	showNoteFocus : function() {
