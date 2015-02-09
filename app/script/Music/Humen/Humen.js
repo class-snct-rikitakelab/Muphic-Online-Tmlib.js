@@ -11,14 +11,14 @@ tm.define("Humen", {
 		this.removeNoteFocus = RemoveNoteFocus(scene, this);
 		this.setScene(scene);
 	},
-
-	//直したい：未完成
 	last : function(){
-
 		var loopCount = 0;
+		var startNumber = this.getMeasureNumber().getStartNumber();
+		var endNumber = startNumber + 2;
+
+		if(startNumber == 6)return;
 		do
-			{
-				
+			{	
 				if(!this.getMeasureNumber().forward(1)) { 
 					this.getNextButton().setDisableState(); 
 					this.getLastButton().setDisableState(); 
@@ -32,9 +32,7 @@ tm.define("Humen", {
 				loopCount++;
 			}
 		while(loopCount < MEASURENUMBER_MAX - 2);
-		var startNumber = this.getMeasureNumber().getStartNumber();
-				var endNumber = startNumber + 2;
-				this.getNote().forward(startNumber, endNumber, loopCount+1);
+			this.getNote().forward(startNumber, endNumber, loopCount+1);
 	},
 	forward : function() {
 		if(!this.getMeasureNumber().forward(1)) { 
@@ -62,9 +60,12 @@ tm.define("Humen", {
 		var endNumber = startNumber + 2;
 		this.getNote().back(startNumber, endNumber, 1);
 	},
-	//直したい：未完成
 	first : function(){
 		var loopCount = 0;
+		var startNumber = this.getStartNumber();
+		var endNumber = startNumber + 2;
+
+		if(startNumber == 1)return;
 
 		do{
 					
@@ -81,9 +82,7 @@ tm.define("Humen", {
 				loopCount++;
 			}
 		while(loopCount < MEASURENUMBER_MAX - 2);
-		console.log(this.getStartNumber());
-			var startNumber = this.getStartNumber();
-				var endNumber = startNumber + 2;
+
 				this.getNote().back(startNumber, endNumber, loopCount+1);	
 	},
 	createNote : function(note) {

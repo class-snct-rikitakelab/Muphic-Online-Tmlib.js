@@ -14,6 +14,7 @@ tm.define("RemoveAllNoteButtonManager", {
 	showRemoveNoteFocus : function() {
 //		this.setPushState();
 		this.getHumen().getRemoveNoteFocus().resetNote();
+		this.getHumen().first();
 	},
 /*	reset : function() {
 		this.setEnableState();
