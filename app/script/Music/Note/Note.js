@@ -35,11 +35,10 @@ tm.define("Note", {
 		this.note[note.measure][note.beat][note.scale] = _note;
 		this.addChild(this.note[note.measure][note.beat][note.scale].getView());
 		
-		//全消し後反応なし
-		if(note.beat == 4 && note.measure == this.getEndNumber() && note.measure < MEASURENUMBER_MAX)
-			this.mediator.forward();
-		else if(note.beat == 1 && note.measure == this.getStartNumber() && note.measure > MEASURENUMBER_MIN)
-			this.mediator.back();
+//		if(note.beat == 4 && note.measure == this.getEndNumber() && note.measure < MEASURENUMBER_MAX)
+//			this.mediator.forward();
+//		else if(note.beat == 1 && note.measure == this.getStartNumber() && note.measure > MEASURENUMBER_MIN)
+//			this.mediator.back();
 	},
 	destroyNote : function(note) {
 		if(!this.isExist(note.measure, note.beat, note.scale)) return;

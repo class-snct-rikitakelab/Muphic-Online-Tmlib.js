@@ -96,6 +96,7 @@ tm.define("Humen", {
 		if(this.getNote().count() === 0) {　//譜面の音符がない場合
 			this.getPlayButton().setDisableState();
 		}
+		this.noteFocus.show();
 	},
 	replaceNote : function(note){
 		return;
