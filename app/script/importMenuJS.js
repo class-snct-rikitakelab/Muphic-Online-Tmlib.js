@@ -4,14 +4,14 @@ document.write('<script src="script/Menu/MenuBackground/MenuBackgroundModel.js">
 document.write('<script src="script/Menu/MenuBackground/MenuBackgroundView.js"></script>');
 document.write('<script src="script/Menu/MenuBackground/MenuBackgroundController.js"></script>');
 
-document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonManager.js"></script>');
-document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonModel.js"></script>');
-document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonView.js"></script>');
-document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonController.js"></script>');
-document.write('<script src="script/Menu/MusicSelectButton/MusicSelectButtonEnableState.js"></script>');
+document.write('<script src="script/Menu/MusicButton/MusicButtonManager.js"></script>');
+document.write('<script src="script/Menu/MusicButton/MusicButtonModel.js"></script>');
+document.write('<script src="script/Menu/MusicButton/MusicButtonView.js"></script>');
+document.write('<script src="script/Menu/MusicButton/MusicButtonController.js"></script>');
+document.write('<script src="script/Menu/MusicButton/MusicButtonEnableState.js"></script>');
 
-document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonManager.js"></script>');
-document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonModel.js"></script>');
-document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonView.js"></script>');
-document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonController.js"></script>');
-document.write('<script src="script/Menu/StorySelectButton/StorySelectButtonEnableState.js"></script>');
+document.write('<script src="script/Menu/ShopButton/ShopButtonManager.js"></script>');
+document.write('<script src="script/Menu/ShopButton/ShopButtonModel.js"></script>');
+document.write('<script src="script/Menu/ShopButton/ShopButtonView.js"></script>');
+document.write('<script src="script/Menu/ShopButton/ShopButtonController.js"></script>');
+document.write('<script src="script/Menu/ShopButton/ShopButtonEnableState.js"></script>');

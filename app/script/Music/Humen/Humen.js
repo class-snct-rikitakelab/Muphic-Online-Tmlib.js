@@ -83,7 +83,6 @@ tm.define("Humen", {
 			}
 		while(loopCount < MEASURENUMBER_MAX - 2);
 		this.getNote().back(startNumber, endNumber, loopCount+1);	
-		console.log(startNumber,endNumber);
 	},
 	createNote : function(note) {
 		this.getNote().createNote(note);   //NoteFocusのcreateNoteを使っている
@@ -96,10 +95,13 @@ tm.define("Humen", {
 		if(this.getNote().count() === 0) {　//譜面の音符がない場合
 			this.getPlayButton().setDisableState();
 		}
-		this.noteFocus.show();
 	},
 	replaceNote : function(note){
-		return;
+		this.getNote().destroyNote(note); //RemoveNoteFocusのdestroyNoteを使っている
+		if(this.getNote().count() === 0) {　//譜面の音符がない場合
+			this.getPlayButton().setDisableState();
+		}
+		this.noteFocus.show();		//再表示
 	},
 	resetNote : function(note){
 		this.getNote().destroyAllNote(note);
