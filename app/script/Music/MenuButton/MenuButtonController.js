@@ -1,4 +1,4 @@
-tm.define("Music_MenuButtonController", {
+tm.define("MenuButtonController", {
 	superClass : "MVCController",
 	init : function(manager) {
 		this.superInit(manager);

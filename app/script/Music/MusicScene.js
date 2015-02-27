@@ -16,8 +16,9 @@ tm.define("MusicScene", {
 		this.saxButton = SaxButtonManager(this);
 		this.removeNoteButton = RemoveNoteButtonManager(this);
 		this.removeAllNoteButton = RemoveAllNoteButtonManager(this);
-		this.replaceNoteButton = ReplaceNoteButtonManager(this);
+//		this.replaceNoteButton = ReplaceNoteButtonManager(this);
 		this.humen = Humen(this);
+		this.menuButton = MenuButtonManager(this);
 //		this.introDialog = MusicIntroDialog(this);
 //		this.yesButton = MusicYesButton(this);
 

@@ -93,7 +93,7 @@ var ASSETS = {
 	"menu_musicButtonOn" : "image/Menu/MusicButton/musicButtonOn.png",
 	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
 	"menu_musicButtonDark" : "image/Menu/MusicButton/musicButtonDark.png",
-	
+
 	//Story
 	"story_background" : "image/Story/background.png",
 	"story_backgroundDark" : "image/Story/backgroundDark.png",
@@ -415,9 +415,9 @@ var ASSETS = {
 	"music_storyButtonOn" : "image/Music/StoryButton/storyButtonOn.png",
 	"music_storyButtonDark" : "image/Music/StoryButton/storyButtonDark.png",
 
-	"music_menuButtonOff" : "image/Menu/MenuButton/menuButtonOff.png",
-	"music_menuButtonOn" : "image/Menu/MenuButton/menuButtonOn.png",
-	"music_menuButtonDark" : "image/Menu/MenuButton/menuButtonDark.png",
+	"music_menuButtonOff" : "image/Music/MenuButton/menuButtonOff.png",
+	"music_menuButtonOn" : "image/Music/MenuButton/menuButtonOn.png",
+	"music_menuButtonDark" : "image/Music/MenuButton/menuButtonDark.png",
 
 	"music_playButtonOff" : "image/Music/PlayButton/playButtonOff.png",
 	"music_playButtonOn" : "image/Music/PlayButton/playButtonOn.png",
@@ -481,6 +481,5 @@ var ASSETS = {
 	
 	"music_yesButtonOff" : "image/Music/IntroDialog/yesButtonOff.png",
 	"music_yesButtonOn" : "image/Music/IntroDialog/yesButtonOn.png",
-
 	
 };
