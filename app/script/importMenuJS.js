@@ -10,8 +10,26 @@ document.write('<script src="script/Menu/MusicButton/MusicButtonView.js"></scrip
 document.write('<script src="script/Menu/MusicButton/MusicButtonController.js"></script>');
 document.write('<script src="script/Menu/MusicButton/MusicButtonEnableState.js"></script>');
 
-document.write('<script src="script/Menu/ShopButton/ShopButtonManager.js"></script>');
-document.write('<script src="script/Menu/ShopButton/ShopButtonModel.js"></script>');
-document.write('<script src="script/Menu/ShopButton/ShopButtonView.js"></script>');
-document.write('<script src="script/Menu/ShopButton/ShopButtonController.js"></script>');
-document.write('<script src="script/Menu/ShopButton/ShopButtonEnableState.js"></script>');
+document.write('<script src="script/Menu/MyShopButton/MyShopButtonManager.js"></script>');
+document.write('<script src="script/Menu/MyShopButton/MyShopButtonModel.js"></script>');
+document.write('<script src="script/Menu/MyShopButton/MyShopButtonView.js"></script>');
+document.write('<script src="script/Menu/MyShopButton/MyShopButtonController.js"></script>');
+document.write('<script src="script/Menu/MyShopButton/MyShopButtonEnableState.js"></script>');
+
+document.write('<script src="script/Menu/FriendsShopButton/FriendsShopButtonManager.js"></script>');
+document.write('<script src="script/Menu/FriendsShopButton/FriendsShopButtonModel.js"></script>');
+document.write('<script src="script/Menu/FriendsShopButton/FriendsShopButtonView.js"></script>');
+document.write('<script src="script/Menu/FriendsShopButton/FriendsShopButtonController.js"></script>');
+document.write('<script src="script/Menu/FriendsShopButton/FriendsShopButtonEnableState.js"></script>');
+
+document.write('<script src="script/Menu/OfficialShopButton/OfficialShopButtonManager.js"></script>');
+document.write('<script src="script/Menu/OfficialShopButton/OfficialShopButtonModel.js"></script>');
+document.write('<script src="script/Menu/OfficialShopButton/OfficialShopButtonView.js"></script>');
+document.write('<script src="script/Menu/OfficialShopButton/OfficialShopButtonController.js"></script>');
+document.write('<script src="script/Menu/OfficialShopButton/OfficialShopButtonEnableState.js"></script>');
+
+document.write('<script src="script/Menu/OptionButton/OptionButtonManager.js"></script>');
+document.write('<script src="script/Menu/OptionButton/OptionButtonModel.js"></script>');
+document.write('<script src="script/Menu/OptionButton/OptionButtonView.js"></script>');
+document.write('<script src="script/Menu/OptionButton/OptionButtonController.js"></script>');
+document.write('<script src="script/Menu/OptionButton/OptionButtonEnableState.js"></script>');

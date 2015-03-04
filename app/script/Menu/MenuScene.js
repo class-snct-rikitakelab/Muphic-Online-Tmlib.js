@@ -5,12 +5,15 @@ tm.define("MenuScene", {
 		this.superInit();
 		this.background = MenuBackgroundManager(this);
 		this.musicButton = MusicButtonManager(this);
-		this.shopButton = ShopButtonManager(this);
+		this.myshopButton = MyShopButtonManager(this);
+		this.friendsshopButton = FriendsShopButtonManager(this);
+		this.officialshopButton = OfficialShopButtonManager(this);
+		this.optionButton = OptionButtonManager(this);
 
 		menuScene = this;
 	},
-	moveToShop : function() {
-		ShopScene();
-	}
+//	moveToMyShop : function() {
+//		MyShopScene();
+//	}
 
 })

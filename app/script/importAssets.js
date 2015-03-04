@@ -94,6 +94,10 @@ var ASSETS = {
 	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
 	"menu_musicButtonDark" : "image/Menu/MusicButton/musicButtonDark.png",
 
+	"menu_dummyButtonOn" : "image/Menu/DummyButton/dummyButtonOn.png",
+	"menu_dummyButtonOff" : "image/Menu/DummyButton/dummyButtonOff.png",
+	"menu_dummyButtonDark" : "image/Menu/DummyButton/dummyButtonDark.png",	
+
 	//Story
 	"story_background" : "image/Story/background.png",
 	"story_backgroundDark" : "image/Story/backgroundDark.png",

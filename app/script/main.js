@@ -6,7 +6,7 @@ var SCREEN_HEIGHT = 768;
 //var	storySceneArray =[null,null,null,null];
 var musicScene = null;
 var menuScene = null;
-var shopScene = null;
+var myshopScene = null;
 
 tm.main(function() {
 	app = tm.app.CanvasApp("#app");
