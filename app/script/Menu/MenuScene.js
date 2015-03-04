@@ -9,6 +9,7 @@ tm.define("MenuScene", {
 		this.friendsshopButton = FriendsShopButtonManager(this);
 		this.officialshopButton = OfficialShopButtonManager(this);
 		this.optionButton = OptionButtonManager(this);
+		this.board = Board(this);
 
 		menuScene = this;
 	},

@@ -98,6 +98,9 @@ var ASSETS = {
 	"menu_dummyButtonOff" : "image/Menu/DummyButton/dummyButtonOff.png",
 	"menu_dummyButtonDark" : "image/Menu/DummyButton/dummyButtonDark.png",	
 
+	"menu_board" : "image/Menu/Board/board.png",
+	"menu_boardDark" : "image/Menu/Board/boardDark.png",
+
 	//Story
 	"story_background" : "image/Story/background.png",
 	"story_backgroundDark" : "image/Story/backgroundDark.png",

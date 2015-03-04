@@ -33,3 +33,9 @@ document.write('<script src="script/Menu/OptionButton/OptionButtonModel.js"></sc
 document.write('<script src="script/Menu/OptionButton/OptionButtonView.js"></script>');
 document.write('<script src="script/Menu/OptionButton/OptionButtonController.js"></script>');
 document.write('<script src="script/Menu/OptionButton/OptionButtonEnableState.js"></script>');
+
+document.write('<script src="script/Menu/Board/Board.js"></script>');
+document.write('<script src="script/Menu/Board/BoardManager.js"></script>');
+document.write('<script src="script/Menu/Board/BoardModel.js"></script>');
+document.write('<script src="script/Menu/Board/BoardView.js"></script>');
+document.write('<script src="script/Menu/Board/BoardController.js"></script>');
