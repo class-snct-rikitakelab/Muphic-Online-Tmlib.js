@@ -39,3 +39,9 @@ document.write('<script src="script/Menu/Board/BoardManager.js"></script>');
 document.write('<script src="script/Menu/Board/BoardModel.js"></script>');
 document.write('<script src="script/Menu/Board/BoardView.js"></script>');
 document.write('<script src="script/Menu/Board/BoardController.js"></script>');
+
+document.write('<script src="script/Menu/TutorialButton/TutorialButtonManager.js"></script>');
+document.write('<script src="script/Menu/TutorialButton/TutorialButtonModel.js"></script>');
+document.write('<script src="script/Menu/TutorialButton/TutorialButtonView.js"></script>');
+document.write('<script src="script/Menu/TutorialButton/TutorialButtonController.js"></script>');
+document.write('<script src="script/Menu/TutorialButton/TutorialButtonEnableState.js"></script>');

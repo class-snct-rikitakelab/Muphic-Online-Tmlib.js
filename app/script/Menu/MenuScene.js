@@ -10,6 +10,7 @@ tm.define("MenuScene", {
 		this.officialshopButton = OfficialShopButtonManager(this);
 		this.optionButton = OptionButtonManager(this);
 		this.board = Board(this);
+		this.tutorialButton = TutorialButtonManager(this);
 
 		menuScene = this;
 	},
