@@ -15,6 +15,9 @@ tm.define("PianoButtonManager", {
 		if(this.getRemoveNoteButton().getIsAvailable()) {
 			this.getRemoveNoteButton().reset();
 		}
+		if(this.getReplaceNoteButton().getIsAvailable()) {
+			this.getReplaceNoteButton().reset();
+		}
 
 		if(this.getClarinetButton().getIsAvailable()) {
 			this.getClarinetButton().reset();
@@ -51,4 +54,7 @@ tm.define("PianoButtonManager", {
 	setSaxButton : function(saxButton) { this.saxButton = saxButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
+	getReplaceNoteButton : function() { return this.replaceNoteButton;},
+	setReplaceNoteButton : function(replaceNoteButton) { this.replaceNoteButton = replaceNoteButton; },
+
 })

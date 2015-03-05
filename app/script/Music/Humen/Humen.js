@@ -9,6 +9,7 @@ tm.define("Humen", {
 		this.note = Note(scene, this);
 		this.noteFocus = NoteFocus(scene, this);
 		this.removeNoteFocus = RemoveNoteFocus(scene, this);
+		this.replaceNoteFocus = ReplaceNoteFocus(scene, this);
 		this.setScene(scene);
 	},
 	last : function(){
@@ -119,6 +120,12 @@ tm.define("Humen", {
 	hideRemoveNoteFocus : function() {
 		this.removeNoteFocus.hide();
 	},
+	showReplaceNoteFocus : function() {
+		this.replaceNoteFocus.show();
+	},
+	hideReplaceNoteFocus : function() {
+		this.replaceNoteFocus.hide();
+	},
 	play : function() {
 		var originStartNumber = this.getStartNumber();
 		var startNumber = 1;
@@ -172,6 +179,7 @@ tm.define("Humen", {
 	getScene : function() { return this.scene; },
 	setScene : function(scene) { this.scene = scene; },
 	getRemoveNoteFocus : function(){return this.removeNoteFocus;},
+	getReplaceNoteFocus : function(){return this.replaceNoteFocus;},
 	getPlayButton : function() { return this.playButton; },
 	setPlayButton : function(playButton) { this.playButton = playButton; },
 	getOtherObject : function() { return this.otherObject; },

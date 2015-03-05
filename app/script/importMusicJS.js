@@ -69,6 +69,7 @@ document.write('<script src="script/Music/Humen/HumenDisableState.js"></script>'
 document.write('<script src="script/Music/Humen/HumenDarkState.js"></script>');
 document.write('<script src="script/Music/Humen/HumenShowNoteFocusState.js"></script>');
 document.write('<script src="script/Music/Humen/HumenShowRemoveNoteFocusState.js"></script>');
+document.write('<script src="script/Music/Humen/HumenShowReplaceNoteFocusState.js"></script>');
 
 document.write('<script src="script/Music/LastButton/LastButtonManager.js"></script>');
 document.write('<script src="script/Music/LastButton/LastButtonModel.js"></script>');
@@ -107,6 +108,9 @@ document.write('<script src="script/Music/Note/NoteFocusEnableState.js"></script
 
 document.write('<script src="script/Music/Note/RemoveNoteFocus.js"></script>');
 document.write('<script src="script/Music/Note/RemoveNoteFocusEnableState.js"></script>');
+
+document.write('<script src="script/Music/Note/ReplaceNoteFocus.js"></script>');
+document.write('<script src="script/Music/Note/ReplaceNoteFocusEnableState.js"></script>');
 
 document.write('<script src="script/Music/Note/NoteManager.js"></script>');
 document.write('<script src="script/Music/Note/NoteModel.js"></script>');

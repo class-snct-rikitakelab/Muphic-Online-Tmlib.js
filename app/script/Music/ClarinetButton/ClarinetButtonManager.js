@@ -16,10 +16,13 @@ tm.define("ClarinetButtonManager", {
 			this.getRemoveNoteButton().reset();
 		}
 
-		if(this.getPianoButton().getIsAvailable()) {
-			this.getPianoButton().reset(); 
+		if(this.getReplaceNoteButton().getIsAvailable()) {
+			this.getReplaceNoteButton().reset();
 		}
 
+		if(this.getPianoButton().getIsAvailable()) {
+			this.getPianoButton().reset();
+		}
 		if(this.getSaxButton().getIsAvailable()) {
 			this.getSaxButton().reset(); 
 		}
@@ -51,4 +54,6 @@ tm.define("ClarinetButtonManager", {
 	setSaxButton : function(saxButton) { this.saxButton = saxButton; },
 	getRemoveNoteButton : function() { return this.removeNoteButton; },
 	setRemoveNoteButton : function(removeNoteButton) { this.removeNoteButton = removeNoteButton; },
+	getReplaceNoteButton : function() { return this.replaceNoteButton; },
+	setReplaceNoteButton : function(replaceNoteButton) { this.replaceNoteButton = replaceNoteButton; },
 })

@@ -9,7 +9,7 @@ tm.define("ReplaceNoteButtonView", {
 		this.superInit(image, width, height, x, y, manager);
 	},
 	showRemoveNoteFocus : function() {
-		this.getController().showRemoveNoteFocus();
+		this.getController().showReplaceNoteFocus();
 	},
 	reset : function() {
 		this.getController().reset();

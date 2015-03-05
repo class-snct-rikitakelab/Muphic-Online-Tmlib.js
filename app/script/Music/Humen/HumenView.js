@@ -27,6 +27,15 @@ tm.define("HumenView", {
 			this.getManager().hideRemoveNoteFocus();
 		}
 	},
+	showReplaceNoteFocus : function() {
+		var overX = mouseoverX(app.mouse.x, 129, 849, 0, 0);
+		var overY = mouseoverY(app.mouse.y, 251, 642, 0, 0);
+		if(overX && overY) {
+			this.getManager().showReplaceNoteFocus();
+		} else {
+			this.getManager().hideReplaceNoteFocus();
+		}
+	},
 	update : function() {
 		this.getState().updateAction();
 	},

@@ -11,7 +11,7 @@ tm.define("ReplaceNoteButtonManager", {
 		this.addToScene();
 		this.setEnableState();
 	},
-	showRemoveNoteFocus : function() {
+	showReplaceNoteFocus : function() {
 		if(this.getPianoButton().getIsAvailable()) {
 			this.getPianoButton().reset();
 		}
@@ -25,7 +25,7 @@ tm.define("ReplaceNoteButtonManager", {
 		}
 
 		this.setPushState();
-		this.getHumen().getHumen().setShowRemoveNoteFocusState();
+		this.getHumen().getHumen().setShowReplaceNoteFocusState();
 	},
 	reset : function() {
 		this.setEnableState();
@@ -35,10 +35,10 @@ tm.define("ReplaceNoteButtonManager", {
 		return this.getModel().getIsAvailable();
 	},
 	setEnableState : function() {
-		this.getView().setState(RemoveNoteButtonEnableState(this.getView()));
+		this.getView().setState(ReplaceNoteButtonEnableState(this.getView()));
 	},
 	setPushState : function() {
-		this.getView().setState(RemoveNoteButtonPushState(this.getView()));
+		this.getView().setState(ReplaceNoteButtonPushState(this.getView()));
 	},
 
 	getHumen : function() { return this.humen; },

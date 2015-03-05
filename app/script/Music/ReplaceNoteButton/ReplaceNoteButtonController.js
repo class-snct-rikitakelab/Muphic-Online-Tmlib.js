@@ -3,9 +3,9 @@ tm.define("ReplaceNoteButtonController", {
 	init : function(manager) {
 		this.superInit(manager);
 	},
-	showRemoveNoteFocus : function() {
+	showReplaceNoteFocus : function() {
 		this.getModel().setIsAvailable(true);
-		this.getManager().showRemoveNoteFocus();
+		this.getManager().showReplaceNoteFocus();
 	},
 	reset : function() {
 		this.getModel().setIsAvailable(false);

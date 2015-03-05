@@ -24,6 +24,12 @@ tm.define("HumenManager", {
 	hideRemoveNoteFocus : function() {
 		this.getMediator().hideRemoveNoteFocus();
 	},
+	showReplaceNoteFocus : function() {
+		this.getMediator().showReplaceNoteFocus();
+	},
+	hideReplaceNoteFocus : function() {
+		this.getMediator().hideReplaceNoteFocus();
+	},
 	setDisableState : function() {
 		this.getView().setState(HumenDisableState(this.getView()));
 	},
@@ -36,6 +42,9 @@ tm.define("HumenManager", {
 	//
 	setShowRemoveNoteFocusState : function() {
 		this.getView().setState(HumenShowRemoveNoteFocusState(this.getView()));
+	},
+	setShowReplaceNoteFocusState : function() {
+		this.getView().setState(HumenShowReplaceNoteFocusState(this.getView()));
 	},
 
 	getMediator : function() { return this.mediator; },
