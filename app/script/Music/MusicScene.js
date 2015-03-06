@@ -23,10 +23,6 @@ tm.define("MusicScene", {
 //		this.yesButton = MusicYesButton(this);
 
 		var otherObject = [
-/*<<<<<<< HEAD
-			this.playButton, this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
-			this.removeAllNoteButton,this.replaceNoteButton,this.humen.getHumen(),this.humen.getLastButton(), 
-=======*/
 			this.menuButton,this.playButton,this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
 			this.removeAllNoteButton,this.humen.getHumen(),this.humen.getLastButton(), 
 			this.humen.getNextButton(), this.humen.getPrevButton(),this.humen.getFirstButton()
