@@ -86,19 +86,21 @@ var ASSETS = {
 	"menu_yesButtonOff" : "image/Menu/IntroDialog/yesButtonOff.png",
 	"menu_yesButtonOn" : "image/Menu/IntroDialog/yesButtonOn.png",
 
-	"menu_storyButton0Off" : "image/Menu/StoryButton/storyButton0Off.png",
-	"menu_storyButton1Off" : "image/Menu/StoryButton/storyButton1Off.png",
-	"menu_storyButton2Off" : "image/Menu/StoryButton/storyButton2Off.png",
-	"menu_storyButton3Off" : "image/Menu/StoryButton/storyButton3Off.png",
+	"menu_shopButtonOn" : "image/Menu/ShopButton/shopButtonOn.png",
+	"menu_shopButtonOff" : "image/Menu/ShopButton/shopButtonOff.png",	
+	"menu_shopButtonDark" : "image/Menu/ShopButton/shopButtonDark.png",
 
-	"menu_storyButton0On" : "image/Menu/StoryButton/storyButton0On.png",
-	"menu_storyButton1On" : "image/Menu/StoryButton/storyButton1On.png",
-	"menu_storyButton2On" : "image/Menu/StoryButton/storyButton2On.png",
-	"menu_storyButton3On" : "image/Menu/StoryButton/storyButton3On.png",
-	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
 	"menu_musicButtonOn" : "image/Menu/MusicButton/musicButtonOn.png",
+	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
 	"menu_musicButtonDark" : "image/Menu/MusicButton/musicButtonDark.png",
-	
+
+	"menu_dummyButtonOn" : "image/Menu/DummyButton/dummyButtonOn.png",
+	"menu_dummyButtonOff" : "image/Menu/DummyButton/dummyButtonOff.png",
+	"menu_dummyButtonDark" : "image/Menu/DummyButton/dummyButtonDark.png",	
+
+	"menu_board" : "image/Menu/Board/board.png",
+	"menu_boardDark" : "image/Menu/Board/boardDark.png",
+
 	//Story
 	"story_background" : "image/Story/background.png",
 	"story_backgroundDark" : "image/Story/backgroundDark.png",
@@ -420,9 +422,9 @@ var ASSETS = {
 	"music_storyButtonOn" : "image/Music/StoryButton/storyButtonOn.png",
 	"music_storyButtonDark" : "image/Music/StoryButton/storyButtonDark.png",
 
-	"music_menuButtonOff" : "image/Menu/MenuButton/menuButtonOff.png",
-	"music_menuButtonOn" : "image/Menu/MenuButton/menuButtonOn.png",
-	"music_menuButtonDark" : "image/Menu/MenuButton/menuButtonDark.png",
+	"music_menuButtonOff" : "image/Music/MenuButton/menuButtonOff.png",
+	"music_menuButtonOn" : "image/Music/MenuButton/menuButtonOn.png",
+	"music_menuButtonDark" : "image/Music/MenuButton/menuButtonDark.png",
 
 	"music_playButtonOff" : "image/Music/PlayButton/playButtonOff.png",
 	"music_playButtonOn" : "image/Music/PlayButton/playButtonOn.png",
@@ -486,6 +488,5 @@ var ASSETS = {
 	
 	"music_yesButtonOff" : "image/Music/IntroDialog/yesButtonOff.png",
 	"music_yesButtonOn" : "image/Music/IntroDialog/yesButtonOn.png",
-
 	
 };

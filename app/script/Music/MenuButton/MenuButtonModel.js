@@ -1,4 +1,4 @@
-tm.define("Music_MenuButtonModel", {
+tm.define("MenuButtonModel", {
 	superClass : "MVCModel",
 	init : function(manager, scene) {
 		this.superInit(manager, scene);
