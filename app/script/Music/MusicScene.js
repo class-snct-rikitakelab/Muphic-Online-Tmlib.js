@@ -27,7 +27,7 @@ tm.define("MusicScene", {
 			this.playButton, this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
 			this.removeAllNoteButton,this.replaceNoteButton,this.humen.getHumen(),this.humen.getLastButton(), 
 =======*/
-			this.menuButton,this.playButton,this.pianoButton,this.clarinetButton,this.removeNoteButton,this.saxButton, this.removeNoteButton,
+			this.menuButton,this.playButton,this.pianoButton,this.clarinetButton,this.saxButton, this.removeNoteButton,
 			this.removeAllNoteButton,this.humen.getHumen(),this.humen.getLastButton(), 
 			this.humen.getNextButton(), this.humen.getPrevButton(),this.humen.getFirstButton()
 		];
