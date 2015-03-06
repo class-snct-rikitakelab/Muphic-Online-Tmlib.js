@@ -1,4 +1,14 @@
 var ASSETS = {
+
+	//Common
+	"common_background" : "image/Common/background/background.png",
+	"common_backgroundDark" : "image/Common/background/backgroundDark.png",
+
+	"common_menuButtonOff" : "image/Common/MenuButton/menuButtonOff.png",
+	"common_menuButtonOn" : "image/Common/MenuButton/menuButtonOn.png",
+	"common_menuButtonDark" : "image/Common/MenuButton/menuButtonDark.png",
+
+
 	//Charactor
 	"char_a" : "image/Char/smallAlfabet/a.png",
 	"char_b" : "image/Char/smallAlfabet/b.png",
@@ -80,8 +90,6 @@ var ASSETS = {
 	
 	
 	//Menu
-	"menu_background" : "image/Menu/background.png",
-	"menu_backgroundDark" : "image/Menu/backgroundDark.png",
 	"menu_introDialog" : "image/Menu/IntroDialog/introDialog.png",
 	"menu_yesButtonOff" : "image/Menu/IntroDialog/yesButtonOff.png",
 	"menu_yesButtonOn" : "image/Menu/IntroDialog/yesButtonOn.png",
@@ -416,15 +424,9 @@ var ASSETS = {
 	"story_yesButtonOn" : "image/Story/IntroDialog/yesButtonOn.png",
 	
 	//Music
-	"music_background" : "image/Music/MusicBackground/background.png",
-	"music_backgroundDark" : "image/Music/MusicBackground/backgroundDark.png",
 	"music_storyButtonOff" : "image/Music/StoryButton/storyButtonOff.png",
 	"music_storyButtonOn" : "image/Music/StoryButton/storyButtonOn.png",
 	"music_storyButtonDark" : "image/Music/StoryButton/storyButtonDark.png",
-
-	"music_menuButtonOff" : "image/Music/MenuButton/menuButtonOff.png",
-	"music_menuButtonOn" : "image/Music/MenuButton/menuButtonOn.png",
-	"music_menuButtonDark" : "image/Music/MenuButton/menuButtonDark.png",
 
 	"music_playButtonOff" : "image/Music/PlayButton/playButtonOff.png",
 	"music_playButtonOn" : "image/Music/PlayButton/playButtonOn.png",
@@ -488,5 +490,11 @@ var ASSETS = {
 	
 	"music_yesButtonOff" : "image/Music/IntroDialog/yesButtonOff.png",
 	"music_yesButtonOn" : "image/Music/IntroDialog/yesButtonOn.png",
-	
+
+	//shop
+	"shop_frame" : "image/Shop/ScreenFrame/Frame.png",
+	"shop_frameDark" : "image/Shop/ScreenFrame/FrameDark.png",
+
+	"shop_sunnyhouse1" : "image/Shop/ScreenImage/sunnyHouse1.png",
+
 };

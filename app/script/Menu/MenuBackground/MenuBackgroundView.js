@@ -1,7 +1,7 @@
 tm.define("MenuBackgroundView", {
 	superClass : "MVCViewSprite",
 	init : function(manager) {
-		var image = "menu_background";
+		var image = "common_background";
 		var width = 1024;
 		var height = 768;
 		var x = 0;

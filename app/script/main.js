@@ -3,7 +3,7 @@ var SCREEN_HEIGHT = 768;
 
 //var userName = null;
 //var loginScene = null;
-//var	storySceneArray =[null,null,null,null];
+var	storySceneArray =[null,null,null,null];
 var musicScene = null;
 var menuScene = null;
 var myshopScene = null;
@@ -17,7 +17,7 @@ tm.main(function() {
 
 	var loadingScene = tm.app.LoadingScene({
 		assets : ASSETS,
-		nextScene : MenuScene,							
+		nextScene : StoryScene,							
 		width : SCREEN_WIDTH,							
 		height : SCREEN_HEIGHT,							
 	});		

@@ -3,6 +3,7 @@ tm.define("MyShopScene", {
 	init : function() {
 		this.superInit();
 		this.background = ShopBackgroundManager(this);
+		this.menuButton = MenuButtonManager(this);
 
 		myshopScene = this;
 	}

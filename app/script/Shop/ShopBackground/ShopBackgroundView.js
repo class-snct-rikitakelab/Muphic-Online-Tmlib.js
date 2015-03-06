@@ -1,7 +1,7 @@
 tm.define("ShopBackgroundView", {
 	superClass : "MVCViewSprite",
 	init : function(manager) {
-		var image = "story_backgroundIllust_sunnyHouse1";
+		var image = "common_background";
 		var width = 1024;
 		var height = 768;
 		var x = 0;

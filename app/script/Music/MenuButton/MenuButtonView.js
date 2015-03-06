@@ -1,7 +1,7 @@
 tm.define("MenuButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager,x,y) {
-		var image = "music_menuButton";
+		var image = "common_menuButton";
 		var width = 106;
 		var height = 109;
 		var x = 30;

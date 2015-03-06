@@ -1,7 +1,7 @@
 tm.define("MusicBackgroundView", {
 	superClass : "MVCViewSprite",
 	init : function(manager) {
-		var image = "music_background";
+		var image = "common_background";
 		var width = 1024;
 		var height = 768;
 		var x = 0;
