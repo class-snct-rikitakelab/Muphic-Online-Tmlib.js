@@ -102,6 +102,22 @@ var ASSETS = {
 	"menu_musicButtonOff" : "image/Menu/MusicButton/musicButtonOff.png",
 	"menu_musicButtonDark" : "image/Menu/MusicButton/musicButtonDark.png",
 
+	"menu_friendsShopButtonOn" : "image/Menu/FriendsShopButton/friendsShopButtonOn.png",
+	"menu_friendsShopButtonOff" : "image/Menu/FriendsShopButton/friendsShopButtonOff.png",
+	"menu_friendsShopButtonDark" : "image/Menu/FriendsShopButton/friendsShopButtonDark.png",
+
+	"menu_optionButtonOn" : "image/Menu/OptionButton/optionButtonOn.png",
+	"menu_optionButtonOff" : "image/Menu/OptionButton/optionButtonOff.png",
+	"menu_optionButtonDark" : "image/Menu/OptionButton/optionButtonDark.png",
+
+	"menu_officialShopButtonOn" : "image/Menu/OfficialShopButton/officialShopButtonOn.png",
+	"menu_officialShopButtonOff" : "image/Menu/OfficialShopButton/officialShopButtonOff.png",
+	"menu_officialShopButtonDark" : "image/Menu/OfficialShopButton/officialShopButtonDark.png",
+
+	"menu_tutorialButtonOn" : "image/Menu/TutorialButton/tutorialButtonOn.png",
+	"menu_tutorialButtonOff" : "image/Menu/TutorialButton/tutorialButtonOff.png",
+	"menu_tutorialButtonDark" : "image/Menu/TutorialButton/tutorialButtonDark.png",
+
 	"menu_dummyButtonOn" : "image/Menu/DummyButton/dummyButtonOn.png",
 	"menu_dummyButtonOff" : "image/Menu/DummyButton/dummyButtonOff.png",
 	"menu_dummyButtonDark" : "image/Menu/DummyButton/dummyButtonDark.png",	

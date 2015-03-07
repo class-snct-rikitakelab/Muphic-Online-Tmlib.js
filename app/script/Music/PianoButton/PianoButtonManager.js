@@ -15,9 +15,9 @@ tm.define("PianoButtonManager", {
 		if(this.getRemoveNoteButton().getIsAvailable()) {
 			this.getRemoveNoteButton().reset();
 		}
-		if(this.getReplaceNoteButton().getIsAvailable()) {
-			this.getReplaceNoteButton().reset();
-		}
+//		if(this.getReplaceNoteButton().getIsAvailable()) {
+//			this.getReplaceNoteButton().reset();
+//		}
 
 		if(this.getClarinetButton().getIsAvailable()) {
 			this.getClarinetButton().reset();

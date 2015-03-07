@@ -1,10 +1,10 @@
 tm.define("Humen", {
 	init : function(scene) {
 		this.humen = HumenManager(scene, this);
-		this.lastButton = LastButtonManager(scene, this);
+//		this.lastButton = LastButtonManager(scene, this);
 		this.nextButton = NextButtonManager(scene, this);
 		this.prevButton = PrevButtonManager(scene, this);
-		this.firstButton = FirstButtonManager(scene, this);
+//		this.firstButton = FirstButtonManager(scene, this);
 		this.measureNumber = MeasureNumber(scene, this);
 		this.note = Note(scene, this);
 		this.noteFocus = NoteFocus(scene, this);

@@ -17,7 +17,7 @@ tm.main(function() {
 
 	var loadingScene = tm.app.LoadingScene({
 		assets : ASSETS,
-		nextScene : StoryScene,							
+		nextScene : MenuScene,							
 		width : SCREEN_WIDTH,							
 		height : SCREEN_HEIGHT,							
 	});		

@@ -1,7 +1,7 @@
 tm.define("FriendsShopButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "menu_dummyButton";
+		var image = "menu_friendsShopButton";
 		var width = 200;
 		var height = 60;
 		var x = 800;

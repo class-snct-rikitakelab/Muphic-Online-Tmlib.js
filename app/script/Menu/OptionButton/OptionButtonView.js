@@ -1,7 +1,7 @@
 tm.define("OptionButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "menu_dummyButton";
+		var image = "menu_optionButton";
 		var width = 200;
 		var height = 60;
 		var x = 800;
