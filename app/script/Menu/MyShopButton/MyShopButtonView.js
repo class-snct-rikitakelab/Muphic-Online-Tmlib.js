@@ -1,7 +1,7 @@
 tm.define("MyShopButtonView", {
 	superClass : "MVCViewButton",
 	init : function(manager) {
-		var image = "menu_shopButton";
+		var image = "tmpshop";
 		var width = 500;
 		var height = 300;
 		var x = 25;

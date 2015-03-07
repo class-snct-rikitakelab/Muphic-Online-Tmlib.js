@@ -4,6 +4,7 @@ tm.define("MyShopScene", {
 		this.superInit();
 		this.background = ShopBackgroundManager(this);
 		this.menuButton = MenuButtonManager(this);
+		this.screen - Screen(this);
 
 		myshopScene = this;
 	}

@@ -8,6 +8,9 @@ var ASSETS = {
 	"common_menuButtonOn" : "image/Common/MenuButton/menuButtonOn.png",
 	"common_menuButtonDark" : "image/Common/MenuButton/menuButtonDark.png",
 
+	"tmpshopOff" : "image/Common/tmpshop.png",
+	"tmpshopOn" : "image/Common/tmpshop.png",
+	"tmpshopDark" : "image/Common/tmpshop.png",
 
 	//Charactor
 	"char_a" : "image/Char/smallAlfabet/a.png",
